@@ -95,7 +95,7 @@ const dadosProjetos = {
         github: "https://github.com/Guilherme-Lopesz/Merlin-voice-agent",
         // Mídia: preencha com os caminhos reais dos seus arquivos
         video: "./video/merlin-em-breve.mp4",          // ex: "assets/merlin-demo.mp4"
-        imagem: "./img/merlim.mae1.jpg"          // ex: "assets/merlin-arquitetura.png"
+        imagem: "./img/merlin.mae1.jpg"          // ex: "assets/merlin-arquitetura.png"
     },
     nexus: {
         titulo: "NEXUS — Sistema de Comunicação Seguro",
@@ -119,7 +119,7 @@ const dadosProjetos = {
         github: "https://github.com/Guilherme-Lopesz/Classificador-Inteligente-de-Transa-es",
         // Mídia: preencha com os caminhos reais dos seus arquivos
         video: "./video/giro-video.mp4",          // ex: "assets/giro-demo.mp4"
-        imagem: "./img/Giro-tela-inicial.png"          // ex: "assets/giro-arquitetura.png"
+        imagem: "./img/Giro-tela-Inicial.png"          // ex: "assets/giro-arquitetura.png"
     }
 };
 
@@ -338,4 +338,34 @@ window.addEventListener('click', (event) => {
         estudosObserver.observe(card);
     });
 
+})();
+// ==================== MENU HAMBÚRGUER (MOBILE) ====================
+(function () {
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.querySelector('.menu');
+
+    if (!menuToggle || !menu) return;
+
+    // Abre/fecha o menu ao clicar no hambúrguer
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = menu.classList.toggle('aberto');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Fecha o menu ao clicar em qualquer link (scroll para a seção)
+    menu.querySelectorAll('.menu-link').forEach((link) => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('aberto');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Fecha o menu ao clicar fora dele
+    document.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+            menu.classList.remove('aberto');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        }
+    });
 })();
