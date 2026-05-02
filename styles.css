@@ -1304,3 +1304,269 @@ body.tema-claro .arsenal-card-inner {
         flex-direction: column;
     }
 }
+
+/* ==================== BOTÃO HAMBÚRGUER (oculto no desktop) ==================== */
+/*
+   Esta regra é lida por TODOS os navegadores, mas como apenas esconde o botão
+   no desktop, não altera nenhum visual existente.
+*/
+.menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--primaria);
+    color: var(--cor-do-texto-fundo-principal);
+    border-radius: 8px;
+    padding: 0.4rem 0.55rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.menu-toggle:hover {
+    background: var(--primaria);
+    color: #fff;
+}
+
+/* ==================== RESPONSIVIDADE MOBILE ==================== */
+/*
+   Tudo abaixo NUNCA é lido por navegadores desktop (largura > 768px).
+   As regras do desktop acima permanecem intactas.
+*/
+@media (max-width: 768px) {
+
+    /* ─── 1. TAG VIEWPORT já presente no HTML ─── */
+
+    /* ─── 2. NAVEGAÇÃO: hambúrguer + menu dropdown ─── */
+    .navegacao {
+        padding: 0.75rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        /* espaços para não sobrepor o logo (esq.) e o tema-toggle (dir.) */
+        padding-left: 9rem;
+        padding-right: 4.5rem;
+        overflow: visible; /* permite o dropdown sair do contêiner */
+    }
+
+    /* Hambúrguer visível no mobile */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Menu oculto por padrão; dropdown absoluto ao clicar */
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 0 1rem;
+        background: var(--nav-bg);
+        backdrop-filter: blur(12px);
+        border-top: 1px solid rgba(124, 58, 237, 0.35);
+        text-align: center;
+        z-index: 99;
+    }
+
+    .menu.aberto {
+        display: flex;
+    }
+
+    .menu li {
+        padding: 0.55rem 0;
+    }
+
+    .menu-link {
+        font-size: 1.05rem;
+        padding: 0.35rem 1rem;
+    }
+
+    /* ─── 3. LOGO ─── */
+    .logo {
+        font-size: 1.25rem;
+        padding: 0.9rem 1rem;
+    }
+
+    /* ─── 4. BOTÃO DE TEMA ─── */
+    .tema-toggle {
+        width: 38px;
+        height: 38px;
+        margin: 0.7rem 1rem;
+    }
+
+    /* ─── 5. AJUSTE DE LAYOUT: CABEÇALHO (HERO) ─── */
+    .cabecalho {
+        flex-direction: column;
+        padding: 6.5rem 5% 3rem;
+        gap: 2rem;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .cabecalho-texto {
+        max-width: 100%;
+    }
+
+    .cabecalho-imagem-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    /* ─── 6. IMAGENS E LARGURAS FLEXÍVEIS ─── */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .foto-perfil {
+        max-width: 200px;
+    }
+
+    /* ─── 7. REDUZIR FONTES ─── */
+    h2 {
+        font-size: 1.65rem;
+        margin-top: 0.6rem;
+    }
+
+    .cabecalho-sub-titulo {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .sobre-titulo {
+        font-size: 1.8rem;
+    }
+
+    .arsenal-titulo,
+    .projetos-titulo {
+        font-size: 1.8rem;
+    }
+
+    .contatos-titulo {
+        font-size: 1.7rem;
+    }
+
+    .contatos-descricao {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* ─── 8. REDUZIR ESPAÇAMENTOS DAS SEÇÕES ─── */
+    .sobre,
+    .arsenal-section,
+    .projetos,
+    .estudos-section,
+    .contatos {
+        padding: 4rem 1rem;
+    }
+
+    /* ─── 9. CARDS SOBRE MIM: coluna única ─── */
+    .sobre-cards-grid {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sobre-card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    /* ─── 10. ARSENAL: força coluna única (reforço do breakpoint 900px) ─── */
+    .arsenal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ─── 11. SLIDER DE PROJETOS ─── */
+    /* Altura aumentada para acomodar imagem + painel de info empilhados */
+    .slider-container {
+        height: 520px;
+    }
+
+    /* Empilha imagem sobre o painel de informações */
+    .item {
+        flex-direction: column;
+    }
+
+    .item img {
+        width: 100%;
+        height: 185px;
+        flex-shrink: 0;
+    }
+
+    .projeto-info {
+        width: 100%;
+        flex: 1;
+        padding: 1rem;
+        border-left: none;
+        border-top: 1px solid rgba(124, 58, 237, 0.25);
+        gap: 0.5rem;
+        overflow-y: auto; /* scroll interno se o conteúdo for longo */
+        transform: translateX(0); /* desativa animação horizontal no mobile */
+    }
+
+    /* Anima de baixo para cima no mobile (mais natural) */
+    .item .projeto-info {
+        transform: translateY(20px);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .item.ativo .projeto-info {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: 0.2s;
+    }
+
+    .projeto-info h3 {
+        font-size: 1.05rem;
+    }
+
+    .projeto-info p {
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+
+    .btn-projeto,
+    .btn-saiba-mais {
+        font-size: 0.8rem;
+        padding: 7px 13px;
+        margin-top: 0.3rem;
+        margin-left: 0;
+    }
+
+    .botoes-container {
+        flex-wrap: wrap;
+    }
+
+    /* ─── 12. SEÇÃO ESTUDOS ─── */
+    .estudos-box {
+        padding: 1.5rem 1rem;
+    }
+
+    .cert-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+
+    /* ─── 13. MODAL ─── */
+    .modal-conteudo {
+        margin: 2% auto;
+        padding: 1.75rem 1.25rem;
+        width: 95%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-certificado-conteudo iframe {
+        height: 380px;
+    }
+}
