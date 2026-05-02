@@ -95,7 +95,7 @@ const dadosProjetos = {
         github: "https://github.com/Guilherme-Lopesz/Merlin-voice-agent",
         // Mídia: preencha com os caminhos reais dos seus arquivos
         video: "./video/merlin-em-breve.mp4",          // ex: "assets/merlin-demo.mp4"
-        imagem: "./img/merlin.mae1.jpg"          // ex: "assets/merlin-arquitetura.png"
+        imagem: "./img/merlim.mae1.jpg"          // ex: "assets/merlin-arquitetura.png"
     },
     nexus: {
         titulo: "NEXUS — Sistema de Comunicação Seguro",
@@ -119,7 +119,7 @@ const dadosProjetos = {
         github: "https://github.com/Guilherme-Lopesz/Classificador-Inteligente-de-Transa-es",
         // Mídia: preencha com os caminhos reais dos seus arquivos
         video: "./video/giro-video.mp4",          // ex: "assets/giro-demo.mp4"
-        imagem: "./img/Giro-tela-Inicial.png"          // ex: "assets/giro-arquitetura.png"
+        imagem: "./img/Giro-tela-inicial.png"          // ex: "assets/giro-arquitetura.png"
     }
 };
 
