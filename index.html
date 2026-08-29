@@ -12,21 +12,9 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Guilherme Lopes Dias | Computer Science Student | AI & Automation">
 <meta name="twitter:description" content="Computer Science student building practical software across AI, automation and security-focused projects. Open to remote international junior software engineering opportunities.">
-<meta name="twitter:image" content="img/Guilherme.jpeg">
-<!--
-  Content-Security-Policy note: GitHub Pages doesn't allow custom HTTP
-  response headers, so a <meta http-equiv> CSP is the only client-side
-  hardening available here. Directives that only work via a real HTTP
-  header (frame-ancestors, HSTS/Strict-Transport-Security,
-  X-Content-Type-Options) are intentionally left out — a meta tag can't
-  enforce them and listing them would be misleading. If this site ever
-  moves behind a proxy (e.g. Cloudflare) that can set response headers,
-  prefer setting the CSP there instead, plus those extra headers.
--->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta name="twitter:image" content="img/guilherme.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -34,9 +22,9 @@
 
 <!-- ============ ICON SPRITE ============
      Shared icon defs referenced via <use> throughout the page
-     (and from script_copy.js for dynamically-rendered content) to
+     (and from script.js for dynamically-rendered content) to
      avoid repeating the same SVG path data dozens of times. -->
-<svg aria-hidden="true" class="icon-sprite" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <symbol id="icon-external-link" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></symbol>
     <symbol id="icon-github" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></symbol>
@@ -80,22 +68,18 @@
         <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="lang-toggle mobile-lang-toggle" role="group" aria-label="Language">
-        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-        <button class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
       </div>
     </nav>
 
     <div class="header-controls">
-      <button class="icon-toggle" id="themeToggle" aria-label="Toggle theme">
-        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M6 .278a.768.768 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278z"/></svg>
-        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5M16 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg>
-      </button>
       <div class="lang-toggle" role="group" aria-label="Language">
-        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-        <button class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
-        <svg class="icon-open" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>
+        <svg class="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>
         <svg class="icon-close" aria-hidden="true"><use href="#icon-close"></use></svg>
       </button>
     </div>
@@ -119,12 +103,12 @@
               <span data-i18n="hero.ctaPrimary">View Projects</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
             </a>
-            <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" class="btn btn-outline">
               <span data-i18n="hero.ctaTertiary">GitHub</span>
               <svg aria-hidden="true"><use href="#icon-github"></use></svg>
             </a>
             <!-- TODO: replace with the real resume file path once it's added to the project -->
-            <a href="Guilherme_Lopes_Dias_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            <a href="Guilherme_Lopes_Dias_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
               <span data-i18n="hero.ctaResume">Resume</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/></svg>
             </a>
@@ -142,7 +126,7 @@
           <div class="profile-top">
             <div class="profile-photo-frame">
               <span class="bracket bracket-tl" aria-hidden="true"></span>
-              <img src="img/Guilherme.jpeg" alt="Guilherme Lopes Dias" fetchpriority="high">
+              <img src="img/Guilherme.jpeg" alt="Guilherme Lopes Dias">
               <span class="bracket bracket-br" aria-hidden="true"></span>
             </div>
             <div class="profile-intro">
@@ -183,13 +167,13 @@
           </div>
 
           <div class="profile-social">
-            <a href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
               <svg aria-hidden="true"><use href="#icon-linkedin"></use></svg>
             </a>
-            <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
               <svg aria-hidden="true"><use href="#icon-github"></use></svg>
             </a>
-            <a href="https://www.instagram.com/guilherme__lopesz" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <a href="https://www.instagram.com/guilherme__lopesz" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
               <svg aria-hidden="true"><use href="#icon-instagram"></use></svg>
             </a>
           </div>
@@ -206,11 +190,11 @@
         <span class="eyebrow">// selected-work</span>
         <div class="section-head-row">
           <h2 data-i18n="projects.title">Selected Work</h2>
-          <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener noreferrer" class="text-link" data-i18n="projects.viewAll">View all projects on GitHub ↗</a>
+          <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" class="text-link" data-i18n="projects.viewAll">View all projects on GitHub ↗</a>
         </div>
       </div>
 
-      <div class="project-grid reveal" id="projectsGrid"><!-- cards injected by script_copy.js --></div>
+      <div class="project-grid reveal" id="projectsGrid"><!-- cards injected by script.js --></div>
     </div>
   </section>
 
@@ -220,17 +204,7 @@
       <button type="button" class="modal-close" id="modalClose" data-i18n-aria="modal.close" aria-label="Close">
         <svg aria-hidden="true"><use href="#icon-close"></use></svg>
       </button>
-      <div class="modal-scroll" id="modalScroll"><!-- content injected by script_copy.js --></div>
-    </div>
-  </div>
-
-  <!-- ============ FUTURE ROADMAP MODAL ============ -->
-  <div class="modal-overlay" id="futureModal" aria-hidden="true">
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="futureModalTitle">
-      <button type="button" class="modal-close" id="futureModalClose" data-i18n-aria="modal.close" aria-label="Close">
-        <svg aria-hidden="true"><use href="#icon-close"></use></svg>
-      </button>
-      <div class="modal-scroll" id="futureModalScroll"><!-- content injected by script_copy.js --></div>
+      <div class="modal-scroll" id="modalScroll"><!-- content injected by script.js --></div>
     </div>
   </div>
 
@@ -259,7 +233,6 @@
           <span class="about-card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5.5H3.5A1.5 1.5 0 0 0 2 9.5zm6 0a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm-2 9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/></svg></span>
           <h3 data-i18n="about.card3.title">What's Next</h3>
           <p data-i18n="about.card3.body">My professional focus is <strong>software development, AI and automation</strong>. Cybersecurity remains an academic and technical area of interest I keep exploring through projects like Nexus. I'm looking for a remote, international <strong>junior software engineering or AI-focused opportunity</strong> where I can keep building, testing and learning from real feedback.</p>
-          <button type="button" class="text-link about-card-cta" id="openFutureModal" data-i18n="about.card3.cta">Explore What's Next →</button>
         </div>
       </div>
     </div>
@@ -331,7 +304,7 @@
 
           <div class="skills-cta">
             <span data-i18n="skills.cta.text">This is just the front-end.</span>
-            <a href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener">
               <span data-i18n="skills.cta.link">Explore the back-end on LinkedIn</span>
               <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
             </a>
@@ -391,7 +364,7 @@
           </div>
           <div class="cert-action">
             <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-endpoint-security.pdf" target="_blank" rel="noopener noreferrer">
+            <a class="cert-btn" href="certificados/cert-endpoint-security.pdf" target="_blank" rel="noopener">
               <span data-i18n="edu.viewCert">View Certificate</span>
               <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
             </a>
@@ -409,7 +382,7 @@
           </div>
           <div class="cert-action">
             <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-sistemas-computacionais.pdf" target="_blank" rel="noopener noreferrer">
+            <a class="cert-btn" href="certificados/cert-sistemas-computacionais.pdf" target="_blank" rel="noopener">
               <span data-i18n="edu.viewCert">View Certificate</span>
               <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
             </a>
@@ -427,7 +400,7 @@
           </div>
           <div class="cert-action">
             <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-ambientes-computacionais.pdf" target="_blank" rel="noopener noreferrer">
+            <a class="cert-btn" href="certificados/cert-ambientes-computacionais.pdf" target="_blank" rel="noopener">
               <span data-i18n="edu.viewCert">View Certificate</span>
               <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
             </a>
@@ -445,7 +418,7 @@
           </div>
           <div class="cert-action">
             <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-liderando-25-2.pdf" target="_blank" rel="noopener noreferrer">
+            <a class="cert-btn" href="certificados/cert-liderando-25-2.pdf" target="_blank" rel="noopener">
               <span data-i18n="edu.viewCert">View Certificate</span>
               <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
             </a>
@@ -463,7 +436,7 @@
           </div>
           <div class="cert-action">
             <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-exploracao-digital.pdf" target="_blank" rel="noopener noreferrer">
+            <a class="cert-btn" href="certificados/cert-exploracao-digital.pdf" target="_blank" rel="noopener">
               <span data-i18n="edu.viewCert">View Certificate</span>
               <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
             </a>
@@ -481,7 +454,7 @@
           </div>
           <div class="cert-action">
             <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-matematica-computacional.pdf" target="_blank" rel="noopener noreferrer">
+            <a class="cert-btn" href="certificados/cert-matematica-computacional.pdf" target="_blank" rel="noopener">
               <span data-i18n="edu.viewCert">View Certificate</span>
               <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
             </a>
@@ -526,6 +499,24 @@
             </div>
           </div>
           <div class="cert-action"><span class="status-chip progress" data-i18n="edu.statusProgress">In Progress</span></div>
+        </div>
+
+        <div class="cert-card in-progress reveal">
+          <div class="cert-info">
+            <span class="cert-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.25a6.75 6.75 0 1 1 0 13.5A6.75 6.75 0 0 1 8 1.25m1.25 3.5a1.25 1.25 0 1 0-2.5 0v3.75c0 .35.14.686.39.94l2.1 2.1a1.25 1.25 0 1 0 1.77-1.77L9.25 8.4V4.75z"/></svg></span>
+            <div>
+              <div class="cert-title">Computer Vision — Biometric Matching</div>
+              <div class="cert-subtitle">Bichometria (PetSalvo) · Applied Computer Vision</div>
+              <div class="cert-meta">Learning to integrate the Google Cloud Vision API for image detection and labeling, build image preprocessing pipelines, and develop visual similarity and matching logic as part of a team project.</div>
+            </div>
+          </div>
+          <div class="cert-action">
+            <span class="status-chip progress">In Progress</span>
+            <a class="cert-btn" href="https://bichometria.vercel.app" target="_blank" rel="noopener noreferrer">
+              <span>Learn more about the project</span>
+              <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -584,7 +575,7 @@
             <div>
               <h4 data-i18n="contact.linkedin.title">LinkedIn</h4>
               <p data-i18n="contact.linkedin.body">Professional profile.</p>
-              <a class="text-link" href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener noreferrer" data-i18n="contact.linkedin.link">View profile ↗</a>
+              <a class="text-link" href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener" data-i18n="contact.linkedin.link">View profile ↗</a>
             </div>
           </div>
           <div class="contact-side-item">
@@ -592,7 +583,7 @@
             <div>
               <h4 data-i18n="contact.github.title">GitHub</h4>
               <p data-i18n="contact.github.body">Projects &amp; source code.</p>
-              <a class="text-link" href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener noreferrer" data-i18n="contact.github.link">View repositories ↗</a>
+              <a class="text-link" href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" data-i18n="contact.github.link">View repositories ↗</a>
             </div>
           </div>
           <div class="contact-side-item">
@@ -600,7 +591,7 @@
             <div>
               <h4 data-i18n="contact.whatsapp.title">WhatsApp</h4>
               <p data-i18n="contact.whatsapp.body">Direct contact.</p>
-              <a class="text-link" href="https://wa.me/5575983726767" target="_blank" rel="noopener noreferrer" data-i18n="contact.whatsapp.link">Open chat ↗</a>
+              <a class="text-link" href="https://wa.me/5575983726767" target="_blank" rel="noopener" data-i18n="contact.whatsapp.link">Open chat ↗</a>
             </div>
           </div>
         </div>
@@ -615,13 +606,13 @@
   <div class="container footer-inner">
     <p class="footer-note"><strong>Guilherme Lopes Dias</strong> — <span data-i18n="footer.note">built with intent, from Brazil to the world.</span></p>
     <div class="footer-social">
-      <a href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
         <svg aria-hidden="true"><use href="#icon-linkedin"></use></svg>
       </a>
-      <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+      <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
         <svg aria-hidden="true"><use href="#icon-github"></use></svg>
       </a>
-      <a href="https://www.instagram.com/guilherme__lopesz" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+      <a href="https://www.instagram.com/guilherme__lopesz" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
         <svg aria-hidden="true"><use href="#icon-instagram"></use></svg>
       </a>
     </div>
