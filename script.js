@@ -17,17 +17,23 @@
     "nav.skills": "Skills",
     "nav.education": "Education",
     "nav.contact": "Contact",
+    "nav.resume": "Resume",
 
+    "hero.eyebrow": "SOFTWARE DEVELOPMENT ↗ AI ↗ AUTOMATION",
     "hero.badge": "OPEN TO INTERNATIONAL OPPORTUNITIES",
     "hero.headline.role": "Computer Science Student & Developer",
     "hero.headline.pre": "Building practical systems with",
     "hero.headline.accent": "AI and automation",
     "hero.headline.dot": ".",
     "hero.sub": "Computer Science student in Brazil who builds and ships real projects — a voice-driven AI agent, an encrypted chat platform, an AI-assisted transaction classifier — and is looking for a remote, international junior software engineering role.",
+    "hero.context": "Based in Brazil · Open to remote opportunities",
     "hero.ctaPrimary": "View Projects",
     "hero.ctaResume": "Resume",
     "hero.ctaTertiary": "GitHub",
     "hero.stackLabel": "CORE STACK",
+    "hero.stack.aiapis": "AI APIs",
+    "hero.stack.automation": "Automation",
+    "hero.stack.cybersecurity": "Security Fundamentals",
     "hero.profileEyebrow": "// developer & problem solver",
     "hero.profileBio": "Computer Science student turning what I learn into practical, working software — currently deepening my work in neural networks and multimodal AI agents.",
     "hero.focusLabel": "FOCUS AREAS",
@@ -65,13 +71,14 @@
     "nexus.tech3": "Client-Server Architecture",
     "nexus.tech4": "Real-Time",
 
-    "proj.merlin.title": "Merlin — Voice Agent & Automation",
-    "proj.merlin.category": "AI Agents · Automation · Multimodal Systems",
-    "proj.merlin.desc": "Multimodal voice agent that integrates real-time AI and automation for hands-free task execution, tuned for low latency.",
+    "proj.merlin.title": "Merlin — Real-Time Voice Agent",
+    "proj.merlin.category": "AI Agents · Real-Time Voice · WebRTC",
+    "proj.merlin.desc": "Multimodal voice agent built with WebRTC and native generative-AI audio (Gemini Realtime), skipping the traditional STT→LLM→TTS pipeline for near-instant, natural conversation.",
     "proj.merlin.imageAlt": "Merlin voice agent cover art",
-    "merlin.tech1": "Python",
-    "merlin.tech2": "Voice AI",
+    "merlin.tech1": "Next.js",
+    "merlin.tech2": "FastAPI",
     "merlin.tech3": "LiveKit",
+    "merlin.tech4": "Gemini Live",
 
     "modal.problem": "Problem",
     "modal.solution": "Solution",
@@ -81,6 +88,7 @@
     "modal.results": "Results",
     "modal.limitations": "Limitations",
     "modal.application": "Application",
+    "modal.links": "Links",
     "modal.close": "Close",
     "modal.zoomHint": "Click to zoom",
     "modal.galleryPrev": "Previous image",
@@ -117,18 +125,21 @@
     "nexus.application": "Applicable to internal team communication or any context where message privacy needs to be built in from the start, not added later.",
     "nexus.limitations": "AES-128 protects message content, but that alone doesn't make the system secure end to end — key management, user authentication and transport-layer hardening are not yet documented as part of the project, and it hasn't been through an independent security review. It should be treated as a learning and architecture project, not a production-ready secure messaging system.",
 
-    "merlin.problem": "Executing routine tasks through screens and manual input isn't always the fastest or most natural way to get things done.",
-    "merlin.solution": "Merlin is a multimodal voice agent that integrates real-time AI with automation workflows to execute tasks hands-free, tuned for low latency.",
-    "merlin.arch1": "Voice input",
-    "merlin.arch2": "Real-time AI processing",
-    "merlin.arch4": "Task execution",
-    "merlin.decision2q": "Why prioritize low latency?",
-    "merlin.decision2a": "A voice agent only feels natural to use if responses are fast — latency was treated as a core requirement, not an afterthought.",
-    "merlin.result1": "Hands-free execution of automated tasks via voice",
-    "merlin.result2": "Real-time AI processing integrated with workflow automation",
-    "merlin.result3": "Tuned specifically for low-latency interaction",
-    "merlin.application": "Fits personal productivity automation, hands-free assistants, or any workflow where voice is a faster interface than a screen.",
-    "merlin.limitations": "Built and tuned through personal, hands-on testing rather than a deployed, continuously-running service — reliability under sustained real-world use hasn't been formally measured yet.",
+    "merlin.problem": "Traditional voice assistants chain speech-to-text, an LLM and text-to-speech together, which adds latency at every hop and loses tone and intent in the text round-trip.",
+    "merlin.solution": "Merlin is a real-time voice agent split into three services — a Next.js frontend, a FastAPI token-issuing backend and a LiveKit Agents worker — that streams audio straight to and from Gemini's Realtime API over WebRTC, so the model hears and speaks natively instead of going through text.",
+    "merlin.arch1": "Token request (FastAPI)",
+    "merlin.arch2": "WebRTC room (LiveKit Cloud)",
+    "merlin.arch3": "Agent worker ↔ Gemini Realtime",
+    "merlin.arch4": "Live audio response",
+    "merlin.decision1q": "Why Gemini's native audio API instead of a classic STT → LLM → TTS pipeline?",
+    "merlin.decision1a": "Gemini Realtime accepts and generates audio directly, preserving tone and intent that a text round-trip would lose, and responds close to instantly instead of chaining three separate models together.",
+    "merlin.decision2q": "Why LiveKit Cloud instead of a self-hosted WebRTC server?",
+    "merlin.decision2a": "LiveKit Cloud removes the work of running and scaling an SFU myself, handling voice-activity detection, natural interruptions (barge-in) and room lifecycle while keeping latency low globally.",
+    "merlin.result1": "Working end-to-end pipeline: Next.js frontend → FastAPI token service → LiveKit Cloud → Gemini Realtime agent worker",
+    "merlin.result2": "Native audio in and out through Gemini Realtime, without a separate STT/TTS step",
+    "merlin.result3": "Live demo deployed and publicly reachable",
+    "merlin.application": "Fits hands-free assistants, customer-facing voice interfaces, or any product where natural, low-latency spoken conversation matters more than a chat window.",
+    "merlin.limitations": "Runs on free-tier infrastructure today: the Render backend cold-starts after inactivity (up to ~50s for the first token), Gemini's Realtime API carries meaningful daily and per-minute quotas under continuous audio streaming, and the agent worker still needs a dedicated always-on environment rather than a fully managed 24/7 deployment.",
 
     "proj.graphroute.title": "GraphRoute — Graph Algorithm Benchmarker",
     "proj.graphroute.category": "Algorithms · Data Structures · Benchmarking",
@@ -147,6 +158,7 @@
     "vidascampo.tech2": "CSS",
     "vidascampo.tech3": "JavaScript",
     "vidascampo.tech4": "Web Audio API",
+    "vidascampo.tech5": "Firebase",
 
     "graphroute.problem": "Comparing graph search algorithms usually stays theoretical — it's hard to see how BFS, DFS and Dijkstra actually perform, and differ, on a real network.",
     "graphroute.solution": "GraphRoute runs BFS, DFS and Dijkstra over a weighted graph of municipalities in the Bahia countryside, executing 100 runs per algorithm and per route, then presents statistical metrics, rankings and an interactive map view of the graph and the path found.",
@@ -169,16 +181,16 @@
     "vidascampo.arch1": "Stage & quiz engine",
     "vidascampo.arch2": "Scoring & streak system",
     "vidascampo.arch3": "Clinical feedback",
-    "vidascampo.arch4": "Ranking (LocalStorage)",
-    "vidascampo.decision1q": "Why build it with no external dependencies?",
-    "vidascampo.decision1a": "Using only native HTML, CSS and JavaScript keeps the game lightweight, fast to load and easy to run anywhere without install steps — important for a tool aimed at students and rural producers.",
-    "vidascampo.decision2q": "Why separate 'Bovine' (beginner) and 'Ovine' (advanced) modes?",
-    "vidascampo.decision2a": "Structuring difficulty by species lets the game onboard beginners gradually before introducing the more advanced sheep-management content.",
+    "vidascampo.arch4": "Ranking (Firebase Realtime DB)",
+    "vidascampo.decision1q": "Why build the gameplay with no external dependencies?",
+    "vidascampo.decision1a": "Using native HTML, CSS and JavaScript for the whole gameplay loop keeps the game lightweight, fast to load and easy to run anywhere without install steps — important for a tool aimed at students and rural producers. The only external service is Firebase, used solely to sync the online ranking.",
+    "vidascampo.decision2q": "Why offer separate 'Bovine' and 'Ovine' management tracks?",
+    "vidascampo.decision2a": "Cattle and sheep neonatal care follow different clinical protocols, so splitting them into their own tracks lets each one use content that's actually specific to that species instead of generic advice. Difficulty is handled separately, through the player's chosen profile (layperson, student or veterinarian).",
     "vidascampo.result1": "7 complete stages covering the perinatal cycle, from pre-birth to farm indicators",
     "vidascampo.result2": "Adaptive quiz and scoring system with streak multipliers and clinical case bonuses",
-    "vidascampo.result3": "Persistent Top 10 ranking stored locally in the browser",
+    "vidascampo.result3": "Persistent Top 10 ranking synced in real time through Firebase",
     "vidascampo.application": "Fits veterinary and animal science education, farm-worker training, or any context where practicing neonatal management decisions beats reading about them.",
-    "vidascampo.limitations": "Progress and rankings are stored in the browser's LocalStorage rather than a backend database, so results don't sync across devices and are lost if the browser cache is cleared.",
+    "vidascampo.limitations": "The Top 10 ranking is synced through Firebase, but in-progress checkpoints are still saved to the browser's LocalStorage, so an unfinished run doesn't carry over between devices — only the final score does.",
 
     "about.title": "A little about me.",
     "about.card1.title": "Who I Am & What I Build",
@@ -187,23 +199,28 @@
     "about.card2.body": "Hands-on exploration of <strong>penetration testing</strong> and vulnerability analysis, including <strong>NFC/RFID</strong> systems with Proxmark3. Currently deepening my knowledge of <strong>neural networks and multimodal AI agents</strong>, applying what I learn directly to project work.",
     "about.card3.title": "What's Next",
     "about.card3.body": "My professional focus is <strong>software development, AI and automation</strong>. Cybersecurity remains an academic and technical area of interest I keep exploring through projects like Nexus. I'm looking for a remote, international <strong>junior software engineering or AI-focused opportunity</strong> where I can keep building, testing and learning from real feedback.",
-    "about.card3.cta": "Explore What's Next →",
 
-    "future.eyebrow": "// future-directions",
+    "future.eyebrow": "// what's next",
     "future.title": "Building for what comes next.",
-    "future.body": "These are directions I want to explore next — not a fixed plan, but the areas I'm most curious about right now.",
-    "future.item1.title": "Computer Vision",
-    "future.item1.body": "Practical, experimental projects involving image processing, neural networks and performance evaluation. I want to explore how vision systems perceive and interpret the world, and get hands-on with building and evaluating my own models.",
-    "future.item2.title": "Cybersecurity",
-    "future.item2.body": "More hands-on projects and practice in security, architecture, analysis and experimentation. I want to keep sharpening how I think about systems from an attacker's and a defender's perspective.",
-    "future.item3.title": "SaaS & Product Engineering",
-    "future.item3.body": "Building my own SaaS product and exploring the full product cycle — development, design decisions, and delivery. I want to learn what it takes to ship and maintain something end to end.",
-    "future.item4.title": "AI & Intelligent Systems",
-    "future.item4.body": "Going deeper into neural networks, multimodal systems and how intelligent systems are evaluated. I want to better understand what makes these systems reliable, not just functional.",
-    "future.footer": "The roadmap evolves as I learn, experiment and discover new problems worth solving.",
+    "future.body": "My goal is to keep growing as a software developer, going deeper into AI and automation while continuing to study cybersecurity as a complementary area — understanding not only how intelligent systems can be built, but also how they can be made more secure, reliable and responsible.",
 
     "skills.title": "Technical Arsenal",
     "skills.sub": "Skills built in practice — from theory to functional product.",
+    "skills.softTitle": "Soft Skills",
+    "skills.soft1.label": "Problem Solving",
+    "skills.soft1.desc": "Critical thinking applied to real challenges",
+    "skills.soft2.label": "Analytical Thinking",
+    "skills.soft2.desc": "Structuring solutions grounded in data",
+    "skills.soft3.label": "Leadership & Teamwork",
+    "skills.soft3.desc": "Class representative for 60 students",
+    "skills.soft4.label": "Ownership",
+    "skills.soft4.desc": "Initiative to build projects from scratch",
+    "skills.soft5.label": "Communication",
+    "skills.soft5.desc": "Translating complexity into clarity",
+    "skills.soft6.label": "Adaptability",
+    "skills.soft6.desc": "Continuous learning in dynamic environments",
+    "skills.soft7.label": "Ethics in Data & Security",
+    "skills.soft7.desc": "Responsible disclosure and privacy by design",
 
     "skills.hardTitle": "Hard Skills",
     "skills.blockLang": "Languages",
@@ -221,6 +238,20 @@
     "skills.blockAuto": "Automation",
     "skills.blockAuto.tag1": "n8n · Make.io · ManyChat",
     "skills.blockAuto.tag2": "Workflow Automation",
+    "skills.block2": "Cybersecurity & Hardware",
+    "skills.block2.tag1": "NFC/RFID Pentesting (Mifare 1k/4k)",
+    "skills.block2.tag2": "Proxmark3",
+    "skills.block2.tag3": "ISO 14443-A Sniffing & Analysis",
+    "skills.block2.tag4": "AES-128 Encryption",
+    "skills.block3": "Software Development",
+    "skills.block3.tag1": "Python",
+    "skills.block3.tag2": "Data Structures & Algorithms",
+    "skills.block3.tag3": "SQL · Power BI",
+    "skills.block3.tag4": "Git & GitHub",
+    "skills.block4": "Systems & Tools",
+    "skills.block4.tag1": "Linux (Basics)",
+    "skills.block4.tag2": "Excel (Data Analysis)",
+    "skills.block4.tag3": "Microsoft Office Suite",
     "skills.blockAdd": "Additional",
     "skills.blockAdd.tag1": "NFC/RFID Pentesting (Mifare 1k/4k)",
     "skills.blockAdd.tag2": "Proxmark3",
@@ -238,6 +269,8 @@
     "edu.degree.title": "Computer Science",
     "edu.degree.sub": "UNIFACS — Universidade Salvador",
     "edu.degree.meta": "2025.2 – Present · Expected graduation: 2029.2",
+    "edu.academicLabel": "EDUCATION",
+    "edu.degree": "Computer Science",
     "edu.completed": "Certifications & Training",
     "edu.inProgress": "Currently Learning",
     "edu.statusDone": "Completed",
@@ -282,6 +315,7 @@
     "contact.form.message": "MESSAGE",
     "contact.form.messagePh": "Type your message",
     "contact.form.submit": "Send Email",
+    "contact.resume": "Download Resume",
     "contact.email.title": "Email",
     "contact.email.body": "Primary contact method.",
     "contact.email.link": "Send an email ↗",
@@ -309,17 +343,23 @@
     "nav.skills": "Habilidades",
     "nav.education": "Formação",
     "nav.contact": "Contato",
+    "nav.resume": "Currículo",
 
+    "hero.eyebrow": "DESENVOLVIMENTO DE SOFTWARE ↗ IA ↗ AUTOMAÇÃO",
     "hero.badge": "ABERTO A OPORTUNIDADES INTERNACIONAIS",
     "hero.headline.role": "Estudante de Ciência da Computação & Desenvolvedor",
     "hero.headline.pre": "Construindo sistemas práticos com",
     "hero.headline.accent": "IA e automação",
     "hero.headline.dot": ".",
     "hero.sub": "Estudante de Ciência da Computação no Brasil que constrói e publica projetos reais — um agente de voz com IA, uma plataforma de chat criptografada, um classificador de transações com IA — e busca uma vaga júnior remota e internacional em engenharia de software.",
+    "hero.context": "Baseado no Brasil · Aberto a oportunidades remotas",
     "hero.ctaPrimary": "Ver Projetos",
     "hero.ctaResume": "Currículo",
     "hero.ctaTertiary": "GitHub",
     "hero.stackLabel": "STACK PRINCIPAL",
+    "hero.stack.aiapis": "APIs de IA",
+    "hero.stack.automation": "Automação",
+    "hero.stack.cybersecurity": "Fundamentos de Segurança",
     "hero.profileEyebrow": "// desenvolvedor & solucionador de problemas",
     "hero.profileBio": "Estudante de Ciência da Computação transformando aprendizado em software funcional — atualmente aprofundando meu trabalho em redes neurais e agentes de IA multimodais.",
     "hero.focusLabel": "ÁREAS DE FOCO",
@@ -357,13 +397,14 @@
     "nexus.tech3": "Arquitetura Cliente-Servidor",
     "nexus.tech4": "Tempo Real",
 
-    "proj.merlin.title": "Merlin — Agente de Voz e Automação",
-    "proj.merlin.category": "Agentes de IA · Automação · Sistemas Multimodais",
-    "proj.merlin.desc": "Agente de voz multimodal que integra IA em tempo real e automação para execução de tarefas hands-free, otimizado para baixa latência.",
+    "proj.merlin.title": "Merlin — Agente de Voz em Tempo Real",
+    "proj.merlin.category": "Agentes de IA · Voz em Tempo Real · WebRTC",
+    "proj.merlin.desc": "Agente de voz multimodal construído com WebRTC e IA generativa nativa em áudio (Gemini Realtime), sem o pipeline tradicional STT→LLM→TTS, para uma conversa quase instantânea e natural.",
     "proj.merlin.imageAlt": "Capa do agente de voz Merlin",
-    "merlin.tech1": "Python",
-    "merlin.tech2": "IA de Voz",
-    "merlin.tech3": "n8n",
+    "merlin.tech1": "Next.js",
+    "merlin.tech2": "FastAPI",
+    "merlin.tech3": "LiveKit",
+    "merlin.tech4": "Gemini Live",
 
     "modal.problem": "Problema",
     "modal.solution": "Solução",
@@ -373,6 +414,7 @@
     "modal.results": "Resultados",
     "modal.limitations": "Limitações",
     "modal.application": "Aplicação",
+    "modal.links": "Links",
     "modal.close": "Fechar",
     "modal.zoomHint": "Clique para ampliar",
     "modal.galleryPrev": "Imagem anterior",
@@ -409,21 +451,21 @@
     "nexus.application": "Aplicável à comunicação interna de equipes ou qualquer contexto em que a privacidade das mensagens precise ser parte do design desde o início, não adicionada depois.",
     "nexus.limitations": "O AES-128 protege o conteúdo das mensagens, mas isso sozinho não torna o sistema seguro de ponta a ponta — gerenciamento de chaves, autenticação de usuários e reforço da camada de transporte ainda não estão documentados como parte do projeto, que também não passou por uma revisão de segurança independente. Deve ser tratado como um projeto de aprendizado e arquitetura, não um sistema de mensagens seguro pronto para produção.",
 
-    "merlin.problem": "Executar tarefas rotineiras por telas e entrada manual nem sempre é a forma mais rápida ou natural de realizar as coisas.",
-    "merlin.solution": "O Merlin é um agente de voz multimodal que integra IA em tempo real com fluxos de automação para executar tarefas hands-free, otimizado para baixa latência.",
-    "merlin.arch1": "Entrada de voz",
-    "merlin.arch2": "Processamento de IA em tempo real",
-    "merlin.arch3": "Fluxo de automação (n8n)",
-    "merlin.arch4": "Execução da tarefa",
-    "merlin.decision1q": "Por que n8n como camada de automação?",
-    "merlin.decision1a": "O n8n possibilitou conectar intenções por voz a ações e integrações reais sem construir cada conector do zero.",
-    "merlin.decision2q": "Por que priorizar baixa latência?",
-    "merlin.decision2a": "Um agente de voz só parece natural de usar se as respostas forem rápidas — a latência foi tratada como requisito central, não um detalhe secundário.",
-    "merlin.result1": "Execução de tarefas automatizadas por voz, sem uso das mãos",
-    "merlin.result2": "Processamento de IA em tempo real integrado à automação de fluxos",
-    "merlin.result3": "Otimizado especificamente para interação de baixa latência",
-    "merlin.application": "Serve para automação de produtividade pessoal, assistentes hands-free, ou qualquer fluxo em que a voz seja uma interface mais rápida do que uma tela.",
-    "merlin.limitations": "Construído e ajustado por meio de testes pessoais e práticos, não como um serviço implantado em produção contínua — a confiabilidade sob uso real sustentado ainda não foi medida formalmente.",
+    "merlin.problem": "Assistentes de voz tradicionais encadeiam conversão de fala em texto, um LLM e conversão de texto em fala, o que adiciona latência a cada etapa e perde entonação e intenção na ida e volta pelo texto.",
+    "merlin.solution": "O Merlin é um agente de voz em tempo real dividido em três serviços — um frontend em Next.js, um backend em FastAPI que emite tokens e um worker do LiveKit Agents — que transmite áudio diretamente de e para a API Realtime do Gemini via WebRTC, permitindo que o modelo ouça e fale de forma nativa, sem passar por texto.",
+    "merlin.arch1": "Solicitação de token (FastAPI)",
+    "merlin.arch2": "Sala WebRTC (LiveKit Cloud)",
+    "merlin.arch3": "Worker do agente ↔ Gemini Realtime",
+    "merlin.arch4": "Resposta em áudio ao vivo",
+    "merlin.decision1q": "Por que a API de áudio nativo do Gemini em vez do pipeline clássico STT → LLM → TTS?",
+    "merlin.decision1a": "O Gemini Realtime recebe e gera áudio diretamente, preservando entonação e intenção que se perderiam numa ida e volta por texto, e responde quase instantaneamente em vez de encadear três modelos separados.",
+    "merlin.decision2q": "Por que LiveKit Cloud em vez de um servidor WebRTC próprio?",
+    "merlin.decision2a": "O LiveKit Cloud elimina o trabalho de manter e escalar um SFU próprio, cuidando de detecção de atividade de voz, interrupções naturais de fala (barge-in) e do ciclo de vida das salas, mantendo baixa latência globalmente.",
+    "merlin.result1": "Pipeline ponta a ponta funcional: frontend Next.js → serviço de token FastAPI → LiveKit Cloud → worker do agente com Gemini Realtime",
+    "merlin.result2": "Áudio nativo de entrada e saída via Gemini Realtime, sem etapa separada de STT/TTS",
+    "merlin.result3": "Demo ao vivo implantada e publicamente acessível",
+    "merlin.application": "Serve para assistentes hands-free, interfaces de voz voltadas ao cliente, ou qualquer produto em que uma conversa falada natural e de baixa latência importe mais do que uma janela de chat.",
+    "merlin.limitations": "Hoje roda em infraestrutura de camada gratuita: o backend no Render entra em repouso após inatividade (até ~50s para o primeiro token), a API Realtime do Gemini tem cotas relevantes de uso diário e por minuto sob streaming contínuo de áudio, e o worker do agente ainda precisa de um ambiente dedicado sempre ativo em vez de uma implantação totalmente gerenciada 24/7.",
 
     "proj.graphroute.title": "GraphRoute — Comparador de Algoritmos em Grafos",
     "proj.graphroute.category": "Algoritmos · Estruturas de Dados · Benchmarking",
@@ -442,6 +484,7 @@
     "vidascampo.tech2": "CSS",
     "vidascampo.tech3": "JavaScript",
     "vidascampo.tech4": "Web Audio API",
+    "vidascampo.tech5": "Firebase",
 
     "graphroute.problem": "Comparar algoritmos de busca em grafos costuma ficar só na teoria — é difícil visualizar como BFS, DFS e Dijkstra realmente se comportam e se diferenciam em uma rede real.",
     "graphroute.solution": "O GraphRoute executa BFS, DFS e Dijkstra sobre um grafo ponderado de municípios do interior da Bahia, rodando 100 execuções por algoritmo e por rota, e apresenta métricas estatísticas, ranking e uma visualização interativa do grafo com o caminho encontrado.",
@@ -464,16 +507,16 @@
     "vidascampo.arch1": "Motor de etapas e quiz",
     "vidascampo.arch2": "Sistema de pontuação e streak",
     "vidascampo.arch3": "Feedback clínico",
-    "vidascampo.arch4": "Ranking (LocalStorage)",
-    "vidascampo.decision1q": "Por que construir sem dependências externas?",
-    "vidascampo.decision1a": "Usar apenas HTML, CSS e JavaScript nativos mantém o jogo leve, rápido de carregar e fácil de rodar em qualquer lugar sem etapas de instalação — importante para uma ferramenta voltada a estudantes e produtores rurais.",
-    "vidascampo.decision2q": "Por que separar os modos 'Bovinos' (iniciante) e 'Ovinos' (avançado)?",
-    "vidascampo.decision2a": "Estruturar a dificuldade por espécie permite introduzir o jogador aos poucos antes de apresentar o conteúdo mais avançado de manejo ovino.",
+    "vidascampo.arch4": "Ranking (Firebase Realtime DB)",
+    "vidascampo.decision1q": "Por que construir a jogabilidade sem dependências externas?",
+    "vidascampo.decision1a": "Usar apenas HTML, CSS e JavaScript nativos para todo o loop de jogo mantém o jogo leve, rápido de carregar e fácil de rodar em qualquer lugar sem etapas de instalação — importante para uma ferramenta voltada a estudantes e produtores rurais. O único serviço externo é o Firebase, usado apenas para sincronizar o ranking online.",
+    "vidascampo.decision2q": "Por que oferecer trilhas separadas para 'Bovinos' e 'Ovinos'?",
+    "vidascampo.decision2a": "O manejo neonatal de bovinos e ovinos segue protocolos clínicos diferentes, então separar as trilhas por espécie permite usar conteúdo realmente específico para cada uma, em vez de orientações genéricas. A dificuldade é tratada separadamente, pelo perfil escolhido pelo jogador (leigo, estudante ou veterinário).",
     "vidascampo.result1": "7 etapas completas cobrindo o ciclo perinatal, da pré-parição aos indicadores da fazenda",
     "vidascampo.result2": "Sistema de quiz adaptativo e pontuação com multiplicador de streak e bônus por casos clínicos",
-    "vidascampo.result3": "Ranking Top 10 persistente, armazenado localmente no navegador",
+    "vidascampo.result3": "Ranking Top 10 persistente, sincronizado em tempo real pelo Firebase",
     "vidascampo.application": "Serve para educação em Medicina Veterinária e Zootecnia, capacitação de trabalhadores rurais, ou qualquer contexto em que praticar decisões de manejo neonatal seja mais eficaz do que apenas ler sobre elas.",
-    "vidascampo.limitations": "O progresso e o ranking são armazenados no LocalStorage do navegador, não em um banco de dados — os resultados não sincronizam entre dispositivos e são perdidos se o cache do navegador for limpo.",
+    "vidascampo.limitations": "O ranking Top 10 é sincronizado pelo Firebase, mas o checkpoint da partida em andamento ainda é salvo no LocalStorage do navegador, então uma partida não finalizada não é transferida entre dispositivos — apenas a pontuação final é.",
 
     "about.title": "Um pouco sobre mim.",
     "about.card1.title": "Quem Sou & O Que Construo",
@@ -482,23 +525,28 @@
     "about.card2.body": "Atuação prática em <strong>testes de intrusão (pentest)</strong> e análise de vulnerabilidades, incluindo sistemas <strong>NFC/RFID</strong> com Proxmark3. Atualmente aprofundo meu conhecimento em <strong>redes neurais e agentes de IA multimodais</strong>, aplicando o que aprendo diretamente em projetos.",
     "about.card3.title": "Próximos Passos",
     "about.card3.body": "Meu foco profissional é <strong>desenvolvimento de software, IA e automação</strong>. Cibersegurança segue como uma área de interesse acadêmico e técnico que continuo explorando em projetos como o Nexus. Estou em busca de uma oportunidade remota e internacional em <strong>engenharia de software júnior ou vagas focadas em IA</strong> onde eu possa continuar construindo, testando e aprendendo com feedback real.",
-    "about.card3.cta": "Ver Próximos Passos →",
 
-    "future.eyebrow": "// future-directions",
+    "future.eyebrow": "// o que vem a seguir",
     "future.title": "Construindo o que vem a seguir.",
-    "future.body": "Estas são direções que quero explorar a seguir — não um plano fixo, mas as áreas que mais despertam minha curiosidade agora.",
-    "future.item1.title": "Visão Computacional",
-    "future.item1.body": "Projetos práticos e experimentais envolvendo processamento de imagens, redes neurais e avaliação de desempenho. Quero explorar como sistemas de visão percebem e interpretam o mundo, e colocar a mão na massa construindo e avaliando meus próprios modelos.",
-    "future.item2.title": "Cibersegurança",
-    "future.item2.body": "Mais projetos e prática hands-on em segurança, arquitetura, análise e experimentação. Quero continuar aprimorando como penso sobre sistemas tanto da perspectiva de ataque quanto de defesa.",
-    "future.item3.title": "SaaS & Engenharia de Produto",
-    "future.item3.body": "Criar meu próprio SaaS e explorar o ciclo completo de produto — desenvolvimento, decisões de design e entrega. Quero aprender o que é preciso para lançar e manter algo do início ao fim.",
-    "future.item4.title": "IA & Sistemas Inteligentes",
-    "future.item4.body": "Aprofundar redes neurais, sistemas multimodais e como sistemas inteligentes são avaliados. Quero entender melhor o que torna esses sistemas confiáveis, não apenas funcionais.",
-    "future.footer": "O roadmap evolui conforme eu aprendo, experimento e descubro novos problemas que valem a pena resolver.",
+    "future.body": "Meu objetivo é continuar crescendo como desenvolvedor de software, me aprofundando em IA e automação enquanto sigo estudando cibersegurança como área complementar — entendendo não apenas como construir sistemas inteligentes, mas também como torná-los mais seguros, confiáveis e responsáveis.",
 
     "skills.title": "Arsenal Técnico",
     "skills.sub": "Competências construídas na prática — da teoria ao produto funcional.",
+    "skills.softTitle": "Soft Skills",
+    "skills.soft1.label": "Resolução de Problemas",
+    "skills.soft1.desc": "Pensamento crítico aplicado a desafios reais",
+    "skills.soft2.label": "Pensamento Analítico",
+    "skills.soft2.desc": "Estruturação de soluções com base em dados",
+    "skills.soft3.label": "Liderança & Trabalho em Equipe",
+    "skills.soft3.desc": "Representante de turma — 60 alunos",
+    "skills.soft4.label": "Senso de Dono",
+    "skills.soft4.desc": "Iniciativa na criação de projetos do zero",
+    "skills.soft5.label": "Comunicação",
+    "skills.soft5.desc": "Tradução de complexidade em clareza",
+    "skills.soft6.label": "Adaptabilidade",
+    "skills.soft6.desc": "Aprendizado contínuo em ambientes dinâmicos",
+    "skills.soft7.label": "Ética em Dados & Segurança",
+    "skills.soft7.desc": "Divulgação responsável e privacidade desde o design",
 
     "skills.hardTitle": "Hard Skills",
     "skills.blockLang": "Linguagens",
@@ -516,6 +564,20 @@
     "skills.blockAuto": "Automação",
     "skills.blockAuto.tag1": "n8n · Make.io · ManyChat",
     "skills.blockAuto.tag2": "Automação de Fluxos",
+    "skills.block2": "Cibersegurança & Hardware",
+    "skills.block2.tag1": "Pentest NFC/RFID (Mifare 1k/4k)",
+    "skills.block2.tag2": "Proxmark3",
+    "skills.block2.tag3": "Sniffing & Análise ISO 14443-A",
+    "skills.block2.tag4": "Criptografia AES-128",
+    "skills.block3": "Desenvolvimento de Software",
+    "skills.block3.tag1": "Python",
+    "skills.block3.tag2": "Estruturas de Dados & Algoritmos",
+    "skills.block3.tag3": "SQL · Power BI",
+    "skills.block3.tag4": "Git & GitHub",
+    "skills.block4": "Sistemas & Ferramentas",
+    "skills.block4.tag1": "Linux (Básico)",
+    "skills.block4.tag2": "Excel (Análise de Dados)",
+    "skills.block4.tag3": "Pacote Microsoft Office",
     "skills.blockAdd": "Adicional",
     "skills.blockAdd.tag1": "Pentest NFC/RFID (Mifare 1k/4k)",
     "skills.blockAdd.tag2": "Proxmark3",
@@ -533,6 +595,8 @@
     "edu.degree.title": "Ciência da Computação",
     "edu.degree.sub": "UNIFACS — Universidade Salvador",
     "edu.degree.meta": "2025.2 – Atual · Previsão de conclusão: 2029.2",
+    "edu.academicLabel": "FORMAÇÃO ACADÊMICA",
+    "edu.degree": "Ciência da Computação",
     "edu.completed": "Certificações & Formação",
     "edu.inProgress": "Aprendendo Atualmente",
     "edu.statusDone": "Concluído",
@@ -577,6 +641,7 @@
     "contact.form.message": "MENSAGEM",
     "contact.form.messagePh": "Digite sua mensagem",
     "contact.form.submit": "Enviar Email",
+    "contact.resume": "Baixar Currículo",
     "contact.email.title": "Email",
     "contact.email.body": "Principal forma de contato.",
     "contact.email.link": "Enviar um email ↗",
@@ -600,105 +665,6 @@
 
   var htmlKeys = ['about.card1.body', 'about.card2.body', 'about.card3.body'];
 
-  /* ============================================================
-     SAFE DOM-BUILDING HELPERS
-     Every function below that renders content pulled from the
-     `translations` dictionary or the `projects` array (further down)
-     builds real DOM nodes through these helpers instead of assembling
-     HTML strings and assigning them via innerHTML. All of that content
-     is static and developer-authored today, but going through
-     createElement/textContent/setAttribute means it stays safe even if
-     a future edit ever pipes in a URL parameter, a CMS field, or any
-     other string that isn't fully trusted — the browser will always
-     treat it as literal text, never as markup to parse.
-     ============================================================ */
-
-  /* Creates an element, applies attributes via setAttribute (className
-     for `class`), and appends children. String children become text
-     nodes — never parsed as HTML — so this is safe to call with any
-     translation or project-data value. */
-  function el(tag, attrs, children) {
-    var node = document.createElement(tag);
-    if (attrs) {
-      Object.keys(attrs).forEach(function (key) {
-        if (attrs[key] == null) return;
-        if (key === 'class') node.className = attrs[key];
-        else node.setAttribute(key, attrs[key]);
-      });
-    }
-    (children || []).forEach(function (child) {
-      if (child == null) return;
-      node.appendChild(typeof child === 'string' ? document.createTextNode(child) : child);
-    });
-    return node;
-  }
-
-  /* Parses a FIXED, hardcoded markup string — the sprite-icon constants
-     defined below (ICON_LINK, PROJECT_ICONS, etc.) — into a real node.
-     Must only ever be called with one of those constants, never with a
-     translation string, a project field, or anything else that isn't
-     literally written in this file, since <template> parsing does not
-     distinguish trusted from untrusted markup. */
-  var _trustedTemplate = document.createElement('template');
-  function trustedNode(svgString) {
-    _trustedTemplate.innerHTML = svgString;
-    var node = _trustedTemplate.content.firstElementChild
-      ? _trustedTemplate.content.firstElementChild.cloneNode(true)
-      : document.createTextNode('');
-    _trustedTemplate.innerHTML = '';
-    return node;
-  }
-
-  /* Renders a translation string that may contain a single <strong>
-     span (the "about" bios are the only case) without ever handing
-     that string to innerHTML. Only the literal <strong>...</strong>
-     wrapper is recognized; everything else — including a stray "<" or
-     ">" a future translation edit might introduce — is inserted as
-     plain text instead of being parsed as markup. */
-  var STRONG_TAG_RE = /<strong>([\s\S]*?)<\/strong>/g;
-  function renderRichText(targetEl, text) {
-    targetEl.textContent = '';
-    var lastIndex = 0;
-    var match;
-    STRONG_TAG_RE.lastIndex = 0;
-    while ((match = STRONG_TAG_RE.exec(text)) !== null) {
-      if (match.index > lastIndex) {
-        targetEl.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
-      }
-      targetEl.appendChild(el('strong', null, [match[1]]));
-      lastIndex = STRONG_TAG_RE.lastIndex;
-    }
-    if (lastIndex < text.length) {
-      targetEl.appendChild(document.createTextNode(text.slice(lastIndex)));
-    }
-  }
-
-  /* ---------- Theme ---------- */
-  var root = document.documentElement;
-  var themeToggle = document.getElementById('themeToggle');
-  var THEME_KEY = 'guilherme-portfolio-theme';
-
-  function applyTheme(theme) {
-    root.setAttribute('data-theme', theme);
-    try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
-  }
-
-  function initTheme() {
-    var saved = null;
-    try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
-    if (saved === 'dark-green' || saved === 'dark-minimal') {
-      applyTheme(saved);
-    }
-  }
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function () {
-      var current = root.getAttribute('data-theme') || 'dark-green';
-      applyTheme(current === 'dark-green' ? 'dark-minimal' : 'dark-green');
-    });
-  }
-  initTheme();
-
   /* ---------- Language ---------- */
   var LANG_KEY = 'guilherme-portfolio-lang';
   var langButtons = document.querySelectorAll('.lang-btn');
@@ -706,30 +672,28 @@
   function setLanguage(lang) {
     var dict = translations[lang] || translations.en;
 
-    document.querySelectorAll('[data-i18n]').forEach(function (node) {
-      var key = node.getAttribute('data-i18n');
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
       if (dict[key] === undefined) return;
       if (htmlKeys.indexOf(key) !== -1) {
-        renderRichText(node, dict[key]);
+        el.innerHTML = dict[key];
       } else {
-        node.textContent = dict[key];
+        el.textContent = dict[key];
       }
     });
 
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (node) {
-      var key = node.getAttribute('data-i18n-placeholder');
-      if (dict[key] !== undefined) node.setAttribute('placeholder', dict[key]);
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
     });
 
-    document.querySelectorAll('[data-i18n-aria]').forEach(function (node) {
-      var key = node.getAttribute('data-i18n-aria');
-      if (dict[key] !== undefined) node.setAttribute('aria-label', dict[key]);
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-aria');
+      if (dict[key] !== undefined) el.setAttribute('aria-label', dict[key]);
     });
 
     langButtons.forEach(function (btn) {
-      var isActive = btn.getAttribute('data-lang') === lang;
-      btn.classList.toggle('active', isActive);
-      btn.setAttribute('aria-pressed', String(isActive));
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 
     document.documentElement.lang = lang === 'pt' ? 'pt-br' : 'en';
@@ -805,16 +769,10 @@
     sections.forEach(function (sec) { navObserver.observe(sec); });
   }
 
-  /* ---------- Scroll reveal ----------
-     Skipped when the user prefers reduced motion: the CSS already
-     neutralizes the transition itself in that case (see the
-     prefers-reduced-motion block in styles_copy.css), but there's no
-     reason to still pay for an observer per element — elements are
-     just marked visible immediately instead, same as the no-
-     IntersectionObserver-support fallback below. */
+  /* ---------- Scroll reveal ---------- */
   var revealEls = document.querySelectorAll('.reveal');
 
-  if ('IntersectionObserver' in window && revealEls.length && !prefersReducedMotion()) {
+  if ('IntersectionObserver' in window && revealEls.length) {
     var revealObserver = new IntersectionObserver(function (entries, obs) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -824,12 +782,12 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-    revealEls.forEach(function (item, i) {
-      item.style.transitionDelay = ((i % 3) * 70) + 'ms';
-      revealObserver.observe(item);
+    revealEls.forEach(function (el, i) {
+      el.style.transitionDelay = ((i % 3) * 70) + 'ms';
+      revealObserver.observe(el);
     });
   } else {
-    revealEls.forEach(function (item) { item.classList.add('is-visible'); });
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
   /* ---------- Contact form -> Email ---------- */
@@ -874,11 +832,11 @@
       titleKey: 'proj.merlin.title',
       categoryKey: 'proj.merlin.category',
       descKey: 'proj.merlin.desc',
-      image: 'img/merlim.mae1.jpeg',
+      image: 'img/merlin - interface2.jpeg',
       imageAltKey: 'proj.merlin.imageAlt',
-      techKeys: ['merlin.tech1', 'merlin.tech2', 'merlin.tech3'],
+      techKeys: ['merlin.tech1', 'merlin.tech2', 'merlin.tech3', 'merlin.tech4'],
       github: 'https://github.com/Guilherme-Lopesz/Merlin-voice-agent',
-      demo: null,
+      demo: 'https://merlin-voice-agent.vercel.app',
       caseStudy: {
         problemKey: 'merlin.problem',
         solutionKey: 'merlin.solution',
@@ -899,13 +857,9 @@
       categoryKey: 'proj.nexus.category',
       descKey: 'proj.nexus.desc',
       image: 'img/nexus-interface.png',
-      imageAltKey: 'proj.nexus.imageAlt',
+      imageAltKey: 'video/nexus-video2.mp4',
       techKeys: ['nexus.tech1', 'nexus.tech2', 'nexus.tech3', 'nexus.tech4'],
       github: 'https://github.com/Guilherme-Lopesz/Nexus',
-      /* No Live Demo button: the only demo available is served over an
-         unencrypted IP:port (http://147.15.106.168:8080), which reads as
-         unpolished on a security-focused portfolio. Set this to a real
-         https:// domain once a stable one exists. */
       demo: null,
       caseStudy: {
         problemKey: 'nexus.problem',
@@ -976,9 +930,9 @@
       descKey: 'proj.vidascampo.desc',
       image: 'img/vidas-do-campo.png',
       imageAltKey: 'proj.vidascampo.imageAlt',
-      techKeys: ['vidascampo.tech1', 'vidascampo.tech2', 'vidascampo.tech3', 'vidascampo.tech4'],
+      techKeys: ['vidascampo.tech1', 'vidascampo.tech2', 'vidascampo.tech3', 'vidascampo.tech4', 'vidascampo.tech5'],
       github: 'https://github.com/Guilherme-Lopesz/vidas-do-campo2',
-      demo: null,
+      demo: 'https://guilherme-lopesz.github.io/vidas-do-campo2/',
       caseStudy: {
         problemKey: 'vidascampo.problem',
         solutionKey: 'vidascampo.solution',
@@ -990,7 +944,7 @@
         resultKeys: ['vidascampo.result1', 'vidascampo.result2', 'vidascampo.result3'],
         applicationKey: 'vidascampo.application',
         limitationsKey: 'vidascampo.limitations',
-        media: [{ src: 'video/merlin-em-breve.mp4', altKey: 'proj.vidascampo.imageAlt' }]
+        media: [{ src: 'img/vidas-do-campo.png', altKey: 'proj.vidascampo.imageAlt' }]
       }
     }
   ];
@@ -1040,52 +994,45 @@
   var projectsGrid = document.getElementById('projectsGrid');
 
   function buildProjectCard(project, lang) {
-    var tags = buildTechTagsNode(project.techKeys, lang);
+    var techHtml = project.techKeys.map(function (k) {
+      return '<span class="tag">' + t(k, lang) + '</span>';
+    }).join('');
 
-    var iconMarkup = PROJECT_ICONS[project.id];
-    var media = el('div', { class: 'project-media' }, [
-      el('img', { src: project.image, alt: t(project.imageAltKey, lang), loading: 'lazy' }),
-      el('div', { class: 'project-media-overlay', 'aria-hidden': 'true' }),
-      el('span', { class: 'project-icon', 'aria-hidden': 'true' }, iconMarkup ? [trustedNode(iconMarkup)] : null)
-    ]);
+    var icon = PROJECT_ICONS[project.id] || '';
 
-    var links = [
-      el('a', { href: project.github, target: '_blank', rel: 'noopener noreferrer', class: 'project-link' }, [
-        el('span', null, [t('proj.viewGithub', lang)]),
-        trustedNode(ICON_LINK)
-      ])
-    ];
-    if (project.demo) {
-      links.push(el('a', { href: project.demo, target: '_blank', rel: 'noopener noreferrer', class: 'project-link' }, [
-        el('span', null, [t('proj.liveDemo', lang)]),
-        trustedNode(ICON_LINK)
-      ]));
-    }
-    links.push(el('button', { type: 'button', class: 'project-link', 'data-open-modal': project.id }, [
-      el('span', null, [t('proj.viewCaseStudy', lang)]),
-      trustedNode(ICON_ARROW_RIGHT)
-    ]));
+    var demoLink = project.demo
+      ? '<a href="' + project.demo + '" target="_blank" rel="noopener" class="project-link"><span>' + t('proj.liveDemo', lang) + '</span>' + ICON_LINK + '</a>'
+      : '';
 
-    var body = el('div', { class: 'project-body' }, [
-      el('h3', null, [t(project.titleKey, lang)]),
-      el('p', null, [t(project.descKey, lang)]),
-      el('div', { class: 'project-tags' }, tags),
-      el('div', { class: 'project-links' }, links)
-    ]);
-
-    return el('article', { class: 'project-card', 'data-project-id': project.id }, [media, body]);
+    return (
+      '<article class="project-card" data-project-id="' + project.id + '">' +
+        '<div class="project-media">' +
+          '<img src="' + project.image + '" alt="' + t(project.imageAltKey, lang) + '" loading="lazy">' +
+          '<div class="project-media-overlay" aria-hidden="true"></div>' +
+          '<span class="project-icon" aria-hidden="true">' + icon + '</span>' +
+        '</div>' +
+        '<div class="project-body">' +
+          '<h3>' + t(project.titleKey, lang) + '</h3>' +
+          '<p>' + t(project.descKey, lang) + '</p>' +
+          '<div class="project-tags">' + techHtml + '</div>' +
+          '<div class="project-links">' +
+            '<a href="' + project.github + '" target="_blank" rel="noopener" class="project-link">' +
+              '<span>' + t('proj.viewGithub', lang) + '</span>' + ICON_LINK +
+            '</a>' +
+            demoLink +
+            '<button type="button" class="project-link" data-open-modal="' + project.id + '">' +
+              '<span>' + t('proj.viewCaseStudy', lang) + '</span>' + ICON_ARROW_RIGHT +
+            '</button>' +
+          '</div>' +
+        '</div>' +
+      '</article>'
+    );
   }
 
   function renderProjectGrid(lang) {
     if (!projectsGrid) return;
     lang = lang || currentLangCode();
-    var fragment = document.createDocumentFragment();
-    projects.forEach(function (project) {
-      fragment.appendChild(buildProjectCard(project, lang));
-    });
-    // A single replaceChildren + one fragment append means one reflow
-    // for the whole grid instead of one per card.
-    projectsGrid.replaceChildren(fragment);
+    projectsGrid.innerHTML = projects.map(function (project) { return buildProjectCard(project, lang); }).join('');
   }
 
   if (projectsGrid) {
@@ -1112,157 +1059,105 @@
     return /\.(mp4|webm|mov|m4v|ogg)(\?.*)?$/i.test(item.src || '');
   }
 
-  /* Shared by buildProjectCard (grid) and the case-study modal so tech
-     tags render identically in both places from one code path. */
-  function buildTechTagsNode(techKeys, lang) {
-    return techKeys.map(function (k) { return el('span', { class: 'tag' }, [t(k, lang)]); });
-  }
-
-  function buildGalleryMediaNode(item, lang) {
-    if (!item) return document.createTextNode('');
+  function galleryMediaHtml(item, lang) {
+    if (!item) return '';
     var altText = item.altKey ? t(item.altKey, lang) : '';
     if (isVideoMedia(item)) {
-      var videoAttrs = {
-        id: 'modalGalleryImg',
-        class: 'modal-gallery-video',
-        src: item.src,
-        controls: '',
-        playsinline: '',
-        preload: 'metadata'
-      };
-      if (item.poster) videoAttrs.poster = item.poster;
-      if (altText) videoAttrs['aria-label'] = altText;
-      return el('video', videoAttrs);
+      return '<video id="modalGalleryImg" class="modal-gallery-video" src="' + item.src + '"' +
+        (item.poster ? ' poster="' + item.poster + '"' : '') +
+        ' controls playsinline preload="metadata"' +
+        (altText ? ' aria-label="' + altText + '"' : '') +
+        '></video>';
     }
-    return el('img', { id: 'modalGalleryImg', src: item.src, alt: altText, loading: 'lazy' });
-  }
-
-  function buildModalGalleryNode(project, lang) {
-    var media = project.caseStudy.media || [];
-    var firstMedia = media[0] || { src: project.image, altKey: project.imageAltKey };
-    var firstIsVideo = isVideoMedia(firstMedia);
-
-    var mediaContainer = el('div', { class: 'modal-gallery-media', id: 'modalGalleryMedia' }, [buildGalleryMediaNode(firstMedia, lang)]);
-
-    var mainAttrs = { class: 'modal-gallery-main' + (firstIsVideo ? ' is-video' : ''), id: 'modalGalleryMain' };
-    if (!firstIsVideo) mainAttrs.title = t('modal.zoomHint', lang);
-    var mainChildren = [mediaContainer];
-
-    if (media.length > 1) {
-      mainChildren.push(el('button', { type: 'button', class: 'modal-gallery-nav prev', 'data-gallery-dir': '-1', 'aria-label': t('modal.galleryPrev', lang) }, [trustedNode(ICON_ARROW_LEFT)]));
-      mainChildren.push(el('button', { type: 'button', class: 'modal-gallery-nav next', 'data-gallery-dir': '1', 'aria-label': t('modal.galleryNext', lang) }, [trustedNode(ICON_ARROW_RIGHT)]));
-    }
-
-    var galleryChildren = [el('div', mainAttrs, mainChildren)];
-
-    if (media.length > 1) {
-      var thumbs = media.map(function (m, i) {
-        var vid = isVideoMedia(m);
-        var thumbChildren = [];
-        var thumbImgSrc = vid ? (m.poster || '') : m.src;
-        if (thumbImgSrc) thumbChildren.push(el('img', { src: thumbImgSrc, alt: '', loading: 'lazy' }));
-        if (vid) thumbChildren.push(el('span', { class: 'modal-thumb-play', 'aria-hidden': 'true' }, [trustedNode(ICON_PLAY)]));
-        return el('button', {
-          type: 'button',
-          class: 'modal-thumb' + (i === 0 ? ' active' : '') + (vid ? ' is-video' : ''),
-          'data-gallery-index': String(i)
-        }, thumbChildren);
-      });
-      galleryChildren.push(el('div', { class: 'modal-thumbs' }, thumbs));
-    }
-
-    return el('div', { class: 'modal-gallery' }, galleryChildren);
-  }
-
-  function buildTextSectionNode(labelKey, bodyText, lang) {
-    return el('div', { class: 'modal-section' }, [
-      el('h3', { class: 'modal-section-label' }, [t(labelKey, lang)]),
-      el('p', null, [bodyText])
-    ]);
-  }
-
-  function buildFlowNode(architectureKeys, lang) {
-    var children = [];
-    architectureKeys.forEach(function (k, i) {
-      if (i > 0) children.push(el('span', { class: 'modal-flow-arrow', 'aria-hidden': 'true' }, [trustedNode(ICON_ARROW_RIGHT)]));
-      children.push(el('div', { class: 'modal-flow-step' }, [t(k, lang)]));
-    });
-    return el('div', { class: 'modal-flow' }, children);
-  }
-
-  function buildDecisionsNode(decisions, lang) {
-    var items = decisions.map(function (d) {
-      return el('div', { class: 'modal-decision-item' }, [
-        el('p', { class: 'modal-decision-q' }, [t(d.qKey, lang)]),
-        el('p', { class: 'modal-decision-a' }, [t(d.aKey, lang)])
-      ]);
-    });
-    return el('div', { class: 'modal-decisions' }, items);
-  }
-
-  function buildResultsNode(resultKeys, lang) {
-    var items = resultKeys.map(function (k) {
-      return el('li', null, [trustedNode(ICON_CHECK), el('span', null, [t(k, lang)])]);
-    });
-    return el('ul', { class: 'modal-results' }, items);
-  }
-
-  function buildModalLinksNode(project, lang) {
-    var children = [
-      el('a', { href: project.github, target: '_blank', rel: 'noopener noreferrer', class: 'btn btn-primary' }, [
-        el('span', null, [t('proj.viewGithub', lang)]),
-        trustedNode(ICON_LINK)
-      ])
-    ];
-    if (project.demo) {
-      children.push(el('a', { href: project.demo, target: '_blank', rel: 'noopener noreferrer', class: 'btn btn-outline' }, [
-        el('span', null, [t('proj.liveDemo', lang)]),
-        trustedNode(ICON_LINK)
-      ]));
-    }
-    return el('div', { class: 'modal-links' }, children);
+    return '<img id="modalGalleryImg" src="' + item.src + '" alt="' + altText + '" loading="lazy">';
   }
 
   function renderModalContent(project, lang) {
     if (!modalScroll) return;
     var cs = project.caseStudy;
+
+    var techHtml = project.techKeys.map(function (k) { return '<span class="tag">' + t(k, lang) + '</span>'; }).join('');
+
+    var archHtml = cs.architectureKeys.map(function (k, i) {
+      var step = '<div class="modal-flow-step">' + t(k, lang) + '</div>';
+      return i === 0 ? step : '<span class="modal-flow-arrow" aria-hidden="true">' + ICON_ARROW_RIGHT + '</span>' + step;
+    }).join('');
+
+    var decisionsHtml = cs.decisions.map(function (d) {
+      return '<div class="modal-decision-item"><p class="modal-decision-q">' + t(d.qKey, lang) + '</p><p class="modal-decision-a">' + t(d.aKey, lang) + '</p></div>';
+    }).join('');
+
+    var resultsHtml = cs.resultKeys.map(function (k) {
+      return '<li>' + ICON_CHECK + '<span>' + t(k, lang) + '</span></li>';
+    }).join('');
+
+    var media = cs.media || [];
     currentGalleryIndex = 0;
 
-    var sections = [
-      el('div', { class: 'modal-header' }, [
-        el('span', { class: 'modal-category' }, [t(project.categoryKey, lang)]),
-        el('h2', { class: 'modal-title', id: 'modalTitle' }, [t(project.titleKey, lang)])
-      ]),
-      buildModalGalleryNode(project, lang),
-      buildTextSectionNode('modal.problem', t(cs.problemKey, lang), lang),
-      buildTextSectionNode('modal.solution', t(cs.solutionKey, lang), lang),
-      el('div', { class: 'modal-section' }, [
-        el('h3', { class: 'modal-section-label' }, [t('modal.technologies', lang)]),
-        el('div', { class: 'modal-tech-tags' }, buildTechTagsNode(project.techKeys, lang))
-      ]),
-      el('div', { class: 'modal-section' }, [
-        el('h3', { class: 'modal-section-label' }, [t('modal.howItWorks', lang)]),
-        buildFlowNode(cs.architectureKeys, lang)
-      ]),
-      el('div', { class: 'modal-section' }, [
-        el('h3', { class: 'modal-section-label' }, [t('modal.decisions', lang)]),
-        buildDecisionsNode(cs.decisions, lang)
-      ]),
-      el('div', { class: 'modal-section' }, [
-        el('h3', { class: 'modal-section-label' }, [t('modal.results', lang)]),
-        buildResultsNode(cs.resultKeys, lang)
-      ])
-    ];
+    var thumbsHtml = media.length > 1
+      ? '<div class="modal-thumbs">' + media.map(function (m, i) {
+          var vid = isVideoMedia(m);
+          var thumbImgSrc = vid ? (m.poster || '') : m.src;
+          var thumbInner = thumbImgSrc ? '<img src="' + thumbImgSrc + '" alt="" loading="lazy">' : '';
+          var playBadge = vid ? '<span class="modal-thumb-play" aria-hidden="true">' + ICON_PLAY + '</span>' : '';
+          return '<button type="button" class="modal-thumb' + (i === 0 ? ' active' : '') + (vid ? ' is-video' : '') + '" data-gallery-index="' + i + '">' + thumbInner + playBadge + '</button>';
+        }).join('') + '</div>'
+      : '';
 
-    if (cs.limitationsKey) {
-      sections.push(buildTextSectionNode('modal.limitations', t(cs.limitationsKey, lang), lang));
-    }
+    var galleryNavHtml = media.length > 1
+      ? '<button type="button" class="modal-gallery-nav prev" data-gallery-dir="-1" aria-label="' + t('modal.galleryPrev', lang) + '">' + ICON_ARROW_LEFT + '</button>' +
+        '<button type="button" class="modal-gallery-nav next" data-gallery-dir="1" aria-label="' + t('modal.galleryNext', lang) + '">' + ICON_ARROW_RIGHT + '</button>'
+      : '';
 
-    sections.push(buildTextSectionNode('modal.application', t(cs.applicationKey, lang), lang));
-    sections.push(buildModalLinksNode(project, lang));
+    var demoBtn = project.demo
+      ? '<a href="' + project.demo + '" target="_blank" rel="noopener" class="btn btn-outline"><span>' + t('proj.liveDemo', lang) + '</span>' + ICON_LINK + '</a>'
+      : '';
 
-    modalScroll.replaceChildren();
-    sections.forEach(function (section) { modalScroll.appendChild(section); });
+    var firstMedia = media[0] || { src: project.image, altKey: project.imageAltKey };
+    var firstIsVideo = isVideoMedia(firstMedia);
+
+    modalScroll.innerHTML =
+      '<div class="modal-header">' +
+        '<span class="modal-category">' + t(project.categoryKey, lang) + '</span>' +
+        '<h2 class="modal-title" id="modalTitle">' + t(project.titleKey, lang) + '</h2>' +
+      '</div>' +
+      '<div class="modal-gallery">' +
+        '<div class="modal-gallery-main' + (firstIsVideo ? ' is-video' : '') + '" id="modalGalleryMain"' + (firstIsVideo ? '' : ' title="' + t('modal.zoomHint', lang) + '"') + '>' +
+          '<div class="modal-gallery-media" id="modalGalleryMedia">' + galleryMediaHtml(firstMedia, lang) + '</div>' +
+          galleryNavHtml +
+        '</div>' +
+        thumbsHtml +
+      '</div>' +
+      '<div class="modal-section">' +
+        '<h3 class="modal-section-label">' + t('modal.problem', lang) + '</h3><p>' + t(cs.problemKey, lang) + '</p>' +
+      '</div>' +
+      '<div class="modal-section">' +
+        '<h3 class="modal-section-label">' + t('modal.solution', lang) + '</h3><p>' + t(cs.solutionKey, lang) + '</p>' +
+      '</div>' +
+      '<div class="modal-section">' +
+        '<h3 class="modal-section-label">' + t('modal.technologies', lang) + '</h3><div class="modal-tech-tags">' + techHtml + '</div>' +
+      '</div>' +
+      '<div class="modal-section">' +
+        '<h3 class="modal-section-label">' + t('modal.howItWorks', lang) + '</h3><div class="modal-flow">' + archHtml + '</div>' +
+      '</div>' +
+      '<div class="modal-section">' +
+        '<h3 class="modal-section-label">' + t('modal.decisions', lang) + '</h3><div class="modal-decisions">' + decisionsHtml + '</div>' +
+      '</div>' +
+      '<div class="modal-section">' +
+        '<h3 class="modal-section-label">' + t('modal.results', lang) + '</h3><ul class="modal-results">' + resultsHtml + '</ul>' +
+      '</div>' +
+      (cs.limitationsKey ? (
+        '<div class="modal-section">' +
+          '<h3 class="modal-section-label">' + t('modal.limitations', lang) + '</h3><p>' + t(cs.limitationsKey, lang) + '</p>' +
+        '</div>'
+      ) : '') +
+      '<div class="modal-section">' +
+        '<h3 class="modal-section-label">' + t('modal.application', lang) + '</h3><p>' + t(cs.applicationKey, lang) + '</p>' +
+      '</div>' +
+      '<div class="modal-links">' +
+        '<a href="' + project.github + '" target="_blank" rel="noopener" class="btn btn-primary"><span>' + t('proj.viewGithub', lang) + '</span>' + ICON_LINK + '</a>' +
+        demoBtn +
+      '</div>';
   }
 
   function setGalleryIndex(index) {
@@ -1277,7 +1172,7 @@
     var lang = currentLangCode();
 
     var mediaContainer = document.getElementById('modalGalleryMedia');
-    if (mediaContainer) mediaContainer.replaceChildren(buildGalleryMediaNode(item, lang));
+    if (mediaContainer) mediaContainer.innerHTML = galleryMediaHtml(item, lang);
 
     var mainEl = document.getElementById('modalGalleryMain');
     if (mainEl) {
@@ -1292,18 +1187,9 @@
     });
   }
 
-  /* ---------- Generic modal infrastructure ----------
-     Shared overlay/panel/close/ESC/focus-trap/scroll-lock behavior,
-     reused by both the Project Case Study modal and the Future
-     Roadmap modal. Each caller supplies its own overlay/panel/close
-     elements and an optional onClose callback; content rendering
-     stays specific to each modal (renderModalContent for case
-     studies, renderFutureModalContent for the roadmap). */
-  var activeModal = null; // tracks the currently-open modal's state object
-
-  function trapFocusIn(panel, event) {
-    if (event.key !== 'Tab' || !panel) return;
-    var focusable = panel.querySelectorAll(FOCUSABLE_SELECTOR);
+  function trapFocus(event) {
+    if (event.key !== 'Tab' || !modalPanel) return;
+    var focusable = modalPanel.querySelectorAll(FOCUSABLE_SELECTOR);
     if (!focusable.length) return;
     var first = focusable[0];
     var last = focusable[focusable.length - 1];
@@ -1315,71 +1201,47 @@
     }
   }
 
-  function onGenericModalKeydown(event) {
-    if (!activeModal) return;
-    if (event.key === 'Escape') { closeGenericModal(activeModal); return; }
-    trapFocusIn(activeModal.panel, event);
-  }
-
-  function openGenericModal(modal) {
-    if (!modal.overlay) return;
-
-    modal.triggerEl = document.activeElement;
-    savedScrollY = window.scrollY || window.pageYOffset || 0;
-    document.body.style.top = '-' + savedScrollY + 'px';
-
-    modal.overlay.classList.add('open');
-    modal.overlay.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('modal-open');
-    document.addEventListener('keydown', onGenericModalKeydown);
-    activeModal = modal;
-
-    window.setTimeout(function () { if (modal.closeBtn) modal.closeBtn.focus(); }, 50);
-  }
-
-  function closeGenericModal(modal) {
-    if (!modal || !modal.overlay || !modal.overlay.classList.contains('open')) return;
-    modal.overlay.classList.remove('open');
-    modal.overlay.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('modal-open');
-    document.body.style.top = '';
-    window.scrollTo(0, savedScrollY);
-    document.removeEventListener('keydown', onGenericModalKeydown);
-    if (activeModal === modal) activeModal = null;
-    if (modal.onClose) modal.onClose();
-    if (modal.triggerEl && typeof modal.triggerEl.focus === 'function') modal.triggerEl.focus();
+  function onModalKeydown(event) {
+    if (event.key === 'Escape') { closeProjectModal(); return; }
+    trapFocus(event);
   }
 
   function openProjectModal(id) {
     var project = findProject(id);
     if (!project || !modalOverlay) return;
 
+    modalTriggerEl = document.activeElement;
     currentModalProjectId = id;
     renderModalContent(project, currentLangCode());
-    openGenericModal(projectModalState);
+
+    savedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.style.top = '-' + savedScrollY + 'px';
+
+    modalOverlay.classList.add('open');
+    modalOverlay.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    document.addEventListener('keydown', onModalKeydown);
+
+    window.setTimeout(function () { if (modalCloseBtn) modalCloseBtn.focus(); }, 50);
   }
 
   function closeProjectModal() {
-    closeGenericModal(projectModalState);
+    if (!modalOverlay || !modalOverlay.classList.contains('open')) return;
+    modalOverlay.classList.remove('open');
+    modalOverlay.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    document.body.style.top = '';
+    window.scrollTo(0, savedScrollY);
+    document.removeEventListener('keydown', onModalKeydown);
+    currentModalProjectId = null;
+    if (modalTriggerEl && typeof modalTriggerEl.focus === 'function') modalTriggerEl.focus();
   }
 
   function refreshOpenModal(lang) {
-    if (currentModalProjectId) {
-      var project = findProject(currentModalProjectId);
-      if (project) renderModalContent(project, lang);
-    }
-    if (futureModalOverlay && futureModalOverlay.classList.contains('open')) {
-      renderFutureModalContent(lang);
-    }
+    if (!currentModalProjectId) return;
+    var project = findProject(currentModalProjectId);
+    if (project) renderModalContent(project, lang);
   }
-
-  var projectModalState = {
-    overlay: modalOverlay,
-    panel: modalPanel,
-    closeBtn: modalCloseBtn,
-    triggerEl: null,
-    onClose: function () { currentModalProjectId = null; }
-  };
 
   if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeProjectModal);
   if (modalOverlay) {
@@ -1396,70 +1258,6 @@
       if (thumb) { setGalleryIndex(parseInt(thumb.getAttribute('data-gallery-index'), 10)); return; }
       if (navBtn) { setGalleryIndex(currentGalleryIndex + parseInt(navBtn.getAttribute('data-gallery-dir'), 10)); return; }
       if (mainImg && !mainImg.classList.contains('is-video')) { mainImg.classList.toggle('zoomed'); }
-    });
-  }
-
-  /* ---------- Future Roadmap modal ---------- */
-  var FUTURE_ITEM_KEYS = ['future.item1', 'future.item2', 'future.item3', 'future.item4'];
-
-  var futureModalOverlay = document.getElementById('futureModal');
-  var futureModalPanel = futureModalOverlay ? futureModalOverlay.querySelector('.modal-panel') : null;
-  var futureModalScroll = document.getElementById('futureModalScroll');
-  var futureModalCloseBtn = document.getElementById('futureModalClose');
-  var openFutureModalBtn = document.getElementById('openFutureModal');
-
-  var futureModalState = {
-    overlay: futureModalOverlay,
-    panel: futureModalPanel,
-    closeBtn: futureModalCloseBtn,
-    triggerEl: null,
-    onClose: null
-  };
-
-  function renderFutureModalContent(lang) {
-    if (!futureModalScroll) return;
-
-    var items = FUTURE_ITEM_KEYS.map(function (key, i) {
-      var num = String(i + 1).padStart(2, '0');
-      return el('div', { class: 'future-item' }, [
-        el('div', { class: 'future-item-title' }, [
-          el('span', { class: 'future-item-index' }, [num]),
-          t(key + '.title', lang)
-        ]),
-        el('p', { class: 'future-item-body' }, [t(key + '.body', lang)])
-      ]);
-    });
-
-    var header = el('div', { class: 'modal-header' }, [
-      el('span', { class: 'future-eyebrow' }, [t('future.eyebrow', lang)]),
-      el('h2', { class: 'future-title', id: 'futureModalTitle' }, [t('future.title', lang)]),
-      el('p', { class: 'future-intro' }, [t('future.body', lang)])
-    ]);
-
-    var list = el('div', { class: 'future-list' }, items);
-    var footer = el('div', { class: 'future-footer' }, [t('future.footer', lang)]);
-
-    futureModalScroll.replaceChildren();
-    futureModalScroll.appendChild(header);
-    futureModalScroll.appendChild(list);
-    futureModalScroll.appendChild(footer);
-  }
-
-  function openFutureModal() {
-    if (!futureModalOverlay) return;
-    renderFutureModalContent(currentLangCode());
-    openGenericModal(futureModalState);
-  }
-
-  function closeFutureModal() {
-    closeGenericModal(futureModalState);
-  }
-
-  if (openFutureModalBtn) openFutureModalBtn.addEventListener('click', openFutureModal);
-  if (futureModalCloseBtn) futureModalCloseBtn.addEventListener('click', closeFutureModal);
-  if (futureModalOverlay) {
-    futureModalOverlay.addEventListener('click', function (event) {
-      if (event.target === futureModalOverlay) closeFutureModal();
     });
   }
 
