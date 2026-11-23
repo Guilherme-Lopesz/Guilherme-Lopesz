@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark-green">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guilherme Lopes Dias | Computer Science Student | AI & Automation</title>
-<meta name="description" content="Guilherme Lopes Dias - Computer Science student building practical projects across AI and automation, with cybersecurity as an area of academic and technical interest. Open to remote international junior software engineering opportunities.">
+<title>Guilherme Lopes Dias | AI Agents &amp; Automation | Computer Science Student</title>
+<!-- <meta name="description" content="Guilherme Lopes Dias — Computer Science student from Brazil building AI agents, automation pipelines and software with a human in the loop. Open to remote international junior roles."> -->
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0C0F13">
+<link rel="canonical" href="https://guilherme-lopesz.github.io/Guilherme-Lopesz/">
+
 <meta property="og:type" content="website">
-<meta property="og:title" content="Guilherme Lopes Dias | Computer Science Student | AI & Automation">
-<meta property="og:description" content="Computer Science student building practical projects across AI and automation, with cybersecurity as an area of academic and technical interest. Open to remote international junior software engineering opportunities.">
-<meta property="og:image" content="img/Guilherme.jpeg">
+<meta property="og:site_name" content="Guilherme Lopes Dias">
+<meta property="og:title" content="Guilherme Lopes Dias | AI Agents &amp; Automation">
+<!-- <meta property="og:description" content="I build AI systems that work on their own — and ask before they act. Computer Science student from Brazil, open to remote international roles."> -->
+<meta property="og:url" content="https://guilherme-lopesz.github.io/Guilherme-Lopesz/">
+<meta property="og:image" content="https://guilherme-lopesz.github.io/Guilherme-Lopesz/img/Guilherme.jpeg">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Guilherme Lopes Dias | Computer Science Student | AI & Automation">
-<meta name="twitter:description" content="Computer Science student building practical software across AI, automation and security-focused projects. Open to remote international junior software engineering opportunities.">
-<meta name="twitter:image" content="img/guilherme.jpeg">
+<meta name="twitter:title" content="Guilherme Lopes Dias | AI Agents &amp; Automation">
+<meta name="twitter:description" content="I build AI systems that work on their own — and ask before they act.">
+<meta name="twitter:image" content="https://guilherme-lopesz.github.io/Guilherme-Lopesz/img/Guilherme.jpeg">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230C0F13'/%3E%3Ctext x='15' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='15' fill='%23ECEFF4'%3EGL%3C/text%3E%3Ccircle cx='26' cy='6' r='3.5' fill='%233DDBB0'/%3E%3C/svg%3E">
+
+<!-- Apply theme before first paint (no flash). Dark/light follows the system until the visitor chooses. -->
+<script>
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  var theme = null;
+  try { theme = localStorage.getItem('guilherme-portfolio-theme'); } catch (e) {}
+  if (theme !== 'light' && theme !== 'dark') {
+    theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+  }
+  d.setAttribute('data-theme', theme);
+  var war = false;
+  try { war = localStorage.getItem('guilherme-portfolio-profile') === 'war'; } catch (e) {}
+  if (war) d.setAttribute('data-profile', 'war');
+  var m = document.querySelector('meta[name="theme-color"]');
+  if (m) m.setAttribute('content', war ? (theme === 'light' ? '#F4EFE4' : '#0A0708') : (theme === 'light' ? '#F6F4EF' : '#0C0F13'));
+})();
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Guilherme Lopes Dias",
+  "jobTitle": "Computer Science student — AI agents & automation",
+  "url": "https://guilherme-lopesz.github.io/Guilherme-Lopesz/",
+  "image": "https://guilherme-lopesz.github.io/Guilherme-Lopesz/img/Guilherme.jpeg",
+  "email": "mailto:guilhermelopes.dias07@outlook.com",
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "UNIFACS — Universidade Salvador" },
+  "address": { "@type": "PostalAddress", "addressCountry": "BR" },
+  "knowsAbout": ["Artificial Intelligence", "AI agents", "Workflow automation", "n8n", "Python", "TypeScript", "Java", "Cybersecurity"],
+  "sameAs": ["https://github.com/Guilherme-Lopesz", "https://www.linkedin.com/in/guilhermelopesdias", "https://www.instagram.com/guilherme__lopesz"]
+}
+</script>
 </head>
 <body>
 
-<!-- ============ ICON SPRITE ============
-     Shared icon defs referenced via <use> throughout the page
-     (and from script.js for dynamically-rendered content) to
-     avoid repeating the same SVG path data dozens of times. -->
+<!-- ============ ICON SPRITE ============ -->
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <symbol id="icon-external-link" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></symbol>
@@ -39,48 +80,79 @@
     <symbol id="icon-arrow-left" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/></symbol>
     <symbol id="icon-arrow-right" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></symbol>
     <symbol id="icon-play" viewBox="0 0 16 16" fill="currentColor"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/></symbol>
+    <symbol id="icon-send" viewBox="0 0 16 16" fill="currentColor"><path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-script" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-carousel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="12" height="12" rx="2"/><path d="M18 8v8M21 10v4"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></symbol>
+    <symbol id="i-approve" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="4"/><path d="m16 11 2 2 4-4"/></symbol>
+    <symbol id="i-publish" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+    <symbol id="i-inputs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m4 7 8-4 8 4-8 4zM4 12l8 4 8-4M4 17l8 4 8-4"/></symbol>
+    <symbol id="i-agents" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="12" cy="12" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="18" r="2.2"/><path d="m7.6 7.6 2.8 2.8M16.4 7.6l-2.8 2.8M7.6 16.4l2.8-2.8M16.4 16.4l-2.8-2.8"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+    <symbol id="i-game" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/><path d="M17.3 5H6.7a4 4 0 0 0-3.9 3.1l-1.5 6.5A3 3 0 0 0 4.2 18c.9 0 1.7-.5 2.1-1.2L7 15h10l.7 1.8c.4.7 1.2 1.2 2.1 1.2a3 3 0 0 0 2.9-3.4l-1.5-6.5A4 4 0 0 0 17.3 5z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></symbol>
+    <symbol id="i-board" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M12 3l9 5H3z"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
   </defs>
 </svg>
 
-<a href="#main" class="skip-link">Skip to content</a>
-<div class="bg-grid" aria-hidden="true"></div>
+<a href="#main" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
 
 <!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="#home" class="brand">
-      <span class="brand-mark" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.033.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39q-1.286-.445-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.531 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.945 10.487.562 7.169 1.158 2.692A1.54 1.54 0 0 1 2.202 1.43 63 63 0 0 1 5.072.56z"/></svg>
-      </span>
+    <a href="#home" class="brand" aria-label="Guilherme Lopes Dias — home">
+      <span class="brand-mark" aria-hidden="true">GL</span>
       <span class="brand-text">
         <span class="brand-name">Guilherme Lopes</span>
-        <span class="brand-role" data-i18n="brand.role">AI-Focused Software Developer</span>
+        <span class="brand-role" data-i18n="brand.role">AI Agents · Automation</span>
       </span>
     </a>
 
-    <nav class="main-nav" id="mainNav">
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
       <ul>
-        <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
-        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#systems" class="nav-link" data-i18n="nav.systems">Systems</a></li>
+        <li><a href="#work" class="nav-link" data-i18n="nav.work">Work</a></li>
+        <li><a href="#freelance" class="nav-link" data-i18n="nav.freelance">Freelance</a></li>
         <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
-        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
-        <li><a href="#experience" class="nav-link" data-i18n="nav.education">Education</a></li>
+        <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
         <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <div class="lang-toggle mobile-lang-toggle" role="group" aria-label="Language">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="pt">PT</button>
+      <div class="lang-toggle mobile-only" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="pt">PT</button>
       </div>
     </nav>
 
     <div class="header-controls">
+      <button type="button" class="palette-btn" id="paletteBtn" aria-haspopup="dialog" aria-label="Open command menu">
+        <svg aria-hidden="true"><use href="#i-search"></use></svg>
+        <span class="palette-label" data-i18n="nav.search">Search</span>
+        <kbd id="paletteKbd">Ctrl K</kbd>
+      </button>
       <div class="lang-toggle" role="group" aria-label="Language">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="pt">PT</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="pt">PT</button>
       </div>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
-        <svg class="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>
-        <svg class="icon-close" aria-hidden="true"><use href="#icon-close"></use></svg>
+      <button type="button" class="icon-btn theme-toggle" id="themeToggle" aria-label="Switch to light theme">
+        <svg class="i-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+        <svg class="i-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+      </button>
+      <button type="button" class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <svg class="i-open" aria-hidden="true"><use href="#i-menu"></use></svg>
+        <svg class="i-close" aria-hidden="true"><use href="#icon-close"></use></svg>
       </button>
     </div>
   </div>
@@ -90,535 +162,597 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="home">
+    <div class="hero-scene" data-scene="h" aria-hidden="true"></div>
     <div class="container">
+
+      <div class="print-only print-head">
+        <h1>Guilherme Lopes Dias</h1>
+        <p class="print-role" data-i18n="print.role">Computer Science student · AI agents &amp; automation</p>
+        <p>Brazil (UTC−3) · guilhermelopes.dias07@outlook.com · linkedin.com/in/guilhermelopesdias · github.com/Guilherme-Lopesz</p>
+      </div>
+
       <div class="hero-grid">
+        <div class="hero-copy">
+          <!-- <span class="badge rise" style="--i:0"><span class="pulse-dot" aria-hidden="true"></span><span data-i18n="hero.badge">Open to remote international roles</span></span> -->
 
-        <div class="hero-content">
-          <span class="badge"><span class="pulse-dot"></span><span data-i18n="hero.badge">OPEN TO INTERNATIONAL OPPORTUNITIES</span></span>
-          <h1><span class="hero-headline-role" data-i18n="hero.headline.role">Computer Science Student &amp; Developer</span><br><span data-i18n="hero.headline.pre">Building practical systems with</span> <span class="accent" data-i18n="hero.headline.accent">AI and automation</span><span data-i18n="hero.headline.dot">.</span></h1>
-          <p class="hero-sub" data-i18n="hero.sub">Computer Science student in Brazil who builds and ships real projects — a voice-driven AI agent, an encrypted chat platform, an AI-assisted transaction classifier — and is looking for a remote, international junior software engineering role.</p>
-
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">
-              <span data-i18n="hero.ctaPrimary">View Projects</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
-            </a>
-            <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" class="btn btn-outline">
-              <span data-i18n="hero.ctaTertiary">GitHub</span>
-              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
-            </a>
-            <!-- TODO: replace with the real resume file path once it's added to the project -->
-            <a href="Guilherme_Lopes_Dias_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
-              <span data-i18n="hero.ctaResume">Resume</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/></svg>
-            </a>
+          <div class="hero-h1-wrap rise" style="--i:1">
+            <h1>
+              <span data-i18n="hero.h1.pre">I build AI systems that</span>
+              <span class="nw"><span class="hl hl-machine" data-i18n="hero.h1.machine">work on their own</span> <span>—</span></span>
+              <span data-i18n="hero.h1.and">and</span> <span class="hl hl-human" data-i18n="hero.h1.human">ask before they act</span><span data-i18n="hero.h1.post">.</span>
+            </h1>
           </div>
 
-          <div class="tech-row">
-            <span class="tech-row-label" data-i18n="hero.stackLabel">CORE STACK</span>
-            <ul class="tech-list">
-              <li>Python</li><li>TypeScript</li><li>SQL</li><li>Git</li><li>n8n</li>
-            </ul>
+          <p class="hero-sub rise" style="--i:2" data-i18n="hero.sub">Computer Science student from Brazil. I design AI agents and automation pipelines — from a real-time voice agent to a personal server that runs agents locally — and keep a person in control of the decisions that matter.</p>
+
+          <div class="hero-cta rise" style="--i:3">
+            <a href="#systems" class="btn btn-primary">
+              <span data-i18n="hero.cta.demo">Try the pipeline demo</span>
+              <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+            <a href="#work" class="btn btn-outline"><span data-i18n="hero.cta.work">Selected work</span></a>
+            <button type="button" class="btn btn-ghost" data-action="print">
+              <svg aria-hidden="true"><use href="#i-print"></use></svg>
+              <span data-i18n="hero.cta.resume">Résumé (PDF)</span>
+            </button>
           </div>
         </div>
 
-        <aside class="profile-card">
+        <aside class="profile-card rise" style="--i:3" aria-label="Profile">
           <div class="profile-top">
-            <div class="profile-photo-frame">
-              <span class="bracket bracket-tl" aria-hidden="true"></span>
-              <img src="img/Guilherme.jpeg" alt="Guilherme Lopes Dias">
-              <span class="bracket bracket-br" aria-hidden="true"></span>
-            </div>
-            <div class="profile-intro">
-              <span class="eyebrow" data-i18n="hero.profileEyebrow">// developer &amp; problem solver</span>
-              <p data-i18n="hero.profileBio">Computer Science student turning what I learn into practical, working software — currently deepening my work in neural networks and multimodal AI agents.</p>
-            </div>
-          </div>
-
-          <div class="profile-stats">
-            <div class="stat">
-              <span class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2 -3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/></svg></span>
-              <div>
-                <span class="stat-label" data-i18n="hero.roleLabel">ROLE</span>
-                <span class="stat-value" data-i18n="hero.roleValue">Computer Science Student · Developer</span>
-              </div>
-            </div>
-            <div class="stat">
-              <span class="stat-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-pin"></use></svg></span>
-              <div>
-                <span class="stat-label" data-i18n="hero.focusLabel">FOCUS AREAS</span>
-                <span class="stat-value" data-i18n="hero.focusValue">Software Development · AI · Automation</span>
-              </div>
-            </div>
-            <div class="stat">
-              <span class="stat-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-pin"></use></svg></span>
-              <div>
-                <span class="stat-label" data-i18n="hero.baseLabel">BASED IN</span>
-                <span class="stat-value" data-i18n="hero.baseValue">Brazil — remote-ready</span>
-              </div>
-            </div>
-            <div class="stat">
-              <span class="stat-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-check"></use></svg></span>
-              <div>
-                <span class="stat-label" data-i18n="hero.openToLabel">OPEN TO</span>
-                <span class="stat-value" data-i18n="hero.openToValue">Remote junior software engineering · AI-focused roles</span>
-              </div>
+            <button type="button" class="profile-photo" id="avatarOpen" data-action="avatar" aria-haspopup="dialog" data-i18n-aria="av.open" aria-label="Change profile photo">
+              <img class="pp pp-default" src="img/Guilherme.jpeg" alt="" width="84" height="84">
+              <img class="pp pp-war" src="img/perfil-gui.webp" alt="" width="84" height="84" loading="lazy" decoding="async">
+              <canvas class="lens-canvas" aria-hidden="true"></canvas>
+              <span class="pp-badge" aria-hidden="true"><svg><use href="#i-swap"></use></svg></span>
+            </button>
+            <div>
+              <div class="profile-name">Guilherme Lopes Dias</div>
+              <p class="profile-role" data-i18n="card.role">Computer Science student · Developer</p>
             </div>
           </div>
-
+          <dl class="profile-facts">
+            <div class="fact">
+              <dt data-i18n="card.baseLabel">Based in</dt>
+              <dd data-i18n="card.baseValue">Brazil · UTC−3, overlaps US &amp; European hours</dd>
+            </div>
+            <div class="fact">
+              <dt data-i18n="card.timeLabel">Local time</dt>
+              <dd><span class="mono" id="localTime">—</span></dd>
+            </div>
+            <div class="fact">
+              <!-- <dt data-i18n="card.openLabel">Open to</dt> -->
+              <!-- <dd data-i18n="card.openValue">Remote junior software engineering &amp; AI-focused roles</dd> -->
+            </div>
+          </dl>
           <div class="profile-social">
-            <a href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
-              <svg aria-hidden="true"><use href="#icon-linkedin"></use></svg>
-            </a>
-            <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
-              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
-            </a>
-            <a href="https://www.instagram.com/guilherme__lopesz" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
-              <svg aria-hidden="true"><use href="#icon-instagram"></use></svg>
-            </a>
+            <a class="icon-btn" href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" aria-label="GitHub"><svg aria-hidden="true"><use href="#icon-github"></use></svg></a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#icon-linkedin"></use></svg></a>
+            <a class="icon-btn" href="https://www.instagram.com/guilherme__lopesz" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+            <a class="icon-btn" href="mailto:guilhermelopes.dias07@outlook.com" aria-label="Email"><svg aria-hidden="true"><use href="#icon-envelope"></use></svg></a>
           </div>
         </aside>
+      </div>
 
+      <div class="stats rise" style="--i:4">
+        <div class="stat"><div class="stat-num is-signal" data-stat="shipped">5</div><div class="stat-label" data-i18n="stat.shipped">Projects shipped</div></div>
+        <div class="stat"><div class="stat-num is-human" data-stat="dev">4</div><div class="stat-label" data-i18n="stat.dev">In development</div></div>
+        <div class="stat"><div class="stat-num" data-stat="freelance">2</div><div class="stat-label" data-i18n="stat.freelance">Freelance projects</div></div>
+        <div class="stat"><div class="stat-num" data-stat="certs">6</div><div class="stat-label" data-i18n="stat.certs">Certifications</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ PROJECTS ============ -->
-  <section class="projects reveal-section" id="projects">
+  <!-- ============ SYSTEMS ============ -->
+  <section class="section" id="systems">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">// selected-work</span>
-        <div class="section-head-row">
-          <h2 data-i18n="projects.title">Selected Work</h2>
-          <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" class="text-link" data-i18n="projects.viewAll">View all projects on GitHub ↗</a>
+        <div class="kicker"><b>01</b><span data-i18n="sys.kicker">Systems</span></div>
+        <h2 data-i18n="sys.title">Human in the loop, by design.</h2>
+        <p class="section-sub" data-i18n="sys.sub">Two systems I'm building right now. Both automate the repeatable work — and keep a person in charge of what matters.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Systems">
+        <button type="button" class="tab" role="tab" id="tab-engine" aria-controls="panel-engine" aria-selected="true" data-i18n="sys.tab.engine">Content engine</button>
+        <button type="button" class="tab" role="tab" id="tab-server" aria-controls="panel-server" aria-selected="false" tabindex="-1" data-i18n="sys.tab.server">Personal AI server</button>
+      </div>
+
+      <!-- Panel: content engine (interactive) -->
+      <div class="panel" id="panel-engine" role="tabpanel" aria-labelledby="tab-engine">
+        <div class="panel-head">
+          <div>
+            <div class="panel-title">
+              <h3>Viral Content Engine</h3>
+              <span class="chip chip--human" data-i18n="chip.dev">In development</span>
+            </div>
+            <p class="panel-desc" data-i18n="sys.engine.desc">An end-to-end content flow: research, scripts, carousels and video, all the way to posting on social media — automatically. Nothing goes live until a human approves it.</p>
+          </div>
+          <ul class="checks">
+            <li><svg aria-hidden="true"><use href="#icon-check"></use></svg><span data-i18n="sys.engine.c1">Built with n8n, each stage tested on its own</span></li>
+            <li class="is-human"><svg aria-hidden="true"><use href="#icon-check"></use></svg><span data-i18n="sys.engine.c2">A human approval gate before anything is published</span></li>
+            <li><svg aria-hidden="true"><use href="#icon-check"></use></svg><span data-i18n="sys.engine.c3">Modular: research, scripts, images and video evolve independently</span></li>
+          </ul>
+        </div>
+
+        <div class="demo reveal">
+          <div class="demo-top">
+            <div class="legend" aria-hidden="true">
+              <span><i></i><span data-i18n="legend.auto">Automated step</span></span>
+              <span class="lg-human"><i></i><span data-i18n="legend.human">Human decision</span></span>
+            </div>
+            <p class="demo-note" data-i18n="demo.note">Interactive simulation of the flow design — no real posts are made.</p>
+          </div>
+
+          <ol class="pipe" id="pipe">
+            <li class="node" data-kind="auto">
+              <div class="node-dot"><svg class="i-main" aria-hidden="true"><use href="#i-search"></use></svg><svg class="i-done" aria-hidden="true"><use href="#icon-check"></use></svg></div>
+              <div class="node-title" data-i18n="pipe.n1.t">Research</div>
+              <p class="node-sub" data-i18n="pipe.n1.s">Finds what to talk about</p>
+              <span class="node-kind" data-i18n="pipe.auto">Automated</span>
+            </li>
+            <li class="node" data-kind="auto">
+              <div class="node-dot"><svg class="i-main" aria-hidden="true"><use href="#i-script"></use></svg><svg class="i-done" aria-hidden="true"><use href="#icon-check"></use></svg></div>
+              <div class="node-title" data-i18n="pipe.n2.t">Scripts</div>
+              <p class="node-sub" data-i18n="pipe.n2.s">Writes hooks and scripts</p>
+              <span class="node-kind" data-i18n="pipe.auto">Automated</span>
+            </li>
+            <li class="node" data-kind="auto">
+              <div class="node-dot"><svg class="i-main" aria-hidden="true"><use href="#i-carousel"></use></svg><svg class="i-done" aria-hidden="true"><use href="#icon-check"></use></svg></div>
+              <div class="node-title" data-i18n="pipe.n3.t">Carousels</div>
+              <p class="node-sub" data-i18n="pipe.n3.s">Designs the images</p>
+              <span class="node-kind" data-i18n="pipe.auto">Automated</span>
+            </li>
+            <li class="node" data-kind="auto">
+              <div class="node-dot"><svg class="i-main" aria-hidden="true"><use href="#i-video"></use></svg><svg class="i-done" aria-hidden="true"><use href="#icon-check"></use></svg></div>
+              <div class="node-title" data-i18n="pipe.n4.t">Video</div>
+              <p class="node-sub" data-i18n="pipe.n4.s">Produces short videos</p>
+              <span class="node-kind" data-i18n="pipe.auto">Automated</span>
+            </li>
+            <li class="node" data-kind="human">
+              <div class="node-dot"><svg class="i-main" aria-hidden="true"><use href="#i-approve"></use></svg><svg class="i-done" aria-hidden="true"><use href="#icon-check"></use></svg></div>
+              <div class="node-title" data-i18n="pipe.n5.t">Approval</div>
+              <p class="node-sub" data-i18n="pipe.n5.s">A person reviews it</p>
+              <span class="node-kind" data-i18n="pipe.human">Human</span>
+            </li>
+            <li class="node" data-kind="auto">
+              <div class="node-dot"><svg class="i-main" aria-hidden="true"><use href="#i-publish"></use></svg><svg class="i-done" aria-hidden="true"><use href="#icon-check"></use></svg></div>
+              <div class="node-title" data-i18n="pipe.n6.t">Publish</div>
+              <p class="node-sub" data-i18n="pipe.n6.s">Posts to social media</p>
+              <span class="node-kind" data-i18n="pipe.auto">Automated</span>
+            </li>
+          </ol>
+
+          <div class="pipe-status" id="pipeStatus" data-state="idle" role="status" aria-live="polite">
+            <span class="tick" aria-hidden="true"></span>
+            <span id="pipeStatusText" data-i18n="pipe.s.idle">Ready. Run it to watch a piece of content move through the flow.</span>
+          </div>
+
+          <div class="gate" id="gate" hidden>
+            <p data-i18n="pipe.gate">The content is ready. It only moves forward if you say so.</p>
+            <div class="gate-actions">
+              <button type="button" class="btn btn-human" id="btnApprove" data-i18n="pipe.approve">Approve</button>
+              <button type="button" class="btn btn-outline" id="btnRevise" data-i18n="pipe.revise">Request changes</button>
+            </div>
+          </div>
+
+          <div class="pipe-controls">
+            <button type="button" class="btn btn-primary" id="btnRun">
+              <svg aria-hidden="true"><use href="#i-play"></use></svg>
+              <span data-i18n="pipe.run">Run the pipeline</span>
+            </button>
+            <button type="button" class="btn btn-ghost" id="btnReset">
+              <svg aria-hidden="true"><use href="#i-reset"></use></svg>
+              <span data-i18n="pipe.reset">Reset</span>
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="project-grid reveal" id="projectsGrid"><!-- cards injected by script.js --></div>
+      <!-- Panel: personal AI server -->
+      <div class="panel" id="panel-server" role="tabpanel" aria-labelledby="tab-server" hidden>
+        <div class="panel-head">
+          <div>
+            <div class="panel-title">
+              <h3 data-i18n="sys.server.title">Personal AI server</h3>
+              <span class="chip chip--human" data-i18n="chip.dev">In development</span>
+            </div>
+            <p class="panel-desc" data-i18n="sys.server.desc">A personal server that runs AI agents locally and feeds a second brain — a personal knowledge base that grows with the work I do.</p>
+          </div>
+          <ul class="checks">
+            <li><svg aria-hidden="true"><use href="#icon-check"></use></svg><span data-i18n="sys.server.c1">Local-first: the agents run on a server of my own</span></li>
+            <li><svg aria-hidden="true"><use href="#icon-check"></use></svg><span data-i18n="sys.server.c2">The agents feed a second brain, and read from it</span></li>
+            <li class="is-human"><svg aria-hidden="true"><use href="#icon-check"></use></svg><span data-i18n="sys.server.c3">Early stage — the architecture is still evolving</span></li>
+          </ul>
+        </div>
+
+        <div class="demo">
+          <div class="topo">
+            <div class="topo-node">
+              <svg aria-hidden="true"><use href="#i-inputs"></use></svg>
+              <h4 data-i18n="topo.n1.t">Inputs</h4>
+              <p data-i18n="topo.n1.s">Notes, research and the output of my projects</p>
+            </div>
+            <div class="topo-link" aria-hidden="true"></div>
+            <div class="topo-node is-agents">
+              <svg aria-hidden="true"><use href="#i-agents"></use></svg>
+              <h4 data-i18n="topo.n2.t">Local agents</h4>
+              <p data-i18n="topo.n2.s">Run on my own server</p>
+            </div>
+            <div class="topo-link" aria-hidden="true"></div>
+            <div class="topo-node is-brain">
+              <svg aria-hidden="true"><use href="#i-brain"></use></svg>
+              <h4 data-i18n="topo.n3.t">Second brain</h4>
+              <p data-i18n="topo.n3.s">A personal knowledge base</p>
+            </div>
+          </div>
+          <div class="topo-return" aria-hidden="true"><span data-i18n="topo.return">context flows back to the agents</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ============ PROJECT CASE STUDY MODAL ============ -->
-  <div class="modal-overlay" id="projectModal" aria-hidden="true">
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button type="button" class="modal-close" id="modalClose" data-i18n-aria="modal.close" aria-label="Close">
-        <svg aria-hidden="true"><use href="#icon-close"></use></svg>
-      </button>
-      <div class="modal-scroll" id="modalScroll"><!-- content injected by script.js --></div>
-    </div>
-  </div>
+  <div class="interlude" data-scene="a" aria-hidden="true"></div>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="about reveal-section" id="about">
+  <!-- ============ WORK ============ -->
+  <section class="section" id="work">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">// about-me</span>
-        <h2 data-i18n="about.title">A little about me.</h2>
+        <div class="kicker"><b>02</b><span data-i18n="work.kicker">Work</span></div>
+        <div class="section-head-row">
+          <h2 data-i18n="work.title">Selected work</h2>
+          <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" class="text-link"><span data-i18n="work.all">All projects on GitHub</span><svg width="12" height="12" aria-hidden="true"><use href="#i-arrow-ur"></use></svg></a>
+        </div>
+        <p class="section-sub" data-i18n="work.sub">Every project is documented as a case study: the problem, the solution, the architecture, the decisions, the results and the limitations.</p>
+      </div>
+
+      <div class="project-grid reveal" id="projectsGrid"><!-- rendered by script.js --></div>
+
+      <h3 class="subhead reveal" data-i18n="work.dev">On the workbench</h3>
+      <div class="dev-grid reveal" id="devGrid"><!-- rendered by script.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ FREELANCE ============ -->
+  <section class="section" id="freelance">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker"><b>03</b><span data-i18n="free.kicker">Freelance</span></div>
+        <h2 data-i18n="free.title">Built for real clients.</h2>
+        <p class="section-sub" data-i18n="free.sub">Projects I've built as an independent developer.</p>
+      </div>
+
+      <div class="free-grid">
+        <article class="free-card reveal" id="free-zeh">
+          <span class="free-index" aria-hidden="true">01</span>
+          <h3 data-i18n="free.zeh.title">Karaokê do Zé</h3>
+          <p data-i18n="free.zeh.desc">A freelance project built for a real client.</p>
+          <div class="project-tags"><span class="tag" data-i18n="tag.freelance">Freelance</span><span class="tag" data-i18n="tag.client">Client work</span></div>
+        </article>
+        <article class="free-card reveal" id="free-nosferata">
+          <span class="free-index" aria-hidden="true">02</span>
+          <h3 data-i18n="free.nosf.title">Nosferata — Landing page</h3>
+          <p data-i18n="free.nosf.desc">A landing page built for a real client.</p>
+          <div class="project-tags"><span class="tag" data-i18n="tag.landing">Landing page</span><span class="tag" data-i18n="tag.freelance">Freelance</span></div>
+        </article>
+      </div>
+
+      <div class="cta-band reveal">
+        <div>
+          <h3 data-i18n="free.cta.title">Need a landing page, an automation or an AI workflow?</h3>
+          <p data-i18n="free.cta.sub">I take on freelance projects — landing pages, n8n automations, AI agents and integrations. Let's talk about yours.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="https://wa.me/5575983726767" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#icon-send"></use></svg><span data-i18n="free.cta.wa">WhatsApp</span></a>
+          <a class="btn btn-outline" href="mailto:guilhermelopes.dias07@outlook.com"><svg aria-hidden="true"><use href="#icon-envelope"></use></svg><span data-i18n="free.cta.mail">Email</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT + STACK ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker"><b>04</b><span data-i18n="about.kicker">About</span></div>
+        <h2 data-i18n="about.title">Building end to end.</h2>
       </div>
 
       <div class="about-grid">
-        <div class="about-card reveal">
-          <span class="about-card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></svg></span>
-          <h3 data-i18n="about.card1.title">Who I Am &amp; What I Build</h3>
-          <p data-i18n="about.card1.body">Computer Science student in Brazil who learns by building, testing and documenting systems — a voice-driven AI agent, an encrypted chat platform, an AI-assisted transaction classifier, an algorithm benchmarking tool and an interactive learning simulation are all things I've <strong>designed, implemented and documented</strong> myself.</p>
+        <div class="reveal">
+          <p class="lead" data-i18n-html="about.lead">I'm a Computer Science student at UNIFACS who learns by <strong>building complete systems</strong> — a real-time voice agent, an encrypted chat, an AI transaction classifier, and now a personal AI server and a full content pipeline.</p>
+          <!-- <p data-i18n-html="about.body">My focus is <strong>software, AI agents and automation</strong>, with cybersecurity as an area I keep exploring in practice. I'm looking for a remote, international junior role where I can keep shipping and learning from real feedback.</p> -->
         </div>
-
-        <div class="about-card reveal">
-          <span class="about-card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.96 1.96 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/></svg></span>
-          <h3 data-i18n="about.card2.title">What I've Explored</h3>
-          <p data-i18n="about.card2.body">Hands-on exploration of <strong>penetration testing</strong> and vulnerability analysis, including <strong>NFC/RFID</strong> systems with Proxmark3. Currently deepening my knowledge of <strong>neural networks and multimodal AI agents</strong>, applying what I learn directly to project work.</p>
-        </div>
-
-        <div class="about-card reveal">
-          <span class="about-card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5.5H3.5A1.5 1.5 0 0 0 2 9.5zm6 0a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm-2 9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/></svg></span>
-          <h3 data-i18n="about.card3.title">What's Next</h3>
-          <p data-i18n="about.card3.body">My professional focus is <strong>software development, AI and automation</strong>. Cybersecurity remains an academic and technical area of interest I keep exploring through projects like Nexus. I'm looking for a remote, international <strong>junior software engineering or AI-focused opportunity</strong> where I can keep building, testing and learning from real feedback.</p>
+        <div class="principles reveal">
+          <div class="principle"><h3 data-i18n="about.p1.t">Build, then document</h3><p data-i18n="about.p1.d">Every project ships with a case study: the problem, the decisions and the limitations.</p></div>
+          <div class="principle"><h3 data-i18n="about.p2.t">Automate the routine, keep people on the decisions</h3><p data-i18n="about.p2.d">AI should remove repetitive work, not accountability.</p></div>
+          <div class="principle"><h3 data-i18n="about.p3.t">Ship early, learn from what breaks</h3><p data-i18n="about.p3.d">Small, testable steps, and honest notes about what doesn't work yet.</p></div>
         </div>
       </div>
+
+      <div class="stack reveal" aria-label="Technical stack">
+        <div class="stack-group">
+          <h3 data-i18n="skills.blockLang">Languages</h3>
+          <div class="stack-tags"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">SQL</span><span class="tag tag--learning">Java</span></div>
+        </div>
+        <div class="stack-group">
+          <h3 data-i18n="skills.block1">AI &amp; Intelligent Systems</h3>
+          <div class="stack-tags"><span class="tag" data-i18n="skills.block1.tag1">Multimodal Voice Agents</span><span class="tag" data-i18n="skills.block1.tag2">OpenAI / Gemini / Grok APIs</span><span class="tag" data-i18n="skills.block1.tag3">Prompt Engineering</span><span class="tag tag--learning" data-i18n="skills.localAgents">Local AI agents</span></div>
+        </div>
+        <div class="stack-group">
+          <h3 data-i18n="skills.blockAuto">Automation</h3>
+          <div class="stack-tags"><span class="tag">n8n</span><span class="tag">Make.io</span><span class="tag">ManyChat</span><span class="tag" data-i18n="skills.blockAuto.tag2">Workflow Automation</span><span class="tag" data-i18n="skills.hitl">Human-in-the-loop flows</span></div>
+        </div>
+        <div class="stack-group">
+          <h3 data-i18n="skills.blockSwe">Software Engineering</h3>
+          <div class="stack-tags"><span class="tag" data-i18n="skills.blockSwe.tag1">Data Structures &amp; Algorithms</span><span class="tag" data-i18n="skills.blockSwe.tag2">Git &amp; GitHub</span><span class="tag" data-i18n="skills.blockSwe.tag3">Linux (Basics)</span></div>
+        </div>
+        <div class="stack-group">
+          <h3 data-i18n="skills.blockAdd">Additional</h3>
+          <div class="stack-tags"><span class="tag" data-i18n="skills.blockAdd.tag1">NFC/RFID Pentesting (Mifare 1k/4k)</span><span class="tag" data-i18n="skills.blockAdd.tag2">Proxmark3</span><span class="tag" data-i18n="skills.blockAdd.tag3">ISO 14443-A Sniffing &amp; Analysis</span><span class="tag" data-i18n="skills.blockAdd.tag4">AES-128 Encryption</span><span class="tag" data-i18n="skills.blockAdd.tag5">Power BI</span><span class="tag" data-i18n="skills.blockAdd.tag6">Excel (Data Analysis)</span><span class="tag" data-i18n="skills.blockAdd.tag7">Microsoft Office Suite</span></div>
+        </div>
+      </div>
+      <p class="stack-legend" data-i18n="skills.legend">Learning / building right now</p>
     </div>
   </section>
 
-  <!-- ============ SKILLS ============ -->
-  <section class="skills reveal-section" id="skills">
+  <div class="interlude" data-scene="b" aria-hidden="true"></div>
+
+  <!-- ============ EDUCATION & LEADERSHIP ============ -->
+  <section class="section" id="education">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">// technical-arsenal</span>
-        <h2 data-i18n="skills.title">Technical Arsenal</h2>
-        <p class="section-sub" data-i18n="skills.sub">Skills built in practice — from theory to functional product.</p>
-      </div>
-
-      <div class="skills-grid skills-grid--single">
-
-        <!-- Hard skills -->
-        <div class="skills-card reveal">
-          <div class="skills-card-head">
-            <span class="about-card-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"/></svg></span>
-            <h3 data-i18n="skills.hardTitle">Hard Skills</h3>
-          </div>
-
-          <div class="hard-grid">
-            <div>
-              <div class="hard-block-title"><span class="dot dot--code"></span><span data-i18n="skills.blockLang">Languages</span></div>
-              <div class="skill-tags">
-                <span class="skill-tag skill-tag--hi" data-i18n="skills.blockLang.tag1">Python</span>
-                <span class="skill-tag" data-i18n="skills.blockLang.tag2">TypeScript</span>
-                <span class="skill-tag" data-i18n="skills.blockLang.tag3">SQL</span>
-              </div>
-            </div>
-            <div>
-              <div class="hard-block-title"><span class="dot dot--sys"></span><span data-i18n="skills.blockSwe">Software Engineering</span></div>
-              <div class="skill-tags">
-                <span class="skill-tag skill-tag--hi" data-i18n="skills.blockSwe.tag1">Data Structures &amp; Algorithms</span>
-                <span class="skill-tag" data-i18n="skills.blockSwe.tag2">Git &amp; GitHub</span>
-                <span class="skill-tag" data-i18n="skills.blockSwe.tag3">Linux (Basics)</span>
-              </div>
-            </div>
-            <div>
-              <div class="hard-block-title"><span class="dot dot--ia"></span><span data-i18n="skills.block1">AI &amp; Intelligent Systems</span></div>
-              <div class="skill-tags">
-                <span class="skill-tag skill-tag--hi" data-i18n="skills.block1.tag1">Multimodal Voice Agents</span>
-                <span class="skill-tag" data-i18n="skills.block1.tag2">OpenAI / Gemini / Grok APIs</span>
-                <span class="skill-tag" data-i18n="skills.block1.tag3">Prompt Engineering</span>
-              </div>
-            </div>
-            <div>
-              <div class="hard-block-title"><span class="dot dot--auto"></span><span data-i18n="skills.blockAuto">Automation</span></div>
-              <div class="skill-tags">
-                <span class="skill-tag skill-tag--hi" data-i18n="skills.blockAuto.tag1">n8n · Make.io · ManyChat</span>
-                <span class="skill-tag" data-i18n="skills.blockAuto.tag2">Workflow Automation</span>
-              </div>
-            </div>
-            <div>
-              <div class="hard-block-title"><span class="dot dot--cyber"></span><span data-i18n="skills.blockAdd">Additional</span></div>
-              <div class="skill-tags">
-                <span class="skill-tag" data-i18n="skills.blockAdd.tag1">NFC/RFID Pentesting (Mifare 1k/4k)</span>
-                <span class="skill-tag" data-i18n="skills.blockAdd.tag2">Proxmark3</span>
-                <span class="skill-tag" data-i18n="skills.blockAdd.tag3">ISO 14443-A Sniffing &amp; Analysis</span>
-                <span class="skill-tag" data-i18n="skills.blockAdd.tag4">AES-128 Encryption</span>
-                <span class="skill-tag" data-i18n="skills.blockAdd.tag5">Power BI</span>
-                <span class="skill-tag" data-i18n="skills.blockAdd.tag6">Excel (Data Analysis)</span>
-                <span class="skill-tag" data-i18n="skills.blockAdd.tag7">Microsoft Office Suite</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-cta">
-            <span data-i18n="skills.cta.text">This is just the front-end.</span>
-            <a href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener">
-              <span data-i18n="skills.cta.link">Explore the back-end on LinkedIn</span>
-              <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ EDUCATION / CERTIFICATIONS ============ -->
-  <section class="experience reveal-section" id="experience">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">// education</span>
+        <div class="kicker"><b>05</b><span data-i18n="edu.kicker">Education</span></div>
         <h2 data-i18n="edu.title">Education &amp; Credentials</h2>
         <p class="section-sub" data-i18n="edu.sub">Training focused on Computer Science fundamentals, Artificial Intelligence, and cybersecurity as an area of study.</p>
       </div>
 
-      <div class="edu-trust reveal">
-        <p class="trust-label" data-i18n="trust.label">CERTIFIED &amp; TRAINED WITH</p>
-        <div class="trust-logos">
-          <span>Cisco Networking Academy</span>
-          <span>UNIFACS</span>
-          <span>Ânima Educação</span>
-        </div>
+      <div class="trust reveal">
+        <span class="trust-label" data-i18n="trust.label">Certified &amp; trained with</span>
+        <span>Cisco Networking Academy</span><span>UNIFACS</span><span>Ânima Educação</span>
       </div>
 
-      <h3 class="exp-subhead status-progress reveal" data-i18n="edu.education.title">Education</h3>
-      <div class="cert-list">
-
+      <h3 class="subhead reveal" data-i18n="edu.education.title">Education</h3>
+      <div class="cert-list single">
         <div class="cert-card in-progress reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.degree.title">Computer Science</div>
-              <div class="cert-subtitle" data-i18n="edu.degree.sub">UNIFACS — Universidade Salvador</div>
-              <div class="cert-meta" data-i18n="edu.degree.meta">2025.2 – Present · Expected graduation: 2029.2</div>
-            </div>
+          <div>
+            <div class="cert-title" data-i18n="edu.degree.title">Computer Science</div>
+            <div class="cert-subtitle" data-i18n="edu.degree.sub">UNIFACS — Universidade Salvador</div>
+            <p class="cert-meta" data-i18n="edu.degree.meta">2025.2 – Present · Expected graduation: 2029.2</p>
           </div>
-          <div class="cert-action"><span class="status-chip progress" data-i18n="edu.statusProgress">In Progress</span></div>
+          <div class="cert-action"><span class="chip chip--human" data-i18n="edu.statusProgress">In Progress</span></div>
         </div>
-
       </div>
 
-      <h3 class="exp-subhead status-live reveal" data-i18n="edu.completed">Certifications &amp; Training</h3>
-      <div class="cert-list">
-
-        <div class="cert-card reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87A1.54 1.54 0 0 0 1.158 2.69C.562 7.169 1.945 10.487 3.63 12.68a11.8 11.8 0 0 0 2.517 2.453 7 7 0 0 0 1.048.625c.281.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263c-.658-.215-1.777-.57-2.887-.87C9.843.265 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.293z"/></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.cert1.title">Endpoint Security</div>
-              <div class="cert-subtitle" data-i18n="edu.cert1.sub">Cisco Networking Academy · Ânima Educação</div>
-              <div class="cert-meta" data-i18n="edu.cert1.meta">Cybersecurity · Instructor Luciano Sávio · Nov 2025</div>
-            </div>
-          </div>
-          <div class="cert-action">
-            <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-endpoint-security.pdf" target="_blank" rel="noopener">
-              <span data-i18n="edu.viewCert">View Certificate</span>
-              <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
-            </a>
+      <h3 class="subhead reveal" data-i18n="edu.leadership.title">Leadership &amp; Activities</h3>
+      <div class="leader-grid">
+        <div class="leader-card is-feature reveal">
+          <span class="leader-icon" aria-hidden="true"><svg><use href="#i-board"></use></svg></span>
+          <div>
+            <h3 data-i18n="edu.colegiado.role">Course Council (Colegiado) Member — Computer Science</h3>
+            <p data-i18n="edu.colegiado.desc">Part of the collegiate body where faculty and student representatives discuss and decide on the Computer Science program.</p>
           </div>
         </div>
-
-        <div class="cert-card reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-badge"></use></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.cert2.title">Computer Systems Analyst</div>
-              <div class="cert-subtitle" data-i18n="edu.cert2.sub">UNIFACS · Computer Systems &amp; Security</div>
-              <div class="cert-meta" data-i18n="edu.cert2.meta">Security · 160h · Dec 2025</div>
-            </div>
-          </div>
-          <div class="cert-action">
-            <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-sistemas-computacionais.pdf" target="_blank" rel="noopener">
-              <span data-i18n="edu.viewCert">View Certificate</span>
-              <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="cert-card reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zM9 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.cert3.title">Computing Environments &amp; Connectivity</div>
-              <div class="cert-subtitle" data-i18n="edu.cert3.sub">UNIFACS · Professional Qualification</div>
-              <div class="cert-meta" data-i18n="edu.cert3.meta">Networking · 160h · Dec 2025</div>
-            </div>
-          </div>
-          <div class="cert-action">
-            <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-ambientes-computacionais.pdf" target="_blank" rel="noopener">
-              <span data-i18n="edu.viewCert">View Certificate</span>
-              <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="cert-card reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-people"></use></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.cert4.title">Leading 25.2 — Computer Systems &amp; Security</div>
-              <div class="cert-subtitle" data-i18n="edu.cert4.sub">UNIFACS</div>
-              <div class="cert-meta" data-i18n="edu.cert4.meta">Leadership &amp; Security · 40h · Dec 2025</div>
-            </div>
-          </div>
-          <div class="cert-action">
-            <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-liderando-25-2.pdf" target="_blank" rel="noopener">
-              <span data-i18n="edu.viewCert">View Certificate</span>
-              <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="cert-card reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-badge"></use></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.cert5.title">Digital Exploration &amp; Technology Fundamentals</div>
-              <div class="cert-subtitle" data-i18n="edu.cert5.sub">UNIFACS · Universidade Salvador</div>
-              <div class="cert-meta" data-i18n="edu.cert5.meta">Technology · 160h · Jul 2026</div>
-            </div>
-          </div>
-          <div class="cert-action">
-            <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-exploracao-digital.pdf" target="_blank" rel="noopener">
-              <span data-i18n="edu.viewCert">View Certificate</span>
-              <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="cert-card reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-badge"></use></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.cert6.title">Applied Computational Mathematics</div>
-              <div class="cert-subtitle" data-i18n="edu.cert6.sub">UNIFACS · Universidade Salvador</div>
-              <div class="cert-meta" data-i18n="edu.cert6.meta">Mathematics · 160h · Jul 2026</div>
-            </div>
-          </div>
-          <div class="cert-action">
-            <span class="status-chip" data-i18n="edu.statusDone">Completed</span>
-            <a class="cert-btn" href="certificados/cert-matematica-computacional.pdf" target="_blank" rel="noopener">
-              <span data-i18n="edu.viewCert">View Certificate</span>
-              <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
-            </a>
+        <div class="leader-card reveal">
+          <span class="leader-icon" aria-hidden="true"><svg><use href="#icon-people"></use></svg></span>
+          <div>
+            <h3 data-i18n="edu.leadership.role">Class Representative — Computer Science</h3>
+            <p data-i18n="edu.leadership.desc">Elected to represent and coordinate communication for a class of 60 students.</p>
           </div>
         </div>
       </div>
 
-      <h3 class="exp-subhead status-progress reveal" data-i18n="edu.inProgress">Currently Learning</h3>
-      <div class="cert-list">
-
-        <div class="cert-card in-progress reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M2 1.5A1.5 1.5 0 0 1 3.5 0h9A1.5 1.5 0 0 1 14 1.5c0 .688-.348 1.294-.879 1.652C13.213 3.352 13 3.674 13 4c0 .326.213.648.621.848A1.9 1.9 0 0 1 14 6.5v0c0 .688-.348 1.294-.879 1.652C12.787 8.352 12.5 8.674 12.5 9c0 .326.287.648.621.848A1.9 1.9 0 0 1 14 11.5c0 .688-.348 1.294-.879 1.652.42.35.879.972.879 1.848a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5c0-.688.348-1.294.879-1.652C2.787 12.648 3 12.326 3 12c0-.326-.213-.648-.621-.848A1.9 1.9 0 0 1 2 9.5c0-.688.348-1.294.879-1.652C3.213 7.352 3 7.03 3 6.5c0-.326-.213-.648-.621-.848A1.9 1.9 0 0 1 2 4z"/></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.prog1.title">CDPro — Professional Data Scientist</div>
-              <div class="cert-subtitle" data-i18n="edu.prog1.sub">Full Data Science track</div>
-              <div class="cert-meta" data-i18n="edu.prog1.meta">Data · Certification included on completion</div>
-            </div>
-          </div>
-          <div class="cert-action"><span class="status-chip progress" data-i18n="edu.statusProgress">In Progress</span></div>
-        </div>
-
-        <div class="cert-card in-progress reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 3a5 5 0 0 0-5 5 .5.5 0 0 1-1 0 6 6 0 1 1 12 0 .5.5 0 0 1-1 0 5 5 0 0 0-5-5"/></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.prog2.title">AI Specialist Program</div>
-              <div class="cert-subtitle" data-i18n="edu.prog2.sub">Focus on modern Artificial Intelligence</div>
-              <div class="cert-meta" data-i18n="edu.prog2.meta">Artificial Intelligence</div>
-            </div>
-          </div>
-          <div class="cert-action"><span class="status-chip progress" data-i18n="edu.statusProgress">In Progress</span></div>
-        </div>
-
-        <div class="cert-card in-progress reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.prog3.title">NFC/RFID Pentest</div>
-              <div class="cert-subtitle" data-i18n="edu.prog3.sub">Hands-on protocol exploitation — Penegui</div>
-              <div class="cert-meta" data-i18n="edu.prog3.meta">Cybersecurity · Practical</div>
-            </div>
-          </div>
-          <div class="cert-action"><span class="status-chip progress" data-i18n="edu.statusProgress">In Progress</span></div>
-        </div>
-
-        <div class="cert-card in-progress reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.25a6.75 6.75 0 1 1 0 13.5A6.75 6.75 0 0 1 8 1.25m1.25 3.5a1.25 1.25 0 1 0-2.5 0v3.75c0 .35.14.686.39.94l2.1 2.1a1.25 1.25 0 1 0 1.77-1.77L9.25 8.4V4.75z"/></svg></span>
-            <div>
-              <div class="cert-title">Computer Vision — Biometric Matching</div>
-              <div class="cert-subtitle">Bichometria (PetSalvo) · Applied Computer Vision</div>
-              <div class="cert-meta">Learning to integrate the Google Cloud Vision API for image detection and labeling, build image preprocessing pipelines, and develop visual similarity and matching logic as part of a team project.</div>
-            </div>
-          </div>
-          <div class="cert-action">
-            <span class="status-chip progress">In Progress</span>
-            <a class="cert-btn" href="https://bichometria.vercel.app" target="_blank" rel="noopener noreferrer">
-              <span>Learn more about the project</span>
-              <svg aria-hidden="true"><use href="#icon-external-link"></use></svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-      <h3 class="exp-subhead reveal" data-i18n="edu.leadership.title">Leadership &amp; Activities</h3>
+      <h3 class="subhead reveal" data-i18n="edu.completed">Certifications &amp; Training</h3>
       <div class="cert-list">
         <div class="cert-card reveal">
-          <div class="cert-info">
-            <span class="cert-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-people"></use></svg></span>
-            <div>
-              <div class="cert-title" data-i18n="edu.leadership.role">Class Representative — Computer Science</div>
-              <div class="cert-subtitle" data-i18n="edu.leadership.desc">Elected to represent and coordinate communication for a class of 60 students.</div>
-            </div>
+          <div>
+            <div class="cert-title" data-i18n="edu.cert1.title">Endpoint Security</div>
+            <div class="cert-subtitle" data-i18n="edu.cert1.sub">Cisco Networking Academy · Ânima Educação</div>
+            <p class="cert-meta" data-i18n="edu.cert1.meta">Cybersecurity · Instructor Luciano Sávio · Nov 2025</p>
           </div>
+          <div class="cert-action"><span class="chip chip--signal" data-i18n="edu.statusDone">Completed</span><a class="cert-btn" href="certificados/cert-endpoint-security.pdf" target="_blank" rel="noopener"><span data-i18n="edu.viewCert">View Certificate</span><svg aria-hidden="true"><use href="#icon-external-link"></use></svg></a></div>
+        </div>
+        <div class="cert-card reveal">
+          <div>
+            <div class="cert-title" data-i18n="edu.cert2.title">Computer Systems Analyst</div>
+            <div class="cert-subtitle" data-i18n="edu.cert2.sub">UNIFACS · Computer Systems &amp; Security</div>
+            <p class="cert-meta" data-i18n="edu.cert2.meta">Security · 160h · Dec 2025</p>
+          </div>
+          <div class="cert-action"><span class="chip chip--signal" data-i18n="edu.statusDone">Completed</span><a class="cert-btn" href="certificados/cert-sistemas-computacionais.pdf" target="_blank" rel="noopener"><span data-i18n="edu.viewCert">View Certificate</span><svg aria-hidden="true"><use href="#icon-external-link"></use></svg></a></div>
+        </div>
+        <div class="cert-card reveal">
+          <div>
+            <div class="cert-title" data-i18n="edu.cert3.title">Computing Environments &amp; Connectivity</div>
+            <div class="cert-subtitle" data-i18n="edu.cert3.sub">UNIFACS · Professional Qualification</div>
+            <p class="cert-meta" data-i18n="edu.cert3.meta">Networking · 160h · Dec 2025</p>
+          </div>
+          <div class="cert-action"><span class="chip chip--signal" data-i18n="edu.statusDone">Completed</span><a class="cert-btn" href="certificados/cert-ambientes-computacionais.pdf" target="_blank" rel="noopener"><span data-i18n="edu.viewCert">View Certificate</span><svg aria-hidden="true"><use href="#icon-external-link"></use></svg></a></div>
+        </div>
+        <div class="cert-card reveal">
+          <div>
+            <div class="cert-title" data-i18n="edu.cert4.title">Leading 25.2 — Computer Systems &amp; Security</div>
+            <div class="cert-subtitle" data-i18n="edu.cert4.sub">UNIFACS</div>
+            <p class="cert-meta" data-i18n="edu.cert4.meta">Leadership &amp; Security · 40h · Dec 2025</p>
+          </div>
+          <div class="cert-action"><span class="chip chip--signal" data-i18n="edu.statusDone">Completed</span><a class="cert-btn" href="certificados/cert-liderando-25-2.pdf" target="_blank" rel="noopener"><span data-i18n="edu.viewCert">View Certificate</span><svg aria-hidden="true"><use href="#icon-external-link"></use></svg></a></div>
+        </div>
+        <div class="cert-card reveal">
+          <div>
+            <div class="cert-title" data-i18n="edu.cert5.title">Digital Exploration &amp; Technology Fundamentals</div>
+            <div class="cert-subtitle" data-i18n="edu.cert5.sub">UNIFACS · Universidade Salvador</div>
+            <p class="cert-meta" data-i18n="edu.cert5.meta">Technology · 160h · Jul 2026</p>
+          </div>
+          <div class="cert-action"><span class="chip chip--signal" data-i18n="edu.statusDone">Completed</span><a class="cert-btn" href="certificados/cert-exploracao-digital.pdf" target="_blank" rel="noopener"><span data-i18n="edu.viewCert">View Certificate</span><svg aria-hidden="true"><use href="#icon-external-link"></use></svg></a></div>
+        </div>
+        <div class="cert-card reveal">
+          <div>
+            <div class="cert-title" data-i18n="edu.cert6.title">Applied Computational Mathematics</div>
+            <div class="cert-subtitle" data-i18n="edu.cert6.sub">UNIFACS · Universidade Salvador</div>
+            <p class="cert-meta" data-i18n="edu.cert6.meta">Mathematics · 160h · Jul 2026</p>
+          </div>
+          <div class="cert-action"><span class="chip chip--signal" data-i18n="edu.statusDone">Completed</span><a class="cert-btn" href="certificados/cert-matematica-computacional.pdf" target="_blank" rel="noopener"><span data-i18n="edu.viewCert">View Certificate</span><svg aria-hidden="true"><use href="#icon-external-link"></use></svg></a></div>
+        </div>
+      </div>
+
+      <h3 class="subhead reveal" data-i18n="edu.inProgress">Currently Learning</h3>
+      <div class="cert-list">
+        <div class="cert-card in-progress reveal">
+          <div>
+            <div class="cert-title" data-i18n="edu.prog1.title">CDPro — Professional Data Scientist</div>
+            <div class="cert-subtitle" data-i18n="edu.prog1.sub">Full Data Science track</div>
+            <p class="cert-meta" data-i18n="edu.prog1.meta">Data · Certification included on completion</p>
+          </div>
+          <div class="cert-action"><span class="chip chip--human" data-i18n="edu.statusProgress">In Progress</span></div>
+        </div>
+        <div class="cert-card in-progress reveal">
+          <div>
+            <div class="cert-title" data-i18n="edu.prog2.title">AI Specialist Program</div>
+            <div class="cert-subtitle" data-i18n="edu.prog2.sub">Focus on modern Artificial Intelligence</div>
+            <p class="cert-meta" data-i18n="edu.prog2.meta">Artificial Intelligence</p>
+          </div>
+          <div class="cert-action"><span class="chip chip--human" data-i18n="edu.statusProgress">In Progress</span></div>
+        </div>
+        <div class="cert-card in-progress reveal">
+          <div>
+            <div class="cert-title" data-i18n="edu.prog3.title">NFC/RFID Pentest</div>
+            <div class="cert-subtitle" data-i18n="edu.prog3.sub">Hands-on protocol exploitation — Penegui</div>
+            <p class="cert-meta" data-i18n="edu.prog3.meta">Cybersecurity · Practical</p>
+          </div>
+          <div class="cert-action"><span class="chip chip--human" data-i18n="edu.statusProgress">In Progress</span></div>
+        </div>
+        <div class="cert-card in-progress reveal">
+          <div>
+            <div class="cert-title" data-i18n="edu.prog4.title">Computer Vision — Biometric Matching</div>
+            <div class="cert-subtitle" data-i18n="edu.prog4.sub">Bichometria (PetSalvo) · Applied Computer Vision</div>
+            <p class="cert-meta" data-i18n="edu.prog4.meta">Learning to integrate the Google Cloud Vision API for image detection and labeling, build image preprocessing pipelines, and develop visual similarity and matching logic as part of a team project.</p>
+          </div>
+          <div class="cert-action"><span class="chip chip--human" data-i18n="edu.statusProgress">In Progress</span><a class="cert-btn" href="https://bichometria.vercel.app" target="_blank" rel="noopener noreferrer"><span data-i18n="edu.prog4.link">Learn more about the project</span><svg aria-hidden="true"><use href="#icon-external-link"></use></svg></a></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ CONTACT ============ -->
-  <section class="contact reveal-section" id="contact">
+  <section class="section" id="contact">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">// get-in-touch</span>
-        <h2 data-i18n="contact.title">Contact</h2>
-        <p class="section-sub" data-i18n="contact.sub">Interested in working together?</p>
+        <div class="kicker"><b>06</b><span data-i18n="contact.kicker">Contact</span></div>
+        <h2 data-i18n="contact.title">Let's build something.</h2>
+        <p class="section-sub" data-i18n="contact.sub">Hiring, freelance or just a good idea — I reply to every message.</p>
       </div>
 
       <div class="contact-grid">
-        <form class="contact-form-card reveal" id="contactForm">
+        <form class="contact-form reveal" id="contactForm">
           <div class="form-row">
-            <label for="nome" data-i18n="contact.form.name">NAME</label>
-            <input class="form-input" id="nome" name="nome" type="text" required data-i18n-placeholder="contact.form.namePh" placeholder="Your name">
+            <label for="nome" data-i18n="contact.form.name">Name</label>
+            <input class="form-input" id="nome" name="nome" type="text" required autocomplete="name" data-i18n-placeholder="contact.form.namePh" placeholder="Your name">
           </div>
           <div class="form-row">
-            <label for="mensagem" data-i18n="contact.form.message">MESSAGE</label>
+            <label for="mensagem" data-i18n="contact.form.message">Message</label>
             <textarea class="form-textarea" id="mensagem" name="mensagem" rows="6" required data-i18n-placeholder="contact.form.messagePh" placeholder="Type your message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">
-            <span data-i18n="contact.form.submit">Send Email</span>
-            <svg aria-hidden="true"><use href="#icon-envelope"></use></svg>
-          </button>
+          <button type="submit" class="btn btn-primary btn-block"><span data-i18n="contact.form.submit">Send Email</span><svg aria-hidden="true"><use href="#icon-envelope"></use></svg></button>
         </form>
 
-        <div class="contact-side-card reveal">
-          <div class="contact-side-item">
-            <span class="stat-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-envelope"></use></svg></span>
-            <div>
-              <h4 data-i18n="contact.email.title">Email</h4>
-              <p data-i18n="contact.email.body">Primary contact method.</p>
-              <a class="text-link" href="mailto:guilhermelopes.dias07@outlook.com" data-i18n="contact.email.link">Send an email ↗</a>
-            </div>
-          </div>
-          <div class="contact-side-item">
-            <span class="stat-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-linkedin"></use></svg></span>
-            <div>
-              <h4 data-i18n="contact.linkedin.title">LinkedIn</h4>
-              <p data-i18n="contact.linkedin.body">Professional profile.</p>
-              <a class="text-link" href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener" data-i18n="contact.linkedin.link">View profile ↗</a>
-            </div>
-          </div>
-          <div class="contact-side-item">
-            <span class="stat-icon" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-github"></use></svg></span>
-            <div>
-              <h4 data-i18n="contact.github.title">GitHub</h4>
-              <p data-i18n="contact.github.body">Projects &amp; source code.</p>
-              <a class="text-link" href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" data-i18n="contact.github.link">View repositories ↗</a>
-            </div>
-          </div>
-          <div class="contact-side-item">
-            <span class="stat-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/></svg></span>
-            <div>
-              <h4 data-i18n="contact.whatsapp.title">WhatsApp</h4>
-              <p data-i18n="contact.whatsapp.body">Direct contact.</p>
-              <a class="text-link" href="https://wa.me/5575983726767" target="_blank" rel="noopener" data-i18n="contact.whatsapp.link">Open chat ↗</a>
-            </div>
-          </div>
+        <div class="contact-list reveal">
+          <a class="contact-item" href="mailto:guilhermelopes.dias07@outlook.com">
+            <span class="icon-btn" aria-hidden="true"><svg><use href="#icon-envelope"></use></svg></span>
+            <span><h3 data-i18n="contact.email.title">Email</h3><p data-i18n="contact.email.body">Primary contact method.</p></span>
+            <svg class="arrow" aria-hidden="true"><use href="#i-arrow-ur"></use></svg>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener">
+            <span class="icon-btn" aria-hidden="true"><svg><use href="#icon-linkedin"></use></svg></span>
+            <span><h3 data-i18n="contact.linkedin.title">LinkedIn</h3><p data-i18n="contact.linkedin.body">Professional profile.</p></span>
+            <svg class="arrow" aria-hidden="true"><use href="#i-arrow-ur"></use></svg>
+          </a>
+          <a class="contact-item" href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener">
+            <span class="icon-btn" aria-hidden="true"><svg><use href="#icon-github"></use></svg></span>
+            <span><h3 data-i18n="contact.github.title">GitHub</h3><p data-i18n="contact.github.body">Projects &amp; source code.</p></span>
+            <svg class="arrow" aria-hidden="true"><use href="#i-arrow-ur"></use></svg>
+          </a>
+          <a class="contact-item" href="https://wa.me/5575983726767" target="_blank" rel="noopener">
+            <span class="icon-btn" aria-hidden="true"><svg><use href="#icon-send"></use></svg></span>
+            <span><h3 data-i18n="contact.whatsapp.title">WhatsApp</h3><p data-i18n="contact.whatsapp.body">Direct contact.</p></span>
+            <svg class="arrow" aria-hidden="true"><use href="#i-arrow-ur"></use></svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
+
+  <div class="interlude interlude--end" data-scene="c" aria-hidden="true"></div>
 
 </main>
 
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p class="footer-note"><strong>Guilherme Lopes Dias</strong> — <span data-i18n="footer.note">built with intent, from Brazil to the world.</span></p>
-    <div class="footer-social">
-      <a href="https://www.linkedin.com/in/guilhermelopesdias" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
-        <svg aria-hidden="true"><use href="#icon-linkedin"></use></svg>
-      </a>
-      <a href="https://github.com/Guilherme-Lopesz" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
-        <svg aria-hidden="true"><use href="#icon-github"></use></svg>
-      </a>
-      <a href="https://www.instagram.com/guilherme__lopesz" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
-        <svg aria-hidden="true"><use href="#icon-instagram"></use></svg>
-      </a>
+    <p><strong>Guilherme Lopes Dias</strong> — <span data-i18n="footer.note">built with intent, from Brazil to the world.</span></p>
+    <div class="footer-links">
+      <a class="text-link" href="#home" data-i18n="footer.top">Back to top ↑</a>
     </div>
-    <a href="#home" class="back-to-top" data-i18n="footer.top">Back to top ↑</a>
   </div>
 </footer>
+
+<!-- ============ PROJECT CASE STUDY MODAL ============ -->
+<div class="modal-overlay" id="projectModal" aria-hidden="true">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button type="button" class="modal-close" id="modalClose" data-i18n-aria="modal.close" aria-label="Close"><svg aria-hidden="true"><use href="#icon-close"></use></svg></button>
+    <div class="modal-scroll" id="modalScroll"><!-- rendered by script.js --></div>
+  </div>
+</div>
+
+<!-- ============ PROFILE PHOTO PICKER ============ -->
+<dialog class="avatar-dialog" id="avatarDialog" aria-labelledby="avTitle">
+  <div class="av-head">
+    <h2 id="avTitle" data-i18n="av.title">Profile photo</h2>
+    <button type="button" class="av-x" id="avClose" data-i18n-aria="modal.close" aria-label="Close"><svg aria-hidden="true"><use href="#icon-close"></use></svg></button>
+  </div>
+  <div class="av-stage">
+    <button type="button" class="av-nav av-prev" id="avPrev" data-i18n-aria="av.prev" aria-label="Previous photo"><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></button>
+    <button type="button" class="av-nav av-next" id="avNext" data-i18n-aria="av.next" aria-label="Next photo"><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></button>
+    <div class="av-track" id="avTrack" tabindex="0" role="group" aria-roledescription="carousel" data-i18n-aria="av.carousel" aria-label="Profile photos">
+      <figure class="av-slide" data-profile="default" role="group" aria-roledescription="slide" aria-label="1 / 2">
+        <div class="av-frame"><img src="img/Guilherme.jpeg" alt="Guilherme Lopes Dias" decoding="async"></div>
+        <figcaption class="av-cap">
+          <strong><span data-i18n="av.s1.name">Classic</span> <span class="av-inuse" data-inuse="default" hidden data-i18n="av.inuse">In use</span></strong>
+          <p data-i18n="av.s1.desc">The default look of the portfolio.</p>
+        </figcaption>
+      </figure>
+      <figure class="av-slide" data-profile="war" role="group" aria-roledescription="slide" aria-label="2 / 2">
+        <div class="av-frame is-lens" id="avLensFrame">
+          <img src="img/perfil-gui.webp" alt="Guilherme Lopes Dias" decoding="async">
+          <canvas class="lens-canvas" aria-hidden="true"></canvas>
+          <span class="av-tag"><svg aria-hidden="true"><use href="#i-sparkle"></use></svg><span data-i18n="av.tag">Interactive photo</span></span>
+          <span class="av-hint" aria-hidden="true"><span class="h-mouse" data-i18n="av.hint.mouse">Move your cursor over the photo</span><span class="h-touch" data-i18n="av.hint.touch">Drag your finger over the photo</span></span>
+          <button type="button" class="av-peek" id="avPeek" aria-pressed="false" data-i18n-aria="av.peek" aria-label="Reveal what is underneath"><svg aria-hidden="true"><use href="#i-eye"></use></svg></button>
+        </div>
+        <figcaption class="av-cap">
+          <strong><span data-i18n="av.s2.name">War mode</span> <span class="av-inuse" data-inuse="war" hidden data-i18n="av.inuse">In use</span></strong>
+          <p data-i18n="av.s2.desc">Something is hiding under this photo. Saving it turns the portfolio into war mode: a battlefield in dark, the quiet field after the battle in light.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="av-dots" role="tablist" data-i18n-aria="av.carousel" aria-label="Profile photos">
+    <button type="button" class="av-dot" role="tab" data-go="0" aria-label="1 / 2"></button>
+    <button type="button" class="av-dot" role="tab" data-go="1" aria-label="2 / 2"></button>
+  </div>
+  <div class="av-actions">
+    <button type="button" class="btn btn-ghost" id="avCancel" data-i18n="av.cancel">Cancel</button>
+    <button type="button" class="btn btn-primary" id="avSave" data-i18n="av.save">Save</button>
+  </div>
+  <p class="av-live" id="avLive" aria-live="polite"></p>
+</dialog>
+
+<!-- ============ COMMAND PALETTE ============ -->
+<dialog class="palette" id="palette" aria-label="Command menu">
+  <div class="palette-search">
+    <svg aria-hidden="true"><use href="#i-search"></use></svg>
+    <input id="paletteInput" type="text" role="combobox" aria-expanded="true" aria-controls="paletteList" aria-autocomplete="list" autocomplete="off" spellcheck="false" data-i18n-placeholder="pal.placeholder" placeholder="Type a command or search…">
+  </div>
+  <div class="palette-list" id="paletteList" role="listbox"></div>
+  <div class="palette-foot"><span data-i18n="pal.hint1">↑↓ navigate</span><span data-i18n="pal.hint2">↵ select</span><span data-i18n="pal.hint3">esc close</span></div>
+</dialog>
 
 <script src="script.js"></script>
 </body>
