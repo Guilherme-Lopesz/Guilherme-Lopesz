@@ -25,7 +25,7 @@
       "nav.about": "About",
       "nav.education": "Education",
       "nav.contact": "Contact",
-      // "hero.badge": "Open to remote international roles",
+      "hero.badge": "Open to remote international roles",
       "hero.sub": "Computer Science student from Brazil. I design AI agents and automation pipelines — from a real-time voice agent to a personal server that runs agents locally — and keep a person in control of the decisions that matter.",
       "trust.label": "CERTIFIED & TRAINED WITH",
       "proj.viewCaseStudy": "View Case Study",
@@ -166,9 +166,6 @@
       "skills.block1.tag1": "Multimodal Voice Agents",
       "skills.block1.tag2": "OpenAI / Gemini / Grok APIs",
       "skills.block1.tag3": "Prompt Engineering",
-      "skills.block1.tag4": "Computer Vision",
-      "skills.block1.tag5": "TensorFlow",
-      "skills.block1.tag6": "Neural Network Training & Fine-Tuning",
       "skills.blockAuto": "Automation",
       "skills.blockAuto.tag2": "Workflow Automation",
       "skills.blockAdd": "Additional",
@@ -238,7 +235,7 @@
       "footer.note": "built with intent, from Brazil to the world.",
       "footer.top": "Back to top ↑",
       "meta.title": "Guilherme Lopes Dias | AI Agents & Automation | Computer Science Student",
-      // "meta.description": "Guilherme Lopes Dias — Computer Science student from Brazil building AI agents, automation pipelines and software with a human in the loop. Open to remote international junior roles.",
+      "meta.description": "Guilherme Lopes Dias — Computer Science student from Brazil building AI agents, automation pipelines and software with a human in the loop. Open to remote international junior roles.",
       "a11y.skip": "Skip to content",
       "nav.systems": "Systems",
       "nav.work": "Work",
@@ -257,8 +254,8 @@
       "card.baseLabel": "Based in",
       "card.baseValue": "Brazil · UTC−3, overlaps US & European hours",
       "card.timeLabel": "Local time",
-      // "card.openLabel": "Open to",
-      // "card.openValue": "Remote junior software engineering & AI-focused roles",
+      "card.openLabel": "Open to",
+      "card.openValue": "Remote junior software engineering & AI-focused roles",
       "stat.shipped": "Projects shipped",
       "stat.dev": "In development",
       "stat.freelance": "Freelance projects",
@@ -332,6 +329,14 @@
       "proj.payroll.desc": "A payroll management system built in Java, currently in development.",
       "payroll.tech1": "Java",
       "payroll.tech2": "Payroll",
+      "proj.bicho.title": "Bichometria",
+      "proj.bicho.category": "Computer vision · Team project",
+      "proj.bicho.desc": "A team project in applied computer vision (PetSalvo). I work on the computer vision front: building with TensorFlow, training artificial neural networks and fine-tuning models for biometric matching.",
+      "bicho.tech1": "Computer vision",
+      "bicho.tech2": "TensorFlow",
+      "bicho.tech3": "Neural networks",
+      "bicho.tech4": "Fine-tuning",
+      "proj.bicho.link": "Project site",
       "nexus.roomAlt": "Nexus chat room",
       "giro.loginAlt": "Giro login screen",
       "free.kicker": "Freelance",
@@ -350,7 +355,7 @@
       "free.cta.mail": "Email",
       "about.kicker": "About",
       "about.lead": "I'm a Computer Science student at UNIFACS who learns by <strong>building complete systems</strong> — a real-time voice agent, an encrypted chat, an AI transaction classifier, and now a personal AI server and a full content pipeline.",
-      // "about.body": "My focus is <strong>software, AI agents and automation</strong>, with cybersecurity as an area I keep exploring in practice. I'm looking for a remote, international junior role where I can keep shipping and learning from real feedback.",
+      "about.body": "My focus is <strong>software, AI agents and automation</strong>, with cybersecurity as an area I keep exploring in practice. I'm looking for a remote, international junior role where I can keep shipping and learning from real feedback.",
       "about.p1.t": "Build, then document",
       "about.p1.d": "Every project ships with a case study: the problem, the decisions and the limitations.",
       "about.p2.t": "Automate the routine, keep people on the decisions",
@@ -358,14 +363,15 @@
       "about.p3.t": "Ship early, learn from what breaks",
       "about.p3.d": "Small, testable steps — and honest notes about what doesn't work yet.",
       "skills.localAgents": "Local AI agents",
+      "skills.cv": "Computer vision & fine-tuning",
       "skills.hitl": "Human-in-the-loop flows",
       "skills.legend": "Learning / building right now",
       "edu.kicker": "Education",
       "edu.colegiado.role": "Course Council (Colegiado) Member — Computer Science",
       "edu.colegiado.desc": "Part of the collegiate body where faculty and student representatives discuss and decide on the Computer Science program.",
       "edu.prog4.title": "Computer Vision — Biometric Matching",
-      "edu.prog4.sub": "Bichometria (PetSalvo) · Computer Vision · TensorFlow",
-      "edu.prog4.meta": "Member of the Computer Vision squad in a team project. Hands-on work with TensorFlow, training artificial neural networks and fine-tuning, plus Google Cloud Vision API integration, image preprocessing pipelines, and visual similarity and matching logic.",
+      "edu.prog4.sub": "Bichometria (PetSalvo) · Applied Computer Vision",
+      "edu.prog4.meta": "On the computer vision front of a team project: TensorFlow, training artificial neural networks and fine-tuning, alongside Google Cloud Vision API integration, image preprocessing pipelines and visual similarity and matching logic.",
       "edu.prog4.link": "Learn more about the project",
       "contact.kicker": "Contact",
       "av.open": "Change profile photo",
@@ -410,7 +416,7 @@
       "nav.about": "Sobre",
       "nav.education": "Formação",
       "nav.contact": "Contato",
-      // "hero.badge": "Aberto a vagas remotas",
+      "hero.badge": "Aberto a vagas remotas internacionais",
       "hero.sub": "Estudante de Ciência da Computação no Brasil. Projeto agentes de IA e pipelines de automação — de um agente de voz em tempo real a um servidor pessoal que roda agentes localmente — e mantenho uma pessoa no controle das decisões que importam.",
       "trust.label": "CERTIFICADO E TREINADO POR",
       "proj.viewCaseStudy": "Ver Estudo de Caso",
@@ -551,9 +557,6 @@
       "skills.block1.tag1": "Agentes de Voz Multimodais",
       "skills.block1.tag2": "APIs OpenAI / Gemini / Grok",
       "skills.block1.tag3": "Engenharia de Prompt",
-      "skills.block1.tag4": "Visão Computacional",
-      "skills.block1.tag5": "TensorFlow",
-      "skills.block1.tag6": "Treinamento de Redes Neurais & Fine-Tuning",
       "skills.blockAuto": "Automação",
       "skills.blockAuto.tag2": "Automação de Fluxos",
       "skills.blockAdd": "Adicional",
@@ -623,7 +626,7 @@
       "footer.note": "construído com intenção, do Brasil para o mundo.",
       "footer.top": "Voltar ao topo ↑",
       "meta.title": "Guilherme Lopes Dias | Agentes de IA e Automação | Estudante de Ciência da Computação",
-      // "meta.description": "Guilherme Lopes Dias — estudante de Ciência da Computação no Brasil que constrói agentes de IA, pipelines de automação e software com humano no circuito. Aberto a vagas júnior.",
+      "meta.description": "Guilherme Lopes Dias — estudante de Ciência da Computação no Brasil que constrói agentes de IA, pipelines de automação e software com humano no circuito. Aberto a vagas júnior remotas internacionais.",
       "a11y.skip": "Pular para o conteúdo",
       "nav.systems": "Sistemas",
       "nav.work": "Projetos",
@@ -642,8 +645,8 @@
       "card.baseLabel": "Localização",
       "card.baseValue": "Brasil · UTC−3, sobrepõe horários dos EUA e da Europa",
       "card.timeLabel": "Horário local",
-      // "card.openLabel": "",
-      // "card.openValue": "",
+      "card.openLabel": "Aberto a",
+      "card.openValue": "Vagas remotas júnior em engenharia de software e IA",
       "stat.shipped": "Projetos entregues",
       "stat.dev": "Em desenvolvimento",
       "stat.freelance": "Projetos freelance",
@@ -717,6 +720,14 @@
       "proj.payroll.desc": "Um sistema de folha de pagamento em Java, em desenvolvimento.",
       "payroll.tech1": "Java",
       "payroll.tech2": "Folha de pagamento",
+      "proj.bicho.title": "Bichometria",
+      "proj.bicho.category": "Visão computacional · Projeto em equipe",
+      "proj.bicho.desc": "Um projeto em equipe de visão computacional aplicada (PetSalvo). Atuo na frente de visão computacional: desenvolvo com TensorFlow, treino redes neurais artificiais e faço fine-tuning de modelos para correspondência biométrica.",
+      "bicho.tech1": "Visão computacional",
+      "bicho.tech2": "TensorFlow",
+      "bicho.tech3": "Redes neurais",
+      "bicho.tech4": "Fine-tuning",
+      "proj.bicho.link": "Site do projeto",
       "nexus.roomAlt": "Sala de chat do Nexus",
       "giro.loginAlt": "Tela de login do Giro",
       "free.kicker": "Freelas",
@@ -735,7 +746,7 @@
       "free.cta.mail": "E-mail",
       "about.kicker": "Sobre",
       "about.lead": "Sou estudante de Ciência da Computação na UNIFACS e aprendo <strong>construindo sistemas completos</strong> — um agente de voz em tempo real, um chat criptografado, um classificador de transações com IA e, agora, um servidor pessoal de IA e um pipeline completo de conteúdo.",
-      // "about.body": "Meu foco é <strong>software, agentes de IA e automação</strong>, com cibersegurança como uma área que continuo explorando na prática. Busco uma vaga júnior remota e internacional onde eu possa continuar entregando e aprendendo com feedback real.",
+      "about.body": "Meu foco é <strong>software, agentes de IA e automação</strong>, com cibersegurança como uma área que continuo explorando na prática. Busco uma vaga júnior remota e internacional onde eu possa continuar entregando e aprendendo com feedback real.",
       "about.p1.t": "Construir e depois documentar",
       "about.p1.d": "Todo projeto tem um estudo de caso: o problema, as decisões e as limitações.",
       "about.p2.t": "Automatizar a rotina, manter pessoas nas decisões",
@@ -743,14 +754,15 @@
       "about.p3.t": "Entregar cedo, aprender com o que quebra",
       "about.p3.d": "Passos pequenos e testáveis — e notas honestas sobre o que ainda não funciona.",
       "skills.localAgents": "Agentes de IA locais",
+      "skills.cv": "Visão computacional e fine-tuning",
       "skills.hitl": "Fluxos com humano no circuito",
       "skills.legend": "Aprendendo / construindo agora",
       "edu.kicker": "Formação",
       "edu.colegiado.role": "Membro do Colegiado do Curso — Ciência da Computação",
       "edu.colegiado.desc": "Integro o colegiado onde docentes e representantes discentes discutem e deliberam sobre o curso de Ciência da Computação.",
       "edu.prog4.title": "Visão Computacional — Biometria",
-      "edu.prog4.sub": "Bichometria (PetSalvo) · Visão Computacional · TensorFlow",
-      "edu.prog4.meta": "Integrante da squad de Visão Computacional em um projeto em equipe. Atuação prática com TensorFlow, treinamento de redes neurais artificiais e fine-tuning, além de integração com a Google Cloud Vision API, pipelines de pré-processamento de imagens e lógica de similaridade e correspondência visual.",
+      "edu.prog4.sub": "Bichometria (PetSalvo) · Visão Computacional aplicada",
+      "edu.prog4.meta": "Na frente de visão computacional de um projeto em equipe: TensorFlow, treinamento de redes neurais artificiais e fine-tuning, além da integração com a Google Cloud Vision API, pipelines de pré-processamento de imagens e lógica de similaridade e correspondência visual.",
       "edu.prog4.link": "Saiba mais sobre o projeto",
       "contact.kicker": "Contato",
       "av.open": "Trocar foto de perfil",
@@ -1156,6 +1168,7 @@
 
   /* Projects still being built (no case study yet) */
   var inDev = [
+    { id: 'bichometria', icon: 'i-eye', wide: true, link: 'https://bichometria.vercel.app', titleKey: 'proj.bicho.title', categoryKey: 'proj.bicho.category', descKey: 'proj.bicho.desc', techKeys: ['bicho.tech1', 'bicho.tech2', 'bicho.tech3', 'bicho.tech4'] },
     { id: 'cleo', icon: 'i-game', titleKey: 'proj.cleo.title', categoryKey: 'proj.cleo.category', descKey: 'proj.cleo.desc', techKeys: ['cleo.tech1', 'cleo.tech2'] },
     { id: 'payroll', icon: 'i-code', titleKey: 'proj.payroll.title', categoryKey: 'proj.payroll.category', descKey: 'proj.payroll.desc', techKeys: ['payroll.tech1', 'payroll.tech2'] }
   ];
@@ -1201,13 +1214,14 @@
 
   function buildDevCard(p, l) {
     return (
-      '<article class="dev-card">' +
+      '<article class="dev-card' + (p.wide ? ' dev-card--wide' : '') + '">' +
         '<div class="dev-top"><span class="dev-icon" aria-hidden="true"><svg><use href="#' + p.icon + '"></use></svg></span>' +
           '<span class="chip chip--human">' + esc(t('chip.dev', l)) + '</span></div>' +
         '<span class="project-cat">' + esc(t(p.categoryKey, l)) + '</span>' +
         '<h3>' + esc(t(p.titleKey, l)) + '</h3>' +
         '<p>' + esc(t(p.descKey, l)) + '</p>' +
         '<div class="project-tags">' + tagsHtml(p.techKeys, l) + '</div>' +
+        (p.link ? '<div class="project-links"><a href="' + p.link + '" target="_blank" rel="noopener" class="project-link is-primary"><span>' + esc(t('proj.bicho.link', l)) + '</span>' + ICON_LINK + '</a></div>' : '') +
       '</article>'
     );
   }
@@ -1412,7 +1426,7 @@
     var cmds = [];
     var navWords = {
       systems: 'pipeline n8n agents agentes second brain server servidor content conteudo',
-      work: 'projects projetos portfolio case studies',
+      work: 'projects projetos portfolio case studies bichometria tensorflow computer vision visao computacional neural fine-tuning',
       freelance: 'freelas clients clientes landing page karaoke nosferata',
       about: 'skills stack habilidades tecnologias java python',
       education: 'certificates certificados colegiado leadership faculdade unifacs',
@@ -1560,425 +1574,4 @@
       var w = 36 + rnd() * 84, h = 26 + rnd() * hmax, k = rnd();
       d += ' L' + n1(x) + ' ' + base;
       if (k < 0.28) {
-        d += ' L' + n1(x) + ' ' + n1(base - h) + ' L' + n1(x + w * 0.5) + ' ' + n1(base - h - 10 - rnd() * 18) + ' L' + n1(x + w * 0.66) + ' ' + n1(base - h * 0.72) + ' L' + n1(x + w) + ' ' + n1(base - h * 0.9);
-      } else if (k < 0.64) {
-        var n = 2 + ((rnd() * 3) | 0), cw = w / (2 * n);
-        d += ' L' + n1(x) + ' ' + n1(base - h);
-        for (var i = 0; i < n; i++) {
-          d += ' L' + n1(x + 2 * i * cw) + ' ' + n1(base - h - 11) + ' L' + n1(x + (2 * i + 1) * cw) + ' ' + n1(base - h - 11) + ' L' + n1(x + (2 * i + 1) * cw) + ' ' + n1(base - h) + ' L' + n1(x + (2 * i + 2) * cw) + ' ' + n1(base - h);
-        }
-      } else {
-        d += ' L' + n1(x) + ' ' + n1(base - h) + ' L' + n1(x + w * 0.35) + ' ' + n1(base - h) + ' L' + n1(x + w * 0.45) + ' ' + n1(base - h + 14) + ' L' + n1(x + w) + ' ' + n1(base - h + 14);
-      }
-      d += ' L' + n1(x + w) + ' ' + base;
-      if (h > 70 && rnd() < 0.4) win += '<rect x="' + n1(x + w * 0.42) + '" y="' + n1(base - h * 0.55) + '" width="5" height="9" rx="1" style="fill:var(--human);fill-opacity:.75"/>';
-      x += w + rnd() * 26;
-    }
-    return { d: d + ' L1600 ' + base + ' L1600 420 Z', win: win };
-  }
-  function warFar(rnd) {
-    var s = skyline(rnd, 318, 120);
-    return '<path d="' + s.d + '" style="fill:var(--surface-2)"/>' + s.win;
-  }
-  function pointOnArc(cx, cy, r, deg) { var a = deg * Math.PI / 180; return [n1(cx + r * Math.cos(a)), n1(cy - r * Math.sin(a))]; }
-  function ruinArch(x, base, span, h) {
-    var xl = x, xr = x + span, cy = base - h, r = span / 2, cx = x + r, e = pointOnArc(cx, cy, r, 62);
-    return '<rect x="' + (xl - 14) + '" y="' + cy + '" width="28" height="' + h + '" style="fill:var(--surface)"/>' +
-      '<path d="M' + (xr - 14) + ' ' + base + ' V' + (cy + 40) + ' L' + (xr - 6) + ' ' + (cy + 22) + ' L' + (xr + 14) + ' ' + (cy + 52) + ' V' + base + ' Z" style="fill:var(--surface)"/>' +
-      '<path d="M' + xl + ' ' + cy + ' A' + r + ' ' + r + ' 0 0 1 ' + e[0] + ' ' + e[1] + '" fill="none" style="stroke:var(--surface)" stroke-width="26"/>';
-  }
-  function banner(x, base, ph, tilt, flip) {
-    var px = x + tilt, py = base - ph, dir = flip ? -1 : 1;
-    return '<line x1="' + x + '" y1="' + base + '" x2="' + px + '" y2="' + py + '" style="stroke:var(--surface)" stroke-width="4"/>' +
-      '<path d="M' + (px - 5) + ' ' + (py + 6) + ' L' + px + ' ' + (py - 18) + ' L' + (px + 5) + ' ' + (py + 6) + ' Z" style="fill:var(--surface)"/>' +
-      '<g class="flag"><path d="M' + px + ' ' + (py + 6) + ' L' + (px + 74 * dir) + ' ' + (py + 12) + ' L' + (px + 58 * dir) + ' ' + (py + 30) + ' L' + (px + 78 * dir) + ' ' + (py + 48) + ' L' + (px + 50 * dir) + ' ' + (py + 54) + ' L' + px + ' ' + (py + 50) + ' Z" style="fill:var(--signal);fill-opacity:.78"/></g>';
-  }
-  function warMid(v, rnd) {
-    var o = '', arches = { a: [[120, 118, 150], [1230, 110, 180]], b: [[320, 120, 140], [1020, 100, 190], [1450, 90, 110]], c: [[60, 120, 160], [1360, 110, 150]], h: [] }[v] || [];
-    arches.forEach(function (a) { o += ruinArch(a[0], 336, a[1], a[2]); });
-    var xs = { a: [520, 700, 960, 1420], b: [140, 640, 820, 1280], c: [330, 520, 1100, 1250], h: [] }[v] || [];
-    xs.forEach(function (x, i) { o += banner(x, 338, 120 + rnd() * 70, (rnd() - 0.5) * 24, i % 2 === 1); });
-    return o + '<path d="M0 420 L0 338 L1600 338 L1600 420 Z" style="fill:var(--surface)"/>';
-  }
-  function swordShape(x, y, s, ang, fill, rim) {
-    var st = rim ? ';stroke:var(--signal);stroke-opacity:.55;stroke-width:' + n1(1.4 / s) : '';
-    return '<g transform="translate(' + x + ' ' + y + ') rotate(' + ang + ') scale(' + s + ')" style="fill:' + fill + st + '">' +
-      '<path d="M-8 0 L8 0 L6 -150 L0 -170 L-6 -150 Z"/>' +
-      '<rect x="-36" y="-160" width="72" height="9" rx="3"/><rect x="-3.5" y="-198" width="7" height="40" rx="2"/><circle cx="0" cy="-204" r="7"/></g>';
-  }
-  function spear(x, y, len, ang) {
-    return '<g transform="translate(' + x + ' ' + y + ') rotate(' + ang + ')" style="fill:var(--bg)"><rect x="-2.5" y="' + (-len) + '" width="5" height="' + len + '"/><path d="M-7 ' + (-len + 4) + ' L0 ' + (-len - 28) + ' L7 ' + (-len + 4) + ' Z"/></g>';
-  }
-  function warNear(v, rnd) {
-    var d = 'M0 420 L0 352', x = 0, ys = [];
-    while (x < 1600) { x += 40 + rnd() * 70; var y = 346 + (rnd() - 0.5) * 22; ys.push([x, y]); d += ' L' + n1(Math.min(x, 1600)) + ' ' + n1(y); }
-    d += ' L1600 420 Z';
-    var o = '<path d="' + d + '" style="fill:var(--bg)"/><path d="' + d.replace(/ L1600 420 Z$/, '').replace('M0 420 L0 352', 'M0 352') + '" fill="none" style="stroke:var(--signal);stroke-opacity:.5" stroke-width="1.5"/>';
-    var set = { a: [[260, 350, .9, -8], [640, 348, .7, 12], [1010, 352, 1, -14], [1380, 350, .8, 9]], b: [[180, 350, .8, 10], [560, 352, 1, -6], [930, 349, .7, 14], [1290, 351, .9, -10]], c: [[200, 350, .7, -10], [520, 350, .8, 8], [1180, 352, .8, -12], [1440, 350, .7, 10]], h: [] }[v] || [];
-    set.forEach(function (sw) { o += swordShape(sw[0], sw[1], sw[2], sw[3], 'var(--bg)', true); });
-    if (v === 'c') o += swordShape(900, 356, 1.55, -5, 'var(--bg)', true);
-    [[80, 352, 90, -16], [760, 350, 70, 9], [1330, 351, 110, -7]].forEach(function (s) { if (v !== 'h') o += spear(s[0], s[1], s[2], s[3]); });
-    for (var i = 0; i < 4; i++) { var bx = 150 + rnd() * 1300; o += '<path d="M' + n1(bx) + ' 352 q 14 -16 30 -6 q -2 8 -8 8 z" style="fill:var(--bg)"/>'; }
-    return o;
-  }
-
-  /* --- PEACE --- */
-  function peaceSky(id, v, H, rnd) {
-    var sx = { a: 560, b: 1010, c: 700, h: 1330 }[v] || 800, sy = v === 'h' ? 128 : 160, clouds = '';
-    for (var i = 0; i < (v === 'h' ? 0 : 4); i++) {
-      var cx = rnd() * 1500, cy = H * (0.18 + rnd() * 0.4), l = 160 + rnd() * 240;
-      clouds += '<path d="M' + n1(cx) + ' ' + n1(cy) + ' q ' + n1(l / 4) + ' -10 ' + n1(l / 2) + ' 0 t ' + n1(l / 2) + ' 0" fill="none" style="stroke:var(--text-3);stroke-opacity:.22" stroke-width="2" stroke-linecap="round"/>';
-    }
-    return '<defs><linearGradient id="' + id + 'g" x1="0" y1="0" x2="0" y2="1">' + stop(0, 'human', 0) + stop(0.6, 'human', 0.1) + stop(1, 'human', 0.24) + '</linearGradient>' +
-      '<radialGradient id="' + id + 'h">' + stop(0, 'human', 0.26) + stop(0.35, 'human', 0.14) + stop(1, 'human', 0) + '</radialGradient></defs>' +
-      '<rect width="1600" height="' + H + '" fill="url(#' + id + 'g)"/>' + clouds +
-      '<circle cx="' + sx + '" cy="' + sy + '" r="210" fill="url(#' + id + 'h)" class="sun-pulse"/>' +
-      '<circle cx="' + sx + '" cy="' + sy + '" r="44" style="fill:var(--human);fill-opacity:.36"/>';
-  }
-  function hillPath(base, a1, a2, p, close) {
-    var d = 'M0 420 L0 ' + n1(base + a1 * Math.sin(p));
-    for (var x = 40; x <= 1640; x += 40) d += ' L' + x + ' ' + n1(base + a1 * Math.sin(x / 260 + p) + a2 * Math.sin(x / 97 + p * 2));
-    return d + ' L1600 420 Z';
-  }
-  function groundY(x, base) { return base + 9 * Math.sin(x / 190 + 1.2) + 5 * Math.sin(x / 71 + 0.4); }
-  function peaceFar(rnd) {
-    var o = '<path d="' + hillPath(300, 24, 8, 0.6) + '" style="fill:var(--surface-2)"/>';
-    for (var i = 0; i < 7; i++) {
-      var x = 60 + rnd() * 1480, y = 300 + 24 * Math.sin(x / 260 + 0.6) + 8 * Math.sin(x / 97 + 1.2), h = 16 + rnd() * 18;
-      o += '<rect x="' + n1(x - 1.5) + '" y="' + n1(y - 4) + '" width="3" height="8" style="fill:var(--text-3);fill-opacity:.4"/><circle cx="' + n1(x) + '" cy="' + n1(y - 4 - h * 0.55) + '" r="' + n1(h * 0.55) + '" style="fill:var(--text-3);fill-opacity:.28"/>';
-    }
-    return o;
-  }
-  function peaceMid(v, rnd) {
-    var o = '<path d="' + hillPath(332, 20, 7, 2.1) + '" style="fill:var(--human);fill-opacity:.12"/><path d="' + hillPath(344, 14, 6, 0.3) + '" style="fill:var(--surface)"/>';
-    if (v === 'b') {
-      /* the same ruins, now quiet and overgrown */
-      o += '<g style="opacity:.9">' + ruinArch(980, 344, 190, 120).replace(/var\(--surface\)/g, 'var(--surface-2)') + '</g>';
-      for (var i = 0; i < 9; i++) o += '<circle cx="' + n1(965 + rnd() * 210) + '" cy="' + n1(344 - rnd() * 60) + '" r="' + n1(3 + rnd() * 3) + '" style="fill:var(--text-3);fill-opacity:.35"/>';
-    }
-    return o;
-  }
-  function peaceNear(v, rnd) {
-    var d = 'M0 420 L0 ' + n1(groundY(0, 362));
-    for (var x = 30; x <= 1630; x += 30) d += ' L' + x + ' ' + n1(groundY(x, 362));
-    d += ' L1600 420 Z';
-    var o = '', i, x2, y2, h, lean;
-    var sword = (v === 'c') ? peaceSword(880, 366) : '';
-    o += sword;
-    o += '<path d="' + d + '" style="fill:var(--human);fill-opacity:.2"/><path d="' + d.replace(/ L1600 420 Z$/, '').replace('M0 420 L0 ', 'M0 ') + '" fill="none" style="stroke:var(--text-3);stroke-opacity:.35" stroke-width="1.4"/>';
-    for (i = 0; i < 130; i++) {
-      x2 = rnd() * 1600; y2 = groundY(x2, 362) + 3; h = 9 + rnd() * 26; lean = (rnd() - 0.5) * 16;
-      o += '<path d="M' + n1(x2) + ' ' + n1(y2) + ' q ' + n1(lean * 0.2) + ' ' + n1(-h * 0.6) + ' ' + n1(lean) + ' ' + n1(-h) + '" fill="none" style="stroke:var(--text-3);stroke-opacity:' + n1(0.35 + rnd() * 0.3) + '" stroke-width="1.4" stroke-linecap="round"/>';
-    }
-    var flowers = (v === 'c') ? 18 : 12;
-    for (i = 0; i < flowers; i++) {
-      x2 = 40 + rnd() * 1520; if (v === 'c' && Math.abs(x2 - 880) < 70) continue;
-      y2 = groundY(x2, 362) + 3; h = 22 + rnd() * 28;
-      o += '<path d="M' + n1(x2) + ' ' + n1(y2) + ' q ' + n1((rnd() - 0.5) * 8) + ' ' + n1(-h * 0.5) + ' 0 ' + n1(-h) + '" fill="none" style="stroke:var(--text-3);stroke-opacity:.55" stroke-width="1.3"/>' +
-        '<circle cx="' + n1(x2) + '" cy="' + n1(y2 - h) + '" r="' + n1(4 + rnd() * 2.5) + '" style="fill:var(--signal)"/><circle cx="' + n1(x2) + '" cy="' + n1(y2 - h) + '" r="1.4" style="fill:var(--bg)"/>';
-    }
-    return o;
-  }
-  function peaceSword(x, y) {
-    /* planted blade, hilt up — a red ribbon tied at the guard */
-    return '<ellipse cx="' + x + '" cy="' + (y - 2) + '" rx="74" ry="7" style="fill:var(--text);fill-opacity:.12"/>' +
-      '<g transform="translate(' + x + ' ' + y + ') rotate(-4)">' +
-      '<path d="M-10 6 L10 6 L8 -190 L0 -214 L-8 -190 Z" style="fill:var(--text-2)"/><path d="M-10 6 L-7 6 L-5 -188 L0 -210 Z" style="fill:var(--surface);fill-opacity:.55"/>' +
-      '<line x1="0" y1="-12" x2="0" y2="-182" style="stroke:var(--bg);stroke-opacity:.28" stroke-width="2"/>' +
-      '<rect x="-48" y="-206" width="96" height="11" rx="4" style="fill:var(--text)"/><circle cx="-49" cy="-200" r="5" style="fill:var(--text)"/><circle cx="49" cy="-200" r="5" style="fill:var(--text)"/>' +
-      '<rect x="-4.5" y="-252" width="9" height="48" rx="2.5" style="fill:var(--text)"/>' +
-      '<path d="M-4.5 -240 L4.5 -236 M-4.5 -230 L4.5 -226 M-4.5 -220 L4.5 -216" style="stroke:var(--text-3)" stroke-width="1.2"/>' +
-      '<circle cx="0" cy="-259" r="9" style="fill:var(--text)"/>' +
-      '<g class="sway"><path d="M6 -204 C40 -196 70 -214 104 -198 C128 -188 150 -194 170 -184 C150 -178 128 -176 104 -184 C72 -198 44 -184 6 -194 Z" style="fill:var(--signal)"/></g>' +
-      '</g>';
-  }
-
-  function ambient(rnd) {
-    var o = '<div class="embers" aria-hidden="true">', i;
-    for (i = 0; i < 14; i++) o += '<span class="ember" style="--x:' + n1(rnd() * 100) + '%;--s:' + n1(2 + rnd() * 3) + 'px;--dx:' + Math.round((rnd() - 0.4) * 140) + 'px;--t:' + n1(5 + rnd() * 5) + 's;--w:-' + n1(rnd() * 9) + 's"></span>';
-    for (i = 0; i < 10; i++) o += '<span class="petal" style="--x:' + n1(rnd() * 100) + '%;--s:' + n1(2.5 + rnd() * 2) + 'px;--dx:' + Math.round(60 + rnd() * 160) + 'px;--t:' + n1(9 + rnd() * 7) + 's;--w:-' + n1(rnd() * 12) + 's"></span>';
-    return o + '</div>';
-  }
-  /* Photographic backdrops (cropped bands). Each theme has its own; hero keeps the drawn sky. */
-  var PHOTOS = {
-    war:   { a: ['img/cenario-guerra-ruinas.webp', '50% 60%'], b: ['img/cenario-guerra-eclipse.webp', '50% 40%'], c: ['img/cenario-guerra-tempestade.webp', '50% 60%', 'saturate(0.9) contrast(1.1) brightness(0.9)'] },
-    peace: { a: ['img/cenario-paz-campo.webp', '50% 55%'], b: ['img/cenario-paz-colina.webp', '50% 45%'], c: ['img/cenario-paz-espadas.webp', '50% 45%', 'saturate(0.7) sepia(0.25) brightness(1.2) contrast(0.95)'] }
-  };
-  function photoLayer(p) {
-    return '<img class="photo layer" style="--d:18;object-position:' + p[1] + (p[2] ? ';filter:' + p[2] : '') + '" src="' + p[0] + '" alt="" loading="lazy" decoding="async"><span class="photo-tint"></span>';
-  }
-  function buildScene(el) {
-    var v = el.getAttribute('data-scene'), id = 's' + (++sceneUid), rnd = rng(v.charCodeAt(0) * 977 + 13), hero = v === 'h', H = hero ? 760 : 420;
-    var war = '<div class="scene scene-war">' + layerSvg(0, H, warSky(id + 'w', v, H, rnd), hero);
-    var peace = '<div class="scene scene-peace">' + layerSvg(0, H, peaceSky(id + 'p', v, H, rnd), hero);
-    if (!hero) {
-      war += layerSvg(8, H, warFar(rnd)) + layerSvg(16, H, warMid(v, rnd)) + layerSvg(24, H, warNear(v, rnd));
-      peace += layerSvg(8, H, peaceFar(rnd)) + layerSvg(16, H, peaceMid(v, rnd)) + layerSvg(24, H, peaceNear(v, rnd));
-    }
-    var ph = PHOTOS;
-    if (!hero && ph.war[v]) war = '<div class="scene scene-war scene--photo">' + photoLayer(ph.war[v]);
-    if (!hero && ph.peace[v]) peace = '<div class="scene scene-peace scene--photo">' + photoLayer(ph.peace[v]);
-    el.innerHTML = war + '</div>' + peace + '</div>' + (hero ? '' : ambient(rnd));
-  }
-  var interludes = $$('.interlude');
-  $$('.interlude, .hero-scene').forEach(buildScene);
-
-  (function parallax() {
-    if (!interludes.length || !('IntersectionObserver' in window)) return;
-    var active = [], ticking = false;
-    function update() {
-      ticking = false;
-      var vh = window.innerHeight || 800;
-      active.forEach(function (el) {
-        var r = el.getBoundingClientRect();
-        var p = (r.top + r.height / 2 - vh / 2) / (vh / 2 + r.height / 2);
-        el.style.setProperty('--py', Math.max(-1, Math.min(1, p)).toFixed(3));
-      });
-    }
-    function request() { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        var el = en.target, i = active.indexOf(el);
-        el.classList.toggle('in-view', en.isIntersecting);
-        if (en.isIntersecting && i < 0) active.push(el);
-        if (!en.isIntersecting && i >= 0) active.splice(i, 1);
-      });
-      request();
-    }, { rootMargin: '80px 0px' });
-    interludes.forEach(function (el) { io.observe(el); });
-    if (!reducedMotion()) { window.addEventListener('scroll', request, { passive: true }); window.addEventListener('resize', request); }
-  })();
-
-  /* ============================================================
-     LENS REVEAL — a soft lens follows the pointer and uncovers the
-     photo underneath; the trail fades away on its own.
-     ============================================================ */
-  function Lens(frame, canvas, src, opts) {
-    opts = opts || {};
-    var ctx = canvas.getContext('2d'), mask = document.createElement('canvas'), mctx = mask.getContext('2d');
-    var img = new Image(), ready = false, loading = false, enabled = true;
-    var w = 0, h = 0, dpr = 1, rad = 40;
-    var ptr = { x: 0, y: 0, inside: false, moved: false };
-    var raf = 0, lastT = 0, peekOn = false, peekA = 0, ringA = 0, demoStart = 0, demoOn = false;
-    var self = this;
-
-    function load() {
-      if (loading) return; loading = true;
-      img.onload = function () { ready = true; resize(); kick(); };
-      img.src = src;
-    }
-    function resize() {
-      var r = frame.getBoundingClientRect();
-      if (!r.width || !r.height) return;
-      dpr = Math.min(window.devicePixelRatio || 1, 2);
-      var nw = Math.round(r.width * dpr), nh = Math.round(r.height * dpr);
-      if (nw !== w || nh !== h) { w = nw; h = nh; canvas.width = w; canvas.height = h; mask.width = w; mask.height = h; }
-      rad = (opts.radius || 0.24) * w; makeSprite();
-    }
-    function cover(c) {
-      var iw = img.naturalWidth, ih = img.naturalHeight, s = Math.max(w / iw, h / ih), dw = iw * s, dh = ih * s;
-      c.drawImage(img, (w - dw) * 0.5, 0, dw, dh);
-    }
-    /* Trail: every stamp lives LIFE ms — fully visible for HOLD ms, then eases out. */
-    var trail = [], lastP = null, LIFE = 4200, HOLD = 1400, sprite = document.createElement('canvas');
-    function makeSprite() {
-      var d = Math.max(2, Math.ceil(rad * 2)); sprite.width = d; sprite.height = d;
-      var sc = sprite.getContext('2d'), g = sc.createRadialGradient(rad, rad, 0, rad, rad, rad);
-      g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(0.6, 'rgba(0,0,0,1)'); g.addColorStop(1, 'rgba(0,0,0,0)');
-      sc.fillStyle = g; sc.fillRect(0, 0, d, d);
-    }
-    function addStamp(x, y, ts) {
-      var step = Math.max(2, rad * 0.22);
-      if (!lastP) { trail.push({ x: x, y: y, t: ts }); }
-      else {
-        var dx = x - lastP.x, dy = y - lastP.y, dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < step) { if (trail.length) trail[trail.length - 1].t = ts; return; }
-        var n = Math.ceil(dist / step);
-        for (var i = 1; i <= n; i++) trail.push({ x: lastP.x + dx * i / n, y: lastP.y + dy * i / n, t: ts });
-      }
-      lastP = { x: x, y: y };
-    }
-    function paintTrail(ts) {
-      mctx.clearRect(0, 0, w, h);
-      var keep = [];
-      for (var i = 0; i < trail.length; i++) {
-        var st = trail[i], age = ts - st.t;
-        if (age >= LIFE) continue;
-        var u = age <= HOLD ? 0 : (age - HOLD) / (LIFE - HOLD);
-        mctx.globalAlpha = 1 - u * u * (3 - 2 * u);
-        mctx.drawImage(sprite, st.x - rad, st.y - rad);
-        keep.push(st);
-      }
-      mctx.globalAlpha = 1;
-      trail = keep;
-    }
-    function ring(x, y, a, t) {
-      ctx.save(); ctx.lineCap = 'round';
-      var a0 = t * 0.0012;
-      ctx.lineWidth = Math.max(1.5, 1.6 * dpr); ctx.strokeStyle = 'rgba(255,255,255,' + (0.42 * a).toFixed(3) + ')';
-      ctx.beginPath(); ctx.arc(x, y, rad * 0.97, a0, a0 + 1.15); ctx.stroke();
-      ctx.lineWidth = Math.max(1, 1.1 * dpr); ctx.strokeStyle = 'rgba(255,255,255,' + (0.22 * a).toFixed(3) + ')';
-      ctx.beginPath(); ctx.arc(x, y, rad * 0.97, a0 + 3.3, a0 + 4.2); ctx.stroke();
-      ctx.restore();
-    }
-    function tick(ts) {
-      raf = 0;
-      if (!ready || !w) return;
-      var dt = Math.min(50, ts - (lastT || ts)); lastT = ts;
-      if (demoOn) {
-        var u = (ts - demoStart) / 3200;
-        if (u >= 1) { demoOn = false; ptr.inside = false; }
-        else {
-          ptr.inside = true; ptr.moved = true;
-          ptr.x = w * (0.5 + 0.2 * Math.sin(u * 9.4)); ptr.y = h * (0.2 + 0.24 * u + 0.035 * Math.sin(u * 19));
-        }
-      }
-      if (ptr.inside && ptr.moved) addStamp(ptr.x, ptr.y, ts); else lastP = null;
-      paintTrail(ts);
-      peekA += ((peekOn ? 1 : 0) - peekA) * Math.min(1, dt / 120);
-      ringA += ((ptr.inside ? 1 : 0) - ringA) * Math.min(1, dt / 100);
-      ctx.globalCompositeOperation = 'source-over';
-      ctx.clearRect(0, 0, w, h);
-      cover(ctx);
-      ctx.globalCompositeOperation = 'destination-in';
-      ctx.drawImage(mask, 0, 0);
-      if (peekA > 0.01) { ctx.globalCompositeOperation = 'destination-over'; ctx.globalAlpha = peekA; cover(ctx); ctx.globalAlpha = 1; }
-      ctx.globalCompositeOperation = 'source-over';
-      if (ringA > 0.02) ring(ptr.x, ptr.y, ringA, ts);
-      var busy = ptr.inside || demoOn || Math.abs((peekOn ? 1 : 0) - peekA) > 0.01 || ringA > 0.02 || trail.length > 0;
-      if (busy) raf = window.requestAnimationFrame(tick);
-      else { ctx.clearRect(0, 0, w, h); if (peekOn) { /* keep the full reveal */ ctx.globalAlpha = 1; cover(ctx); } }
-    }
-    function kick() { if (!raf && ready && enabled) raf = window.requestAnimationFrame(tick); }
-    function setPtr(e) {
-      var r = frame.getBoundingClientRect();
-      ptr.x = (e.clientX - r.left) * (w / r.width); ptr.y = (e.clientY - r.top) * (h / r.height); ptr.moved = true;
-    }
-    function onEnter(e) { if (!enabled) return; load(); resize(); demoOn = false; ptr.inside = true; setPtr(e); markUsed(); kick(); }
-    function onMove(e) { if (!enabled) return; demoOn = false; if (!ptr.inside) ptr.inside = true; setPtr(e); markUsed(); kick(); }
-    function onLeave() { ptr.inside = false; lastP = null; kick(); }
-    function markUsed() { if (opts.onUse) opts.onUse(); }
-    frame.addEventListener('pointerenter', onEnter);
-    frame.addEventListener('pointermove', onMove);
-    frame.addEventListener('pointerdown', onEnter);
-    frame.addEventListener('pointerleave', onLeave);
-    frame.addEventListener('pointerup', function (e) { if (e.pointerType !== 'mouse') onLeave(); });
-    frame.addEventListener('pointercancel', onLeave);
-
-    this.load = load;
-    this.resize = function () { resize(); kick(); };
-    this.setEnabled = function (v) { enabled = !!v; if (!enabled) { ptr.inside = false; peekOn = false; peekA = 0; demoOn = false; trail = []; lastP = null; mctx.clearRect(0, 0, w, h); ctx.clearRect(0, 0, w, h); } else load(); };
-    this.peek = function (on) { load(); peekOn = !!on; kick(); };
-    this.demo = function () { if (!enabled || ptr.inside) return; load(); resize(); demoOn = true; demoStart = performance.now(); kick(); };
-    this.stopDemo = function () { demoOn = false; };
-  }
-
-  /* ============================================================
-     PROFILE — the avatar opens a picker (swipe / arrows / dots);
-     Save applies the chosen photo and, with it, the whole mood.
-     ============================================================ */
-  var PROFILE_KEY = 'guilherme-portfolio-profile';
-  var profileApi = null;
-  function currentProfile() { return root.getAttribute('data-profile') === 'war' ? 'war' : 'default'; }
-  function metaColor(theme, profile) {
-    if (profile === 'war') return theme === 'light' ? '#F4EFE4' : '#0A0708';
-    return theme === 'light' ? '#F6F4EF' : '#0C0F13';
-  }
-  function applyProfile(p, animate) {
-    if (animate && !reducedMotion()) {
-      root.classList.add('theme-anim');
-      window.setTimeout(function () { root.classList.remove('theme-anim'); }, 450);
-    }
-    if (p === 'war') root.setAttribute('data-profile', 'war'); else root.removeAttribute('data-profile');
-    var m = $('meta[name="theme-color"]');
-    if (m) m.setAttribute('content', metaColor(currentTheme(), p));
-    if (cardLens) cardLens.setEnabled(p === 'war');
-    $$('[data-inuse]').forEach(function (el) { el.hidden = el.getAttribute('data-inuse') !== p; });
-  }
-  function openProfilePicker() { if (profileApi) profileApi.open(); }
-
-  /* the small avatar in the card also reveals, once war mode is on */
-  var cardLens = null;
-  (function cardAvatar() {
-    var btn = $('#avatarOpen'); if (!btn) return;
-    var canvas = $('.lens-canvas', btn);
-    cardLens = new Lens(btn, canvas, 'img/perfil-guerra-reveal.webp', { radius: 0.34 });
-    cardLens.setEnabled(false);
-    btn.addEventListener('click', openProfilePicker);
-  })();
-
-  (function profilePicker() {
-    var dlg = $('#avatarDialog'); if (!dlg || typeof dlg.showModal !== 'function') return;
-    var track = $('#avTrack'), dots = $$('.av-dot'), prev = $('#avPrev'), next = $('#avNext'), save = $('#avSave'),
-        live = $('#avLive'), peekBtn = $('#avPeek'), lensFrame = $('#avLensFrame'), order = ['default', 'war'];
-    var idx = 0, lens = null, demoShown = false, raf = 0;
-
-    function ensureLens() {
-      if (lens) return lens;
-      lens = new Lens(lensFrame, $('.lens-canvas', lensFrame), 'img/perfil-guerra-reveal.webp', { radius: 0.24, onUse: function () { lensFrame.classList.add('is-used'); } });
-      return lens;
-    }
-    function slideWidth() { return track.clientWidth || 1; }
-    function go(i, smooth) {
-      i = Math.max(0, Math.min(order.length - 1, i));
-      track.scrollTo({ left: i * slideWidth(), behavior: smooth && !reducedMotion() ? 'smooth' : 'auto' });
-      if (!smooth) refresh(i);
-    }
-    function refresh(i) {
-      idx = i;
-      dots.forEach(function (d, k) { d.setAttribute('aria-current', k === i ? 'true' : 'false'); d.setAttribute('aria-selected', k === i ? 'true' : 'false'); });
-      prev.disabled = i === 0; next.disabled = i === order.length - 1;
-      if (i === 1) {
-        ensureLens().load();
-        if (!demoShown && !reducedMotion()) { demoShown = true; window.setTimeout(function () { if (dlg.open && idx === 1) lens.demo(); }, 750); }
-      } else if (lens) lens.stopDemo();
-    }
-    function onScroll() {
-      if (raf) return;
-      raf = window.requestAnimationFrame(function () { raf = 0; var i = Math.round(track.scrollLeft / slideWidth()); if (i !== idx) refresh(i); });
-    }
-    track.addEventListener('scroll', onScroll, { passive: true });
-    prev.addEventListener('click', function () { go(idx - 1, true); });
-    next.addEventListener('click', function () { go(idx + 1, true); });
-    dots.forEach(function (d) { d.addEventListener('click', function () { go(parseInt(d.getAttribute('data-go'), 10), true); }); });
-    track.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowLeft') { e.preventDefault(); go(idx - 1, true); }
-      else if (e.key === 'ArrowRight') { e.preventDefault(); go(idx + 1, true); }
-    });
-    peekBtn.addEventListener('click', function () {
-      var on = peekBtn.getAttribute('aria-pressed') !== 'true';
-      peekBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
-      ensureLens().peek(on); lensFrame.classList.add('is-used');
-    });
-    function reset() { peekBtn.setAttribute('aria-pressed', 'false'); if (lens) lens.peek(false); }
-    function close() { if (dlg.open) dlg.close(); }
-    $('#avCancel').addEventListener('click', close);
-    $('#avClose').addEventListener('click', close);
-    dlg.addEventListener('click', function (e) { if (e.target === dlg) close(); });
-    dlg.addEventListener('close', reset);
-    save.addEventListener('click', function () {
-      var p = order[idx];
-      if (p !== currentProfile()) { applyProfile(p, true); store(PROFILE_KEY, p); }
-      live.textContent = t(p === 'war' ? 'av.savedWar' : 'av.savedDefault');
-      close();
-    });
-    window.addEventListener('resize', function () { if (dlg.open) { go(idx, false); if (lens) lens.resize(); } });
-
-    profileApi = {
-      open: function () {
-        dlg.showModal();
-        var start = order.indexOf(currentProfile());
-        window.requestAnimationFrame(function () { go(start, false); if (lens) lens.resize(); else if (start === 1) ensureLens().resize(); });
-      }
-    };
-  })();
-  applyProfile(currentProfile(), false);
-
-  /* ---------- Boot ---------- */
-  var saved = read(LANG_KEY);
-  var initial = (saved === 'en' || saved === 'pt') ? saved : (/^pt/i.test(navigator.language || '') ? 'pt' : 'en');
-  setLanguage(initial);          // also renders the project grid
-  fillStats();
-  initReveal();
-
-})();
+        d += ' L' + n1(x) + ' ' + n1(base - h) + ' L' + n1(x + w * 0.5) + ' ' + n1(base - h - 10 - rnd() * 18) + '
