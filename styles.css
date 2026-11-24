@@ -467,6 +467,9 @@ kbd {
 .dev-card h3 { font-size: 1.35rem; }
 .dev-card p { font-size: 15px; color: var(--text-2); }
 .dev-card .project-tags { margin-top: 0; padding: 0; }
+.dev-card--wide { grid-column: 1 / -1; }
+.dev-card--wide p { max-width: 72ch; }
+.dev-card .project-links { margin-top: 2px; }
 
 /* ============================================================
    FREELANCE
@@ -934,7 +937,7 @@ body.modal-open { overflow: hidden; position: fixed; width: 100%; }
   .principles { display: none; }
   .cert-card { padding-bottom: 4pt; }
   .cert-card .cert-subtitle, .cert-card .cert-meta { font-size: 9pt; margin: 0; }
-  .cert-action { display: block; } .cert-action .chip { display: none !important; }
+  .cert-action { display: block; } .cert-action .chip { display: none !important; } .cert-card.in-progress .cert-meta { display: none; }
   .leader-icon { display: none; }
   .tab, .btn { display: none !important; }
   a { color: inherit; }
