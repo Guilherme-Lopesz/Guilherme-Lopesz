@@ -22,6 +22,7 @@ I'm currently open to **remote international opportunities** where I can continu
 - **Giro** — AI-assisted financial transaction classifier combining rule-based logic with AI.
 - **GraphRoute** — Algorithm benchmarking tool comparing BFS, DFS, and Dijkstra over a real geographic road network.
 - **Vidas do Campo** — Interactive learning simulation built around clinical decision-making and educational gamification.
+- **Bichometria (PetSalvo)** — Team project on visual biometric matching; I work on the Computer Vision squad with TensorFlow, training artificial neural networks, and fine-tuning.
 
 Each project is documented through **case studies** covering the problem, solution, architecture, technical decisions, results, and limitations.
 
@@ -65,6 +66,9 @@ This roadmap is intentionally open and will evolve as I learn, experiment, and d
 - Multimodal Voice Agents
 - OpenAI / Gemini / Grok APIs
 - Prompt Engineering
+- Computer Vision
+- TensorFlow
+- Neural Network Training & Fine-Tuning
 
 **Automation**
 - n8n
