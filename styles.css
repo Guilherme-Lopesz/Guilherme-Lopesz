@@ -18,8 +18,6 @@
 /* ---------- Tokens ---------- */
 :root {
   color-scheme: dark;
-
-  --bg: #0C0F13;
   --surface: #12161C;
   --surface-2: #181D25;
   --line: rgba(236, 239, 244, 0.10);
